@@ -71,6 +71,7 @@ const Header = () => {
                 src="/images/homepage/logo.png" 
                 alt="Windows by Choice" 
                 className="h-16 w-auto"
+                onError={(e) => console.log('Logo failed to load:', e)}
               />
             </Link>
 
