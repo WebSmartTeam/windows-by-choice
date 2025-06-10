@@ -1,10 +1,225 @@
+import { Link } from 'react-router-dom';
+import { ArrowRight, Check, Shield, Lock, Palette } from 'lucide-react';
+
+// Future MCP Component
+// import { ImageGallery, ContactForm } from '@aidan/mcp-components';
+
 const DoorsPage = () => {
+  const doorTypes = [
+    {
+      id: 'composite',
+      title: 'Composite Doors',
+      description: 'Durable, secure doors with authentic timber appearance and superior insulation',
+      image: '/images/doors/composite-doors-1.jpg',
+      features: [
+        'Exceptional security',
+        'Energy efficient',
+        'Weather resistant',
+        'Low maintenance',
+        'Wide range of colours'
+      ]
+    },
+    {
+      id: 'bifold',
+      title: 'Bi-Fold Doors',
+      description: 'Create seamless indoor-outdoor living with our premium bi-fold door systems',
+      image: '/images/doors/bifold-doors-1.jpg',
+      features: [
+        'Maximum opening space',
+        'Slim sight lines',
+        'Smooth operation',
+        'High security',
+        'Various configurations'
+      ]
+    },
+    {
+      id: 'patio',
+      title: 'Patio Doors',
+      description: 'Large sliding doors perfect for garden access and natural light',
+      image: '/images/doors/patio-doors-1.jpg',
+      features: [
+        'Space-saving design',
+        'Large glass areas',
+        'Smooth sliding action',
+        'Excellent insulation',
+        'Easy maintenance'
+      ]
+    },
+    {
+      id: 'french',
+      title: 'French Doors',
+      description: 'Classic elegance with modern performance for traditional and contemporary homes',
+      image: '/images/doors/french-doors-1.jpg',
+      features: [
+        'Timeless design',
+        'Excellent ventilation',
+        'Security features',
+        'Energy efficient',
+        'Custom sizes available'
+      ]
+    }
+  ];
+
+  const benefits = [
+    {
+      icon: Shield,
+      title: 'Superior Security',
+      description: 'Multi-point locking systems and reinforced frames for maximum protection'
+    },
+    {
+      icon: Lock,
+      title: 'Energy Efficiency',
+      description: 'Advanced insulation technology to keep your home warm and reduce bills'
+    },
+    {
+      icon: Palette,
+      title: 'Custom Design',
+      description: 'Choose from hundreds of colours, finishes, and hardware options'
+    }
+  ];
+
   return (
-    <div className="min-h-screen bg-white py-16">
-      <div className="container mx-auto px-4">
-        <h1 className="text-4xl font-bold text-gray-800 text-center">Doors</h1>
-        <p className="text-xl text-gray-600 text-center mt-4">Coming soon...</p>
-      </div>
+    <div className="min-h-screen bg-white">
+      {/* Page Header */}
+      <section className="bg-[#FAF8F5] py-16">
+        <div className="container mx-auto px-4">
+          <h1 className="text-4xl font-bold text-gray-800 text-center mb-4">
+            Premium Doors
+          </h1>
+          <p className="text-xl text-gray-600 text-center max-w-3xl mx-auto">
+            Enhance your home's entrance with our range of high-quality doors. 
+            From secure composite doors to space-saving bi-folds, we have the perfect solution for every home.
+          </p>
+        </div>
+      </section>
+
+      {/* Door Types */}
+      <section className="py-16">
+        <div className="container mx-auto px-4">
+          {doorTypes.map((type, index) => (
+            <div
+              key={type.id}
+              id={type.id}
+              className={`mb-16 ${index % 2 === 1 ? 'bg-[#FAF8F5] -mx-4 px-4 py-12 md:-mx-8 md:px-8' : ''}`}
+            >
+              <div className="max-w-6xl mx-auto">
+                <div className={`grid md:grid-cols-2 gap-12 items-center ${index % 2 === 1 ? 'md:grid-flow-dense' : ''}`}>
+                  <div className={index % 2 === 1 ? 'md:col-start-2' : ''}>
+                    <img
+                      src={type.image}
+                      alt={type.title}
+                      className="w-full rounded-lg shadow-lg"
+                    />
+                  </div>
+                  
+                  <div>
+                    <h2 className="text-3xl font-bold text-gray-800 mb-4">{type.title}</h2>
+                    <p className="text-lg text-gray-600 mb-6">{type.description}</p>
+                    
+                    <ul className="space-y-3 mb-8">
+                      {type.features.map((feature) => (
+                        <li key={feature} className="flex items-start gap-3">
+                          <Check className="w-5 h-5 text-[#8B7E6A] mt-0.5 flex-shrink-0" />
+                          <span className="text-gray-700">{feature}</span>
+                        </li>
+                      ))}
+                    </ul>
+                    
+                    <Link
+                      to="/contact"
+                      className="inline-flex items-center px-6 py-3 bg-[#8B7E6A] text-white rounded-lg hover:bg-[#6B5E4A] transition-colors font-medium"
+                    >
+                      Get Quote
+                      <ArrowRight className="ml-2 w-5 h-5" />
+                    </Link>
+                  </div>
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      {/* Benefits Section */}
+      <section className="py-16 bg-white">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl font-bold text-gray-800 mb-4">
+              Why Choose Our Doors?
+            </h2>
+            <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+              Professional installation with comprehensive warranties
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+            {benefits.map((benefit) => (
+              <div key={benefit.title} className="text-center">
+                <div className="inline-flex items-center justify-center w-16 h-16 bg-[#FAF8F5] text-[#8B7E6A] rounded-full mb-6">
+                  <benefit.icon className="w-8 h-8" />
+                </div>
+                <h3 className="text-xl font-bold text-gray-800 mb-3">{benefit.title}</h3>
+                <p className="text-gray-600">{benefit.description}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Gallery Section */}
+      <section className="py-16 bg-[#FAF8F5]">
+        <div className="container mx-auto px-4">
+          <h2 className="text-3xl font-bold text-gray-800 text-center mb-12">
+            Our Door Installations
+          </h2>
+          
+          {/* Future MCP Integration
+          <ImageGallery
+            category="doors"
+            mcpEndpoint="https://mcp.aidan.build/images"
+            layout="masonry"
+            businessId="windows-by-choice"
+          />
+          */}
+          
+          {/* Temporary Gallery */}
+          <div className="grid md:grid-cols-3 gap-6 max-w-6xl mx-auto">
+            <img src="/images/doors/door-services-hitchin-1.jpg" alt="Door installation" className="w-full h-64 object-cover rounded-lg" />
+            <img src="/images/doors/composite-doors-2.jpg" alt="Composite door" className="w-full h-64 object-cover rounded-lg" />
+            <img src="/images/doors/bifold-doors-2.jpg" alt="Bi-fold doors" className="w-full h-64 object-cover rounded-lg" />
+            <img src="/images/doors/patio-doors-2.jpg" alt="Patio doors" className="w-full h-64 object-cover rounded-lg" />
+            <img src="/images/doors/french-doors-2.jpg" alt="French doors" className="w-full h-64 object-cover rounded-lg" />
+            <img src="/images/doors/composite-doors-3.jpg" alt="Composite doors" className="w-full h-64 object-cover rounded-lg" />
+          </div>
+        </div>
+      </section>
+
+      {/* CTA Section */}
+      <section className="py-16 bg-gradient-to-r from-[#8B7E6A] to-[#6B5E4A] text-white">
+        <div className="container mx-auto px-4 text-center">
+          <h2 className="text-3xl font-bold mb-4">
+            Ready to Upgrade Your Doors?
+          </h2>
+          <p className="text-xl mb-8 max-w-2xl mx-auto">
+            Get a free consultation and quote from our expert team
+          </p>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <Link
+              to="/contact"
+              className="inline-flex items-center justify-center px-8 py-4 bg-white text-[#8B7E6A] rounded-lg hover:bg-gray-100 transition-colors font-medium"
+            >
+              Get Free Quote
+              <ArrowRight className="ml-2 w-5 h-5" />
+            </Link>
+            <a
+              href="tel:07774604190"
+              className="inline-flex items-center justify-center px-8 py-4 border-2 border-white text-white rounded-lg hover:bg-white hover:text-[#8B7E6A] transition-colors font-medium"
+            >
+              Call 07774 604 190
+            </a>
+          </div>
+        </div>
+      </section>
     </div>
   );
 };

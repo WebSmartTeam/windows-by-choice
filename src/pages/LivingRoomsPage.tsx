@@ -1,10 +1,307 @@
+import { Link } from 'react-router-dom';
+import { ArrowRight, Check, Home, Crown, Building } from 'lucide-react';
+
+// Future MCP Component
+// import { ImageGallery, ContactForm } from '@aidan/mcp-components';
+
 const LivingRoomsPage = () => {
+  const orangeryTypes = [
+    {
+      id: 'contemporary',
+      title: 'Contemporary Orangeries',
+      description: 'Modern design with clean lines and maximum natural light for stylish living',
+      image: '/images/living-room-orangeries/contemporary-orangery-1.jpg',
+      features: [
+        'Floor-to-ceiling glazing',
+        'Flat or pitched roof options',
+        'Integrated blinds available',
+        'Modern architectural styling',
+        'Energy-efficient construction'
+      ]
+    },
+    {
+      id: 'traditional',
+      title: 'Traditional Orangeries',
+      description: 'Classic brick pillars and period features combined with modern performance',
+      image: '/images/living-room-orangeries/traditional-orangery-1.jpg',
+      features: [
+        'Brick pillar construction',
+        'Period-style windows',
+        'Decorative cornice details',
+        'Heritage colour options',
+        'Planning-friendly design'
+      ]
+    },
+    {
+      id: 'lantern',
+      title: 'Lantern Roof Extensions',
+      description: 'Stunning roof lanterns that flood your space with natural light from above',
+      image: '/images/living-room-orangeries/lantern-roof-1.jpg',
+      features: [
+        'Central roof lantern feature',
+        'Maximum overhead lighting',
+        'Various size configurations',
+        'Self-cleaning glass options',
+        'Superior thermal performance'
+      ]
+    }
+  ];
+
+  const benefits = [
+    {
+      icon: Home,
+      title: 'Luxury Living Space',
+      description: 'Create a premium living area that seamlessly blends indoor and outdoor living'
+    },
+    {
+      icon: Crown,
+      title: 'Prestigious Design',
+      description: 'Add architectural grandeur and significantly increase your property value'
+    },
+    {
+      icon: Building,
+      title: 'Solid Construction',
+      description: 'Built with brick or stone pillars for a permanent, substantial feel'
+    }
+  ];
+
+  const features = [
+    'Planning permission often not required',
+    'Superior insulation vs conservatories',
+    'Year-round comfortable temperatures',
+    'Substantial brick or stone construction',
+    'High-end finishes and fixtures',
+    'Bespoke design service'
+  ];
+
   return (
-    <div className="min-h-screen bg-white py-16">
-      <div className="container mx-auto px-4">
-        <h1 className="text-4xl font-bold text-gray-800 text-center">Living Rooms & Orangeries</h1>
-        <p className="text-xl text-gray-600 text-center mt-4">Coming soon...</p>
-      </div>
+    <div className="min-h-screen bg-white">
+      {/* Page Header */}
+      <section className="bg-[#FAF8F5] py-16">
+        <div className="container mx-auto px-4">
+          <h1 className="text-4xl font-bold text-gray-800 text-center mb-4">
+            Luxury Orangeries & Living Room Extensions
+          </h1>
+          <p className="text-xl text-gray-600 text-center max-w-3xl mx-auto">
+            Create the ultimate living space with our luxury orangeries. 
+            Combining the best of traditional construction with modern glazing for year-round comfort.
+          </p>
+        </div>
+      </section>
+
+      {/* Hero Image */}
+      <section className="py-0">
+        <div className="container mx-auto px-4">
+          <img 
+            src="/images/living-room-orangeries/livin-room-and-orangeries-1.jpg" 
+            alt="Luxury orangery living space" 
+            className="w-full h-96 object-cover rounded-lg shadow-lg"
+          />
+        </div>
+      </section>
+
+      {/* What is an Orangery */}
+      <section className="py-16">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto text-center">
+            <h2 className="text-3xl font-bold text-gray-800 mb-6">
+              What is an Orangery?
+            </h2>
+            <p className="text-lg text-gray-600 mb-8">
+              An orangery is the perfect blend of a traditional extension and a conservatory. 
+              With substantial brick or stone pillars, a flat or pitched roof with lantern features, 
+              and large glazed areas, orangeries provide a luxurious living space that can be used year-round.
+            </p>
+            
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mt-12">
+              {features.map((feature, index) => (
+                <div key={index} className="flex items-start gap-3">
+                  <Check className="w-5 h-5 text-[#8B7E6A] mt-0.5 flex-shrink-0" />
+                  <span className="text-gray-700">{feature}</span>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Orangery Types */}
+      <section className="py-16 bg-[#FAF8F5]">
+        <div className="container mx-auto px-4">
+          <h2 className="text-3xl font-bold text-gray-800 text-center mb-12">
+            Choose Your Orangery Style
+          </h2>
+          
+          {orangeryTypes.map((type, index) => (
+            <div
+              key={type.id}
+              id={type.id}
+              className={`mb-16 ${index % 2 === 1 ? 'bg-white -mx-4 px-4 py-12 md:-mx-8 md:px-8 rounded-lg' : ''}`}
+            >
+              <div className="max-w-6xl mx-auto">
+                <div className={`grid md:grid-cols-2 gap-12 items-center ${index % 2 === 1 ? 'md:grid-flow-dense' : ''}`}>
+                  <div className={index % 2 === 1 ? 'md:col-start-2' : ''}>
+                    <img
+                      src={type.image}
+                      alt={type.title}
+                      className="w-full rounded-lg shadow-lg"
+                    />
+                  </div>
+                  
+                  <div>
+                    <h3 className="text-3xl font-bold text-gray-800 mb-4">{type.title}</h3>
+                    <p className="text-lg text-gray-600 mb-6">{type.description}</p>
+                    
+                    <ul className="space-y-3 mb-8">
+                      {type.features.map((feature) => (
+                        <li key={feature} className="flex items-start gap-3">
+                          <Check className="w-5 h-5 text-[#8B7E6A] mt-0.5 flex-shrink-0" />
+                          <span className="text-gray-700">{feature}</span>
+                        </li>
+                      ))}
+                    </ul>
+                    
+                    <Link
+                      to="/contact"
+                      className="inline-flex items-center px-6 py-3 bg-[#8B7E6A] text-white rounded-lg hover:bg-[#6B5E4A] transition-colors font-medium"
+                    >
+                      Get Quote
+                      <ArrowRight className="ml-2 w-5 h-5" />
+                    </Link>
+                  </div>
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      {/* Benefits Section */}
+      <section className="py-16 bg-white">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl font-bold text-gray-800 mb-4">
+              Why Choose an Orangery?
+            </h2>
+            <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+              The premium choice for homeowners seeking luxury, comfort, and substantial property value addition
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+            {benefits.map((benefit) => (
+              <div key={benefit.title} className="text-center">
+                <div className="inline-flex items-center justify-center w-16 h-16 bg-[#FAF8F5] text-[#8B7E6A] rounded-full mb-6">
+                  <benefit.icon className="w-8 h-8" />
+                </div>
+                <h3 className="text-xl font-bold text-gray-800 mb-3">{benefit.title}</h3>
+                <p className="text-gray-600">{benefit.description}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Planning & Regulations */}
+      <section className="py-16 bg-[#FAF8F5]">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="text-3xl font-bold text-gray-800 text-center mb-8">
+              Planning & Building Regulations
+            </h2>
+            <div className="grid md:grid-cols-2 gap-8">
+              <div className="bg-white p-6 rounded-lg shadow-lg">
+                <h3 className="text-xl font-bold text-gray-800 mb-4">Permitted Development</h3>
+                <p className="text-gray-600 mb-4">
+                  Many orangeries can be built under Permitted Development Rights, meaning no planning application is required.
+                </p>
+                <ul className="space-y-2 text-sm text-gray-600">
+                  <li className="flex items-start gap-2">
+                    <Check className="w-4 h-4 text-[#8B7E6A] mt-0.5 flex-shrink-0" />
+                    Single storey rear extensions up to 6m (detached) or 4m (semi/terraced)
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <Check className="w-4 h-4 text-[#8B7E6A] mt-0.5 flex-shrink-0" />
+                    Maximum height of 4m or 3m within 2m of boundary
+                  </li>
+                </ul>
+              </div>
+              
+              <div className="bg-white p-6 rounded-lg shadow-lg">
+                <h3 className="text-xl font-bold text-gray-800 mb-4">Building Regulations</h3>
+                <p className="text-gray-600 mb-4">
+                  We handle all Building Regulations applications and ensure full compliance with current standards.
+                </p>
+                <ul className="space-y-2 text-sm text-gray-600">
+                  <li className="flex items-start gap-2">
+                    <Check className="w-4 h-4 text-[#8B7E6A] mt-0.5 flex-shrink-0" />
+                    Structural calculations and drawings
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <Check className="w-4 h-4 text-[#8B7E6A] mt-0.5 flex-shrink-0" />
+                    Energy efficiency compliance
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Gallery Section */}
+      <section className="py-16 bg-white">
+        <div className="container mx-auto px-4">
+          <h2 className="text-3xl font-bold text-gray-800 text-center mb-12">
+            Our Orangery Projects
+          </h2>
+          
+          {/* Future MCP Integration
+          <ImageGallery
+            category="orangeries"
+            mcpEndpoint="https://mcp.aidan.build/images"
+            layout="masonry"
+            businessId="windows-by-choice"
+          />
+          */}
+          
+          {/* Temporary Gallery */}
+          <div className="grid md:grid-cols-3 gap-6 max-w-6xl mx-auto">
+            <img src="/images/living-room-orangeries/livin-room-and-orangeries-1.jpg" alt="Orangery installation" className="w-full h-64 object-cover rounded-lg" />
+            <img src="/images/living-room-orangeries/contemporary-orangery-2.jpg" alt="Contemporary orangery" className="w-full h-64 object-cover rounded-lg" />
+            <img src="/images/living-room-orangeries/traditional-orangery-2.jpg" alt="Traditional orangery" className="w-full h-64 object-cover rounded-lg" />
+            <img src="/images/living-room-orangeries/lantern-roof-2.jpg" alt="Lantern roof extension" className="w-full h-64 object-cover rounded-lg" />
+            <img src="/images/living-room-orangeries/luxury-orangery-1.jpg" alt="Luxury orangery" className="w-full h-64 object-cover rounded-lg" />
+            <img src="/images/living-room-orangeries/orangery-interior-1.jpg" alt="Orangery interior" className="w-full h-64 object-cover rounded-lg" />
+          </div>
+        </div>
+      </section>
+
+      {/* CTA Section */}
+      <section className="py-16 bg-gradient-to-r from-[#8B7E6A] to-[#6B5E4A] text-white">
+        <div className="container mx-auto px-4 text-center">
+          <h2 className="text-3xl font-bold mb-4">
+            Ready to Create Your Dream Living Space?
+          </h2>
+          <p className="text-xl mb-8 max-w-2xl mx-auto">
+            Get a free design consultation and quote for your luxury orangery project
+          </p>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <Link
+              to="/contact"
+              className="inline-flex items-center justify-center px-8 py-4 bg-white text-[#8B7E6A] rounded-lg hover:bg-gray-100 transition-colors font-medium"
+            >
+              Get Free Quote
+              <ArrowRight className="ml-2 w-5 h-5" />
+            </Link>
+            <a
+              href="tel:07774604190"
+              className="inline-flex items-center justify-center px-8 py-4 border-2 border-white text-white rounded-lg hover:bg-white hover:text-[#8B7E6A] transition-colors font-medium"
+            >
+              Call 07774 604 190
+            </a>
+          </div>
+        </div>
+      </section>
     </div>
   );
 };
