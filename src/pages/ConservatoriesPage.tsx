@@ -1,8 +1,6 @@
 import { Link } from 'react-router-dom';
 import { ArrowRight, Check, Sun, Home, Thermometer } from 'lucide-react';
 
-// Future MCP Component
-// import { ImageGallery, ContactForm } from '@aidan/mcp-components';
 
 const ConservatoriesPage = () => {
   const conservatoryTypes = [
@@ -217,14 +215,6 @@ const ConservatoriesPage = () => {
             Our Conservatory Projects
           </h2>
           
-          {/* Future MCP Integration
-          <ImageGallery
-            category="conservatories"
-            mcpEndpoint="https://mcp.aidan.build/images"
-            layout="masonry"
-            businessId="windows-by-choice"
-          />
-          */}
           
           {/* Temporary Gallery */}
           <div className="grid md:grid-cols-3 gap-6 max-w-6xl mx-auto">

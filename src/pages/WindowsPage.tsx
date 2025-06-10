@@ -1,8 +1,6 @@
 import { Link } from 'react-router-dom';
 import { ArrowRight, Check, Shield, Zap, Home } from 'lucide-react';
 
-// Future MCP Component
-// import { ImageGallery, ContactForm } from '@aidan/mcp-components';
 
 const WindowsPage = () => {
   const windowTypes = [
@@ -160,14 +158,6 @@ const WindowsPage = () => {
             Our Window Installations
           </h2>
           
-          {/* Future MCP Integration
-          <ImageGallery
-            category="windows"
-            mcpEndpoint="https://mcp.aidan.build/images"
-            layout="masonry"
-            businessId="windows-by-choice"
-          />
-          */}
           
           {/* Temporary Gallery */}
           <div className="grid md:grid-cols-3 gap-6 max-w-6xl mx-auto">

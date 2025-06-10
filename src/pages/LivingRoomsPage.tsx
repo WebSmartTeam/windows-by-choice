@@ -1,8 +1,6 @@
 import { Link } from 'react-router-dom';
 import { ArrowRight, Check, Home, Crown, Building } from 'lucide-react';
 
-// Future MCP Component
-// import { ImageGallery, ContactForm } from '@aidan/mcp-components';
 
 const LivingRoomsPage = () => {
   const orangeryTypes = [
@@ -255,14 +253,6 @@ const LivingRoomsPage = () => {
             Our Orangery Projects
           </h2>
           
-          {/* Future MCP Integration
-          <ImageGallery
-            category="orangeries"
-            mcpEndpoint="https://mcp.aidan.build/images"
-            layout="masonry"
-            businessId="windows-by-choice"
-          />
-          */}
           
           {/* Temporary Gallery */}
           <div className="grid md:grid-cols-3 gap-6 max-w-6xl mx-auto">

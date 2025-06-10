@@ -2,8 +2,6 @@ import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Menu, X, ChevronDown, Phone } from 'lucide-react';
 
-// Future MCP Component
-// import { MegaMenu } from '@aidan/mcp-components';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -155,13 +153,6 @@ const Header = () => {
         )}
       </div>
 
-      {/* Future MCP Mega Menu Integration
-      <MegaMenu 
-        structure={navigationConfig}
-        style="professional"
-        businessId="windows-by-choice"
-      />
-      */}
     </header>
   );
 };

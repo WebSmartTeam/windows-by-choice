@@ -1,8 +1,6 @@
 import { Link } from 'react-router-dom';
 import { ArrowRight, Shield, Award, Clock, Phone } from 'lucide-react';
 
-// Future MCP Components
-// import { ContactForm, ImageGallery, BlogPublisher } from '@aidan/mcp-components';
 
 const HomePage = () => {
   const services = [
@@ -177,18 +175,6 @@ const HomePage = () => {
         </div>
       </section>
 
-      {/* Future MCP Integration Section */}
-      {/* 
-      <section className="py-20 bg-white">
-        <div className="container mx-auto px-4">
-          <ContactForm 
-            mcpEndpoint="https://mcp.aidan.build/contact"
-            businessId="windows-by-choice"
-            formType="quote-request"
-          />
-        </div>
-      </section>
-      */}
     </div>
   );
 };

@@ -1,5 +1,4 @@
-// Future MCP Component
-// import { BlogPublisher } from '@aidan/mcp-components';
+// Standard React Component - No MCP needed
 
 const BlogPage = () => {
   return (
@@ -9,14 +8,7 @@ const BlogPage = () => {
           News & Tips
         </h1>
         
-        {/* Future MCP Integration
-        <BlogPublisher
-          apiKey={process.env.BLOG_API_KEY}
-          businessId="windows-by-choice"
-          categories={['news', 'tips', 'projects', 'guides']}
-          theme="professional"
-        />
-        */}
+        {/* Standard blog layout - no external APIs */}
         
         <div className="max-w-4xl mx-auto text-center">
           <p className="text-xl text-gray-600 mb-8">

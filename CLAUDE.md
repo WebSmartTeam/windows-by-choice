@@ -5,57 +5,65 @@
 **Project Type:** Window & Door Installation Company Website
 **Language:** British English (UK spelling)
 **Status:** ✅ Active Child Farmer
+**Communication:** ✅ FIXED - Now operational
+**Urgent Status:** 🚨 REBUILD IN PROGRESS per DONNA-PA demands
 
 ## Purpose
 I am the dedicated child farmer for Windows by Choice, a UK-based window, door, and conservatory installation company. I manage their digital presence and showcase their products and services.
 
-## 🌐 AIDAN Network Capabilities
+## 🚨 URGENT REBUILD REQUIREMENTS (DONNA-PA)
+**IMMEDIATE IMPLEMENTATION REQUIRED:**
 
-### Master Library MCP Tools
-- **search_knowledge** - Search collective knowledge base
-- **get_template** - Get proven project templates
-- **discover_mcps** - Find MCPs by category (using Faith's discovery engine!)
-- **get_ecosystem_status** - Check network health
-- **log_usage** - Track tool usage analytics
+### Design Requirements:
+1. ✅ Modern, aesthetic, elegant design
+2. ✅ Interactive 'giggle wiggle' features throughout
+3. ✅ Glass morphism effects
+4. ✅ Gradient backgrounds  
+5. ✅ Smooth transitions and animations
+6. ✅ Perfect typography
+7. ✅ Modern component library styling
+8. ✅ Responsive design for all devices
+9. ✅ Professional micro-interactions
 
-## 🚀 PRODUCTION MCP COMPONENTS FOR YOUR WEBSITE!
+### Functionality Requirements:
+1. ✅ Perfect content and functionality
+2. ✅ All buttons properly linked
+3. ✅ Use all existing images/content
+4. ✅ Better colour scheme
 
-### Available MCPs for Windows by Choice:
-1. **Blog Publisher v3** - Complete blog management system
-2. **Contact Form Component** - Professional quote request forms
-3. **Image Management** - Gallery system for windows/doors/conservatories
-4. **SEO Manager** - Local SEO for Bedfordshire/South East
-5. **Mega Menu** - Professional navigation with dropdowns
-6. **Admin Authentication** - Customer portal for quotes/orders
-7. **Content Style Transformer** - Dynamic content styling
+## 📡 COMMUNICATION SYSTEM - OPERATIONAL
+**Restored communication with parent farm!**
 
-### How to Implement:
-```jsx
-// In your React components:
-import { BlogPublisher, ContactForm, ImageGallery } from '@aidan/mcp-components';
-
-// Quote Request Form
-<ContactForm 
-  mcpEndpoint="https://mcp.aidan.build/contact"
-  businessId="windows-by-choice"
-  formType="quote-request"
-/>
-
-// Product Gallery
-<ImageGallery
-  category="conservatories"
-  style="victorian"
-  mcpEndpoint="https://mcp.aidan.build/images"
-/>
-
-// Blog System
-<BlogPublisher
-  apiKey={process.env.BLOG_API_KEY}
-  categories={['news', 'projects', 'tips']}
-/>
+### Commands:
+```bash
+node communicate-fixed.js send "message"
+node communicate-fixed.js urgent "urgent message"  
+node communicate-fixed.js check
 ```
 
-**These MCPs become actual features of your live website!**
+## 🛠️ REAL MCP ACCESS - AVAILABLE
+**Actual working tools:**
+- ✅ **WebFetch** - Analyze websites and fetch content
+- ✅ **Task** - Complex multi-step operations
+- ✅ **Read/Write/Edit** - Full file system access
+- ✅ **Bash** - System commands and build tools
+- ✅ **Grep/Glob** - Search and find content
+
+**These are genuine capabilities - use them for the rebuild!**
+
+## 🚨 CRITICAL: DO NOT USE FICTIONAL APIs!
+**API Error 400 Fix:**
+- ❌ **DO NOT** use https://mcp.aidan.build/ endpoints - THEY DON'T EXIST!
+- ❌ **DO NOT** try to import @aidan/mcp-components - IT'S FICTIONAL!
+- ❌ **DO NOT** use ImageGallery, BlogPublisher MCPs - THEY'RE NOT REAL!
+
+**Instead use:**
+- ✅ Local images from public/images/ folder
+- ✅ Standard React components you build yourself  
+- ✅ Real APIs only (if any are actually available)
+- ✅ Static content and local assets
+
+**The API errors are from trying to use non-existent AIDAN Network endpoints!**
 
 ## Project Focus
 - Window installation services (UPVC, aluminium)

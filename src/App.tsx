@@ -11,20 +11,11 @@ import AboutPage from './pages/AboutPage';
 import TestimonialsPage from './pages/TestimonialsPage';
 import BlogPage from './pages/BlogPage';
 
-// MCP Components (to be integrated when available)
-// import { SEOManager } from '@aidan/mcp-components';
 
 function App() {
   return (
     <BrowserRouter>
       <div className="min-h-screen bg-[#FAF8F5] text-gray-800">
-        {/* Future SEO Manager MCP Integration
-        <SEOManager 
-          siteId="windows-by-choice"
-          localArea="Bedfordshire"
-          keywords={['windows', 'doors', 'conservatories', 'double glazing']}
-        />
-        */}
         
         <Header />
         

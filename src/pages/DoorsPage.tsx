@@ -1,8 +1,6 @@
 import { Link } from 'react-router-dom';
 import { ArrowRight, Check, Shield, Lock, Palette } from 'lucide-react';
 
-// Future MCP Component
-// import { ImageGallery, ContactForm } from '@aidan/mcp-components';
 
 const DoorsPage = () => {
   const doorTypes = [
@@ -173,14 +171,6 @@ const DoorsPage = () => {
             Our Door Installations
           </h2>
           
-          {/* Future MCP Integration
-          <ImageGallery
-            category="doors"
-            mcpEndpoint="https://mcp.aidan.build/images"
-            layout="masonry"
-            businessId="windows-by-choice"
-          />
-          */}
           
           {/* Temporary Gallery */}
           <div className="grid md:grid-cols-3 gap-6 max-w-6xl mx-auto">

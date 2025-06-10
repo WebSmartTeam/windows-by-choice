@@ -1,7 +1,5 @@
 import { Phone, Mail, MapPin, Clock } from 'lucide-react';
 
-// MCP Component Integration
-// import { ContactForm } from '@aidan/mcp-components';
 
 const ContactPage = () => {
   const handleSubmit = (e: React.FormEvent) => {
@@ -114,28 +112,6 @@ const ContactPage = () => {
                 Request Your Free Quote
               </h2>
 
-              {/* Future MCP Integration
-              <ContactForm 
-                mcpEndpoint="https://mcp.aidan.build/contact"
-                businessId="windows-by-choice"
-                formType="quote-request"
-                fields={[
-                  'name',
-                  'email',
-                  'phone',
-                  'postcode',
-                  'service',
-                  'message'
-                ]}
-                services={[
-                  'Windows',
-                  'Doors',
-                  'Conservatories',
-                  'Living Rooms/Orangeries',
-                  'Other'
-                ]}
-              />
-              */}
 
               {/* Temporary Form */}
               <form onSubmit={handleSubmit} className="space-y-6">
