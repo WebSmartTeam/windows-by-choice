@@ -74,10 +74,6 @@ const Header = () => {
                 alt="Windows by Choice" 
                 className="h-16 w-auto"
               />
-              <div className="ml-3">
-                <h1 className="text-2xl font-bold text-gray-800">Windows by Choice</h1>
-                <p className="text-sm text-gray-600">Quality Windows for You</p>
-              </div>
             </Link>
 
             {/* Desktop Navigation */}
