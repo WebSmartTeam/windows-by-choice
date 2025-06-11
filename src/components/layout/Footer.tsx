@@ -148,6 +148,49 @@ const Footer = () => {
         </div>
       </div>
 
+      {/* Certifications Bar */}
+      <div className="bg-gray-800 py-6">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-4">
+            <h4 className="text-white font-semibold mb-2">Trusted & Certified</h4>
+            <p className="text-gray-400 text-sm">Accredited by leading industry bodies for your peace of mind</p>
+          </div>
+          <div className="flex items-center justify-center gap-8 flex-wrap">
+            <div className="flex items-center gap-2">
+              <img 
+                src="/images/contact/which-trusted-wbc.png" 
+                alt="Which? Trusted Trader" 
+                className="h-12"
+              />
+            </div>
+            <div className="flex items-center gap-2">
+              <img 
+                src="/images/contact/smq3.png" 
+                alt="SMQ Certification" 
+                className="h-12"
+              />
+            </div>
+            <div className="flex items-center gap-2">
+              <img 
+                src="/images/contact/reward.png" 
+                alt="Reward Certification" 
+                className="h-12"
+              />
+            </div>
+            <div className="text-center">
+              <div className="bg-blue-600 text-white px-4 py-2 rounded-lg font-semibold text-sm">
+                FENSA<br />REGISTERED
+              </div>
+            </div>
+            <div className="text-center">
+              <div className="bg-emerald-600 text-white px-4 py-2 rounded-lg font-semibold text-sm">
+                BUILDING REGS<br />COMPLIANT
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
       {/* Bottom Bar */}
       <div className="bg-gray-950 py-4">
         <div className="container mx-auto px-4">
@@ -155,14 +198,10 @@ const Footer = () => {
             <p>
               © {currentYear} Windows by Choice Ltd. All rights reserved.
             </p>
-            <div className="flex items-center gap-2">
-              <img 
-                src="/images/contact/which-trusted-wbc.png" 
-                alt="Which? Trusted Trader" 
-                className="h-8"
-              />
-              <span className="text-gray-500">|</span>
-              <span>FENSA Registered</span>
+            <div className="flex items-center gap-4 text-gray-400">
+              <span>Company Registration: 12345678</span>
+              <span>•</span>
+              <span>VAT Number: GB123456789</span>
             </div>
           </div>
         </div>

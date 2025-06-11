@@ -125,9 +125,47 @@ node communicate-fixed.js check
 - **Apply Always**: Use these guidelines for ALL design work
 - **No Exceptions**: Every website must follow these proven patterns
 
-## 📋 IMMEDIATE TASKS
-1. **Analyze Live Site**: Visit and document current site structure
-2. **Extract Images**: Organize all product images by category
-3. **Create Documentation**: Full content and feature mapping
-4. **Build Structure**: Professional folder organization
-5. **Implement Design**: Based on calm inspiration screenshots
+## 📋 CURRENT PROJECT PLAN (Enhanced Content & Design)
+
+### 🎯 Complete Action Plan:
+
+**CLARIFICATIONS RECEIVED:**
+- Testimonial images = Customer review letters/documents (NOT customer photos)
+- Need comprehensive content expansion across ALL pages
+- Which? Trusted Trader logo needs prominent placement
+- Partner certification logos needed in footer
+
+### 1. **Homepage Enhancements**
+- Add background image with professional overlay to hero section
+- Expand content with detailed service descriptions, process explanations, benefits
+- Improve typography and CTA buttons
+- Better visual hierarchy and spacing
+
+### 2. **Fix Image Visibility Issues**
+- Debug and fix all broken image paths
+- Ensure all images load correctly across pages
+
+### 3. **Expand Content on All Pages**
+- **Homepage**: Add detailed service sections, company process, why choose us
+- **Windows Page**: Add specifications, energy ratings, installation process, warranty info
+- **Doors Page**: Include security features, materials guide, customization options, maintenance tips
+- **Conservatories Page**: Add planning permission info, building regulations, seasonal usage, heating options
+- **Living Rooms Page**: Expand orangery vs conservatory differences, planning process, interior design ideas
+- **About Page**: Add more company history, team info, service areas, quality processes
+- **Contact Page**: Include service areas details, FAQ section, quote process explanation
+
+### 4. **Enhanced Testimonials Page**
+- Create elegant testimonial cards with customer review letter images
+- Add more detailed reviews with project specifics
+- Include before/after project showcases
+- **KEY**: Use actual customer review letter images from /images/Testimonials/
+
+### 5. **Footer Enhancements** 
+- Add partner/certification logos (FENSA, Which? Trusted Trader, Building Regs, etc.)
+- Include consistently across all pages
+
+### 6. **Which? Trusted Trader Logo Placement**
+- Position prominently in hero section or header area
+- Ensure maximum visibility for trust building
+
+**NEXT**: Start with hero enhancement and image fixes, then systematically expand content

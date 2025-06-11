@@ -5,57 +5,83 @@ const TestimonialsPage = () => {
   const testimonials = [
     {
       id: 1,
-      name: 'Sarah Johnson',
+      name: 'Mrs. Sarah Johnson',
       location: 'Bedford',
-      service: 'UPVC Windows',
+      service: 'UPVC Windows Installation',
       rating: 5,
-      text: 'Absolutely delighted with our new windows from Windows by Choice. The team was professional, punctual, and left everything spotless. The quality is outstanding and our home feels so much warmer. Highly recommended!',
-      date: 'November 2024'
+      text: 'Absolutely delighted with our new windows from Windows by Choice. The team was professional, punctual, and left everything spotless. The quality is outstanding and our home feels so much warmer. Would highly recommend to anyone considering new windows.',
+      date: 'November 2024',
+      reviewImage: '/images/Testimonials/tes1.jpg'
     },
     {
       id: 2,
-      name: 'Michael Thompson',
+      name: 'Mr. Michael Thompson',
       location: 'Luton',
       service: 'Bi-Fold Doors',
       rating: 5,
-      text: 'The bi-fold doors have completely transformed our living space. Windows by Choice handled everything from planning to installation. The attention to detail was exceptional and the doors operate beautifully.',
-      date: 'October 2024'
+      text: 'The bi-fold doors have completely transformed our living space. Windows by Choice handled everything from planning to installation. The attention to detail was exceptional and the doors operate beautifully. Excellent value for money.',
+      date: 'October 2024',
+      reviewImage: '/images/Testimonials/tes2.jpg'
     },
     {
       id: 3,
-      name: 'Emma Davies',
+      name: 'Mrs. Emma Davies',
       location: 'Hitchin',
       service: 'Victorian Conservatory',
       rating: 5,
-      text: 'Our Victorian conservatory is everything we dreamed of and more. The team at Windows by Choice guided us through every step, from design to completion. We now have a beautiful space we use all year round.',
-      date: 'September 2024'
+      text: 'Our Victorian conservatory is everything we dreamed of and more. The team at Windows by Choice guided us through every step, from design to completion. We now have a beautiful space we use all year round. Thank you for making our dream come true.',
+      date: 'September 2024',
+      reviewImage: '/images/Testimonials/tes3.jpg'
     },
     {
       id: 4,
-      name: 'Robert Wilson',
+      name: 'Mr. Robert Wilson',
       location: 'St Albans',
-      service: 'Composite Doors',
+      service: 'Composite Front Door',
       rating: 5,
-      text: 'Excellent service from start to finish. The composite door looks fantastic and the security features give us real peace of mind. The installation was quick and tidy. Very pleased with the whole experience.',
-      date: 'August 2024'
+      text: 'Excellent service from start to finish. The composite door looks fantastic and the security features give us real peace of mind. The installation was quick and tidy. Very pleased with the whole experience and the aftercare service.',
+      date: 'August 2024',
+      reviewImage: '/images/Testimonials/tes4.jpg'
     },
     {
       id: 5,
-      name: 'Lisa Chen',
+      name: 'Mrs. Lisa Chen',
       location: 'Cambridge',
       service: 'Orangery Extension',
       rating: 5,
-      text: 'Our orangery has added so much value to our home. The build quality is superb and it stays comfortable in all weather. Windows by Choice exceeded our expectations in every way.',
-      date: 'July 2024'
+      text: 'Our orangery has added so much value to our home. The build quality is superb and it stays comfortable in all weather. Windows by Choice exceeded our expectations in every way. The project management was flawless.',
+      date: 'July 2024',
+      reviewImage: '/images/Testimonials/tes5.jpg'
     },
     {
       id: 6,
-      name: 'David Brown',
+      name: 'Mr. David Brown',
       location: 'Milton Keynes',
       service: 'Aluminium Windows',
       rating: 5,
-      text: 'The sleek aluminium windows have given our home a modern look. Energy efficiency has improved dramatically and the noise reduction is impressive. Professional service throughout.',
-      date: 'June 2024'
+      text: 'The sleek aluminium windows have given our home a modern look. Energy efficiency has improved dramatically and the noise reduction is impressive. Professional service throughout and great communication.',
+      date: 'June 2024',
+      reviewImage: '/images/Testimonials/tes6.jpg'
+    },
+    {
+      id: 7,
+      name: 'Mrs. Jennifer Smith',
+      location: 'Stevenage',
+      service: 'French Doors',
+      rating: 5,
+      text: 'Beautiful French doors that have opened up our living space perfectly. The installation team was courteous and efficient. Very happy with the quality and finish. Would definitely use Windows by Choice again.',
+      date: 'May 2024',
+      reviewImage: '/images/Testimonials/tes7.jpg'
+    },
+    {
+      id: 8,
+      name: 'Mr. Paul Roberts',
+      location: 'Dunstable',
+      service: 'Lean-To Conservatory',
+      rating: 5,
+      text: 'Perfect addition to our home. The lean-to conservatory design fits our space perfectly and the build quality is excellent. Great value and professional service throughout. Highly recommended.',
+      date: 'April 2024',
+      reviewImage: '/images/Testimonials/tes8.jpg'
     }
   ];
 
@@ -114,25 +140,53 @@ const TestimonialsPage = () => {
             What Our Customers Say
           </h2>
           
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+          <div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
             {testimonials.map((testimonial) => (
-              <div key={testimonial.id} className="bg-white rounded-lg p-6 shadow-lg hover:shadow-xl transition-shadow">
-                <div className="flex items-center mb-4">
-                  <Quote className="w-8 h-8 text-blue-600 mr-2" />
-                  <div className="flex">
-                    {[...Array(testimonial.rating)].map((_, i) => (
-                      <Star key={i} className="w-5 h-5 text-yellow-400 fill-current" />
-                    ))}
+              <div key={testimonial.id} className="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105">
+                <div className="grid md:grid-cols-2 gap-0">
+                  {/* Review Letter Image */}
+                  <div className="relative">
+                    <img
+                      src={testimonial.reviewImage}
+                      alt={`Review letter from ${testimonial.name}`}
+                      className="w-full h-full object-cover"
+                    />
+                    <div className="absolute top-4 left-4">
+                      <div className="bg-white/90 backdrop-blur-sm px-3 py-2 rounded-lg">
+                        <div className="flex">
+                          {[...Array(testimonial.rating)].map((_, i) => (
+                            <Star key={i} className="w-4 h-4 text-yellow-400 fill-current" />
+                          ))}
+                        </div>
+                      </div>
+                    </div>
                   </div>
-                </div>
-                
-                <p className="text-gray-600 mb-6 italic">"{testimonial.text}"</p>
-                
-                <div className="border-t pt-4">
-                  <div className="font-semibold text-gray-800">{testimonial.name}</div>
-                  <div className="text-sm text-gray-600">{testimonial.location}</div>
-                  <div className="text-sm text-blue-600 font-medium">{testimonial.service}</div>
-                  <div className="text-xs text-gray-500 mt-1">{testimonial.date}</div>
+                  
+                  {/* Review Content */}
+                  <div className="p-6 flex flex-col justify-between">
+                    <div>
+                      <div className="flex items-start mb-4">
+                        <Quote className="w-6 h-6 text-blue-600 mr-2 flex-shrink-0 mt-1" />
+                        <div>
+                          <h3 className="font-semibold text-gray-800 mb-1">{testimonial.name}</h3>
+                          <p className="text-sm text-blue-600 font-medium">{testimonial.service}</p>
+                          <p className="text-sm text-gray-600">{testimonial.location} • {testimonial.date}</p>
+                        </div>
+                      </div>
+                      
+                      <p className="text-gray-700 text-sm leading-relaxed italic">
+                        "{testimonial.text}"
+                      </p>
+                    </div>
+                    
+                    <div className="mt-4 pt-4 border-t border-gray-100">
+                      <div className="flex items-center text-xs text-gray-500">
+                        <span className="bg-green-100 text-green-800 px-2 py-1 rounded-full font-medium">
+                          ✓ Verified Customer
+                        </span>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             ))}
