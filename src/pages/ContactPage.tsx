@@ -10,13 +10,79 @@ const ContactPage = () => {
 
   return (
     <div className="min-h-screen bg-white">
-      {/* Page Header */}
-      <section className="bg-gray-50 py-16">
-        <div className="container mx-auto px-4">
-          <h1 className="text-4xl font-bold text-gray-800 text-center">Contact Us</h1>
-          <p className="text-xl text-gray-600 text-center mt-4">
-            Get your free quote today
-          </p>
+      {/* Interactive Hero Header */}
+      <section className="relative min-h-[60vh] flex items-center">
+        {/* Background Image */}
+        <div 
+          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+          style={{
+            backgroundImage: "url('/images/contact/contact-wbc.jpg')"
+          }}
+        />
+        
+        {/* Overlay */}
+        <div className="absolute inset-0 bg-gradient-to-r from-teal-900/90 via-teal-800/85 to-teal-900/90" />
+        
+        {/* Floating Phone Badge */}
+        <div className="absolute top-10 right-10 bg-green-600/90 backdrop-blur-sm rounded-xl p-4 animate-bounce">
+          <div className="text-white text-center">
+            <Phone className="w-8 h-8 mx-auto mb-2" />
+            <div className="text-sm font-bold">Free Quote<br/>Call Now</div>
+          </div>
+        </div>
+        
+        {/* Floating Experience Badge */}
+        <div className="absolute bottom-10 left-10 bg-blue-600/90 backdrop-blur-sm rounded-xl p-4 animate-pulse">
+          <div className="text-white text-center">
+            <div className="text-3xl font-bold">35+</div>
+            <div className="text-sm font-bold">Years Trusted</div>
+          </div>
+        </div>
+        
+        {/* Content */}
+        <div className="relative z-10 container mx-auto px-4 py-20">
+          <div className="max-w-4xl mx-auto text-center">
+            <h1 className="text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight">
+              Contact Us
+            </h1>
+            <p className="text-xl text-teal-100 mb-8 max-w-3xl mx-auto">
+              Get your free quote today from Bedfordshire's trusted window, door, and conservatory specialists.
+            </p>
+            
+            {/* Interactive CTAs */}
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <a
+                href="tel:07774604190"
+                className="group inline-flex items-center justify-center px-8 py-4 bg-green-600 text-white rounded-lg hover:bg-green-700 transition-all duration-300 font-semibold shadow-lg hover:shadow-xl transform hover:scale-105"
+              >
+                <Phone className="mr-2 w-5 h-5" />
+                Call 07774 604 190
+              </a>
+              <a
+                href="mailto:info@windowsbychoice.co.uk"
+                className="group inline-flex items-center justify-center px-8 py-4 border-2 border-white text-white rounded-lg hover:bg-white hover:text-teal-800 transition-all duration-300 font-semibold transform hover:scale-105"
+              >
+                <Mail className="mr-2 w-5 h-5" />
+                Email Us
+              </a>
+            </div>
+            
+            {/* Trust Indicators */}
+            <div className="flex items-center justify-center gap-8 mt-8 text-teal-100">
+              <div className="flex items-center gap-2">
+                <Phone className="w-5 h-5 text-green-400" />
+                <span className="text-sm font-medium">Free Consultation</span>
+              </div>
+              <div className="flex items-center gap-2">
+                <MapPin className="w-5 h-5 text-green-400" />
+                <span className="text-sm font-medium">Local Service</span>
+              </div>
+              <div className="flex items-center gap-2">
+                <Clock className="w-5 h-5 text-green-400" />
+                <span className="text-sm font-medium">Quick Response</span>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 

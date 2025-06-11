@@ -64,15 +64,77 @@ const BlogPage = () => {
 
   return (
     <div className="min-h-screen bg-white">
-      {/* Header */}
-      <section className="bg-gray-50 py-16">
-        <div className="container mx-auto px-4">
-          <h1 className="text-4xl font-bold text-gray-800 text-center mb-4">
-            News & Expert Tips
-          </h1>
-          <p className="text-xl text-gray-600 text-center max-w-3xl mx-auto">
-            Stay updated with the latest insights, tips, and news about windows, doors, and home improvements from our expert team.
-          </p>
+      {/* Interactive Hero Header */}
+      <section className="relative min-h-[60vh] flex items-center">
+        {/* Background Image */}
+        <div 
+          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+          style={{
+            backgroundImage: "url('/images/homepage/window-services-hitchin.jpg')"
+          }}
+        />
+        
+        {/* Overlay */}
+        <div className="absolute inset-0 bg-gradient-to-r from-indigo-900/90 via-indigo-800/85 to-indigo-900/90" />
+        
+        {/* Floating Tips Badge */}
+        <div className="absolute top-10 right-10 bg-orange-500/90 backdrop-blur-sm rounded-xl p-4 animate-bounce">
+          <div className="text-white text-center">
+            <div className="text-2xl font-bold">35+</div>
+            <div className="text-sm font-bold">Years of<br/>Expertise</div>
+          </div>
+        </div>
+        
+        {/* Floating Updates Badge */}
+        <div className="absolute bottom-10 left-10 bg-green-600/90 backdrop-blur-sm rounded-xl p-4 animate-pulse">
+          <div className="text-white text-center">
+            <div className="text-sm font-bold">Latest Tips<br/>& News</div>
+          </div>
+        </div>
+        
+        {/* Content */}
+        <div className="relative z-10 container mx-auto px-4 py-20">
+          <div className="max-w-4xl mx-auto text-center">
+            <h1 className="text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight">
+              News & Expert Tips
+            </h1>
+            <p className="text-xl text-indigo-100 mb-8 max-w-3xl mx-auto">
+              Stay updated with the latest insights, tips, and news about windows, doors, and home improvements from our expert team.
+            </p>
+            
+            {/* Interactive CTAs */}
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <Link
+                to="/contact"
+                className="group inline-flex items-center justify-center px-8 py-4 bg-orange-500 text-white rounded-lg hover:bg-orange-600 transition-all duration-300 font-semibold shadow-lg hover:shadow-xl transform hover:scale-105"
+              >
+                Get Expert Advice
+                <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
+              </Link>
+              <a
+                href="tel:07774604190"
+                className="group inline-flex items-center justify-center px-8 py-4 border-2 border-white text-white rounded-lg hover:bg-white hover:text-indigo-800 transition-all duration-300 font-semibold transform hover:scale-105"
+              >
+                Call 07774 604 190
+              </a>
+            </div>
+            
+            {/* Trust Indicators */}
+            <div className="flex items-center justify-center gap-8 mt-8 text-indigo-100">
+              <div className="flex items-center gap-2">
+                <Calendar className="w-5 h-5 text-orange-400" />
+                <span className="text-sm font-medium">Regular Updates</span>
+              </div>
+              <div className="flex items-center gap-2">
+                <User className="w-5 h-5 text-orange-400" />
+                <span className="text-sm font-medium">Expert Insights</span>
+              </div>
+              <div className="flex items-center gap-2">
+                <ArrowRight className="w-5 h-5 text-orange-400" />
+                <span className="text-sm font-medium">Helpful Tips</span>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 

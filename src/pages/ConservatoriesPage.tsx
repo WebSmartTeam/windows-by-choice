@@ -91,16 +91,79 @@ const ConservatoriesPage = () => {
 
   return (
     <div className="min-h-screen bg-white">
-      {/* Page Header */}
-      <section className="bg-gray-50 py-16">
-        <div className="container mx-auto px-4">
-          <h1 className="text-4xl font-bold text-gray-800 text-center mb-4">
-            Beautiful Conservatories
-          </h1>
-          <p className="text-xl text-gray-600 text-center max-w-3xl mx-auto">
-            Transform your home with a stunning conservatory. 
-            Choose from our range of classic and contemporary designs to create the perfect living space.
-          </p>
+      {/* Interactive Hero Header */}
+      <section className="relative min-h-[60vh] flex items-center">
+        {/* Background Image */}
+        <div 
+          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+          style={{
+            backgroundImage: "url('/images/conservatories/conservatories-hitchin.png')"
+          }}
+        />
+        
+        {/* Overlay */}
+        <div className="absolute inset-0 bg-gradient-to-r from-green-900/85 via-green-800/75 to-green-900/85" />
+        
+        {/* Floating Year-Round Badge */}
+        <div className="absolute top-10 right-10 bg-orange-500/90 backdrop-blur-sm rounded-xl p-4 animate-bounce">
+          <div className="text-white text-center">
+            <Sun className="w-8 h-8 mx-auto mb-2" />
+            <div className="text-sm font-bold">Year-Round<br/>Comfort</div>
+          </div>
+        </div>
+        
+        {/* Floating Space Badge */}
+        <div className="absolute bottom-10 left-10 bg-blue-500/90 backdrop-blur-sm rounded-xl p-4 animate-pulse">
+          <div className="text-white text-center">
+            <Home className="w-8 h-8 mx-auto mb-2" />
+            <div className="text-sm font-bold">Extra Living<br/>Space</div>
+          </div>
+        </div>
+        
+        {/* Content */}
+        <div className="relative z-10 container mx-auto px-4 py-20">
+          <div className="max-w-4xl mx-auto text-center">
+            <h1 className="text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight">
+              Beautiful Conservatories
+            </h1>
+            <p className="text-xl text-green-100 mb-8 max-w-3xl mx-auto">
+              Transform your home with a stunning conservatory. 
+              Choose from our range of classic and contemporary designs to create the perfect year-round living space.
+            </p>
+            
+            {/* Interactive CTAs */}
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <Link
+                to="/contact"
+                className="group inline-flex items-center justify-center px-8 py-4 bg-orange-500 text-white rounded-lg hover:bg-orange-600 transition-all duration-300 font-semibold shadow-lg hover:shadow-xl transform hover:scale-105"
+              >
+                Get Free Design
+                <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
+              </Link>
+              <a
+                href="tel:07774604190"
+                className="group inline-flex items-center justify-center px-8 py-4 border-2 border-white text-white rounded-lg hover:bg-white hover:text-green-800 transition-all duration-300 font-semibold transform hover:scale-105"
+              >
+                Call 07774 604 190
+              </a>
+            </div>
+            
+            {/* Trust Indicators */}
+            <div className="flex items-center justify-center gap-8 mt-8 text-green-100">
+              <div className="flex items-center gap-2">
+                <Sun className="w-5 h-5 text-orange-400" />
+                <span className="text-sm font-medium">All Season Use</span>
+              </div>
+              <div className="flex items-center gap-2">
+                <Home className="w-5 h-5 text-orange-400" />
+                <span className="text-sm font-medium">Adds Property Value</span>
+              </div>
+              <div className="flex items-center gap-2">
+                <Thermometer className="w-5 h-5 text-orange-400" />
+                <span className="text-sm font-medium">Thermal Efficient</span>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 

@@ -105,16 +105,83 @@ const TestimonialsPage = () => {
 
   return (
     <div className="min-h-screen bg-white">
-      {/* Page Header */}
-      <section className="bg-gray-50 py-16">
-        <div className="container mx-auto px-4">
-          <h1 className="text-4xl font-bold text-gray-800 text-center mb-4">
-            Customer Testimonials
-          </h1>
-          <p className="text-xl text-gray-600 text-center max-w-3xl mx-auto">
-            See what our customers say about their experience with Windows by Choice. 
-            Over 35 years of happy customers across Bedfordshire and South East England.
-          </p>
+      {/* Interactive Hero Header */}
+      <section className="relative min-h-[60vh] flex items-center">
+        {/* Background Image */}
+        <div 
+          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+          style={{
+            backgroundImage: "url('/images/Testimonials/tes1.jpg')"
+          }}
+        />
+        
+        {/* Overlay */}
+        <div className="absolute inset-0 bg-gradient-to-r from-purple-900/90 via-purple-800/85 to-purple-900/90" />
+        
+        {/* Floating Rating Badge */}
+        <div className="absolute top-10 right-10 bg-yellow-500/90 backdrop-blur-sm rounded-xl p-4 animate-bounce">
+          <div className="text-white text-center">
+            <div className="flex justify-center mb-2">
+              {[...Array(5)].map((_, i) => (
+                <Star key={i} className="w-5 h-5 text-white fill-current" />
+              ))}
+            </div>
+            <div className="text-sm font-bold">4.9/5 Rating</div>
+          </div>
+        </div>
+        
+        {/* Floating Satisfaction Badge */}
+        <div className="absolute bottom-10 left-10 bg-green-600/90 backdrop-blur-sm rounded-xl p-4 animate-pulse">
+          <div className="text-white text-center">
+            <div className="text-3xl font-bold">98%</div>
+            <div className="text-sm font-bold">Satisfaction</div>
+          </div>
+        </div>
+        
+        {/* Content */}
+        <div className="relative z-10 container mx-auto px-4 py-20">
+          <div className="max-w-4xl mx-auto text-center">
+            <h1 className="text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight">
+              Customer Testimonials
+            </h1>
+            <p className="text-xl text-purple-100 mb-8 max-w-3xl mx-auto">
+              See what our customers say about their experience with Windows by Choice. 
+              Over 35 years of happy customers across Bedfordshire and South East England.
+            </p>
+            
+            {/* Interactive CTAs */}
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <Link
+                to="/contact"
+                className="group inline-flex items-center justify-center px-8 py-4 bg-yellow-500 text-white rounded-lg hover:bg-yellow-600 transition-all duration-300 font-semibold shadow-lg hover:shadow-xl transform hover:scale-105"
+              >
+                Get Your Quote
+                <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
+              </Link>
+              <a
+                href="tel:07774604190"
+                className="group inline-flex items-center justify-center px-8 py-4 border-2 border-white text-white rounded-lg hover:bg-white hover:text-purple-800 transition-all duration-300 font-semibold transform hover:scale-105"
+              >
+                Call 07774 604 190
+              </a>
+            </div>
+            
+            {/* Trust Indicators */}
+            <div className="flex items-center justify-center gap-8 mt-8 text-purple-100">
+              <div className="flex items-center gap-2">
+                <Star className="w-5 h-5 text-yellow-400" />
+                <span className="text-sm font-medium">5-Star Reviews</span>
+              </div>
+              <div className="flex items-center gap-2">
+                <Quote className="w-5 h-5 text-yellow-400" />
+                <span className="text-sm font-medium">Verified Customers</span>
+              </div>
+              <div className="flex items-center gap-2">
+                <Star className="w-5 h-5 text-yellow-400" />
+                <span className="text-sm font-medium">Trusted Service</span>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
