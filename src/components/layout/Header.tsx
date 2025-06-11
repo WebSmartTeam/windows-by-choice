@@ -55,7 +55,7 @@ const Header = () => {
             <div className="text-gray-600">
               35+ Years of Excellence in Windows & Doors
             </div>
-            <a href="tel:07774604190" className="flex items-center gap-2 text-blue-600 hover:text-blue-700 font-medium">
+            <a href="tel:07774604190" className="flex items-center gap-2 text-blue-800 hover:text-emerald-500 font-medium">
               <Phone className="w-4 h-4" />
               07774 604 190
             </a>
@@ -70,18 +70,8 @@ const Header = () => {
               <img 
                 src="/images/homepage/logo.png" 
                 alt="Windows by Choice" 
-                className="h-20 w-auto"
-                onError={(e) => {
-                  console.log('Logo failed to load:', e);
-                  const target = e.target as HTMLImageElement;
-                  target.style.display = 'none';
-                  const fallback = target.nextElementSibling as HTMLElement;
-                  if (fallback) fallback.style.display = 'block';
-                }}
+                className="h-16 w-auto"
               />
-              <div className="hidden text-2xl font-bold text-blue-600">
-                Windows by Choice
-              </div>
             </Link>
 
             {/* Desktop Navigation */}
@@ -95,7 +85,7 @@ const Header = () => {
                 >
                   <Link
                     to={item.href}
-                    className="flex items-center gap-1 text-gray-700 hover:text-blue-600 font-medium transition-colors"
+                    className="flex items-center gap-1 text-slate-700 hover:text-blue-800 font-medium transition-colors"
                   >
                     {item.name}
                     {item.dropdown && <ChevronDown className="w-4 h-4" />}

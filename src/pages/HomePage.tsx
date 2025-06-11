@@ -54,26 +54,26 @@ const HomePage = () => {
       <section className="relative bg-gradient-to-br from-blue-50 via-white to-blue-50 py-20">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
-            <h1 className="text-5xl font-bold text-gray-800 mb-6">
+            <h1 className="text-4xl font-bold text-slate-800 mb-6">
               We Produce Quality Windows for You
             </h1>
-            <p className="text-xl text-gray-600 mb-8">
+            <p className="text-lg text-slate-600 mb-8">
               Transform your home with our premium windows, doors, and conservatories. 
               35+ years of excellence in Bedfordshire and South East England.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link
                 to="/contact"
-                className="inline-flex items-center justify-center px-8 py-4 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors font-medium shadow-lg"
+                className="group inline-flex items-center justify-center px-8 py-4 bg-blue-800 text-white rounded-lg hover:bg-emerald-500 transition-all duration-300 font-medium shadow-lg hover:shadow-xl transform hover:scale-105 hover:animate-pulse"
               >
                 Get Free Quote
-                <ArrowRight className="ml-2 w-5 h-5" />
+                <ArrowRight className="ml-2 w-5 h-5 group-hover:animate-bounce" />
               </Link>
               <a
                 href="tel:07774604190"
-                className="inline-flex items-center justify-center px-8 py-4 border-2 border-blue-600 text-blue-600 rounded-lg hover:bg-blue-600 hover:text-white transition-colors font-medium"
+                className="group inline-flex items-center justify-center px-8 py-4 border-2 border-blue-800 text-blue-800 rounded-lg hover:bg-blue-800 hover:text-white transition-all duration-300 font-medium transform hover:scale-105"
               >
-                <Phone className="mr-2 w-5 h-5" />
+                <Phone className="mr-2 w-5 h-5 group-hover:animate-bounce" />
                 07774 604 190
               </a>
             </div>
@@ -85,10 +85,10 @@ const HomePage = () => {
       <section className="py-20 bg-white">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
-            <h2 className="text-4xl font-bold text-gray-800 mb-4">
+            <h2 className="text-3xl font-bold text-slate-800 mb-4">
               Our Services
             </h2>
-            <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+            <p className="text-lg text-slate-600 max-w-2xl mx-auto">
               Choose from our comprehensive range of windows, doors, and home extensions
             </p>
           </div>
@@ -98,7 +98,7 @@ const HomePage = () => {
               <Link
                 key={service.title}
                 to={service.link}
-                className="group bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow"
+                className="group bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105"
               >
                 <div className="aspect-w-16 aspect-h-12 overflow-hidden">
                   <img
@@ -107,12 +107,12 @@ const HomePage = () => {
                     className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
                   />
                 </div>
-                <div className="p-6">
-                  <h3 className="text-xl font-bold text-gray-800 mb-2">{service.title}</h3>
-                  <p className="text-gray-600 mb-4">{service.description}</p>
-                  <span className="inline-flex items-center text-blue-600 font-medium group-hover:text-blue-700">
+                <div className="p-8">
+                  <h3 className="text-xl font-bold text-slate-800 mb-3">{service.title}</h3>
+                  <p className="text-slate-600 mb-6">{service.description}</p>
+                  <span className="inline-flex items-center text-blue-800 font-medium group-hover:text-emerald-500 transition-all duration-300">
                     Learn More
-                    <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                    <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-2 group-hover:animate-bounce transition-all duration-300" />
                   </span>
                 </div>
               </Link>
@@ -122,13 +122,13 @@ const HomePage = () => {
       </section>
 
       {/* Features Section */}
-      <section className="py-20 bg-gray-50">
+      <section className="py-20" style={{backgroundColor: '#F9FAFB'}}>
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
-            <h2 className="text-4xl font-bold text-gray-800 mb-4">
+            <h2 className="text-3xl font-bold text-slate-800 mb-4">
               Why Choose Windows by Choice?
             </h2>
-            <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+            <p className="text-lg text-slate-600 max-w-2xl mx-auto">
               Trusted by homeowners across Bedfordshire for over three decades
             </p>
           </div>
@@ -136,39 +136,39 @@ const HomePage = () => {
           <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
             {features.map((feature) => (
               <div key={feature.title} className="text-center">
-                <div className="inline-flex items-center justify-center w-16 h-16 bg-blue-600 text-white rounded-full mb-6">
+                <div className="inline-flex items-center justify-center w-16 h-16 bg-blue-800 text-white rounded-full mb-6 hover:bg-emerald-500 transition-all duration-300 transform hover:scale-110 hover:animate-pulse">
                   <feature.icon className="w-8 h-8" />
                 </div>
-                <h3 className="text-xl font-bold text-gray-800 mb-3">{feature.title}</h3>
-                <p className="text-gray-600">{feature.description}</p>
+                <h3 className="text-xl font-bold text-slate-800 mb-3">{feature.title}</h3>
+                <p className="text-slate-600">{feature.description}</p>
               </div>
             ))}
           </div>
         </div>
       </section>
 
-      {/* CTA Section */}
-      <section className="py-20 bg-gradient-to-r from-blue-600 to-blue-700 text-white">
+      {/* CTA Section - Softer Blue */}
+      <section className="py-20 text-white" style={{background: 'linear-gradient(135deg, #1E3A8A 0%, #3B82F6 100%)'}}>
         <div className="container mx-auto px-4 text-center">
-          <h2 className="text-4xl font-bold mb-4">
+          <h2 className="text-3xl font-bold mb-4">
             Ready to Transform Your Home?
           </h2>
-          <p className="text-xl mb-8 max-w-2xl mx-auto">
+          <p className="text-lg mb-8 max-w-2xl mx-auto">
             Get a free, no-obligation quote for your windows, doors, or conservatory project
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+          <div className="flex flex-col sm:flex-row gap-6 justify-center">
             <Link
               to="/contact"
-              className="inline-flex items-center justify-center px-8 py-4 bg-white text-blue-600 rounded-lg hover:bg-gray-100 transition-colors font-medium"
+              className="group inline-flex items-center justify-center px-8 py-4 bg-emerald-500 text-white rounded-lg hover:bg-white hover:text-blue-800 transition-all duration-300 font-medium shadow-lg transform hover:scale-105 hover:animate-pulse"
             >
               Request Free Quote
-              <ArrowRight className="ml-2 w-5 h-5" />
+              <ArrowRight className="ml-2 w-5 h-5 group-hover:animate-bounce" />
             </Link>
             <a
               href="tel:07774604190"
-              className="inline-flex items-center justify-center px-8 py-4 border-2 border-white text-white rounded-lg hover:bg-white hover:text-blue-600 transition-colors font-medium"
+              className="group inline-flex items-center justify-center px-8 py-4 border-2 border-white text-white rounded-lg hover:bg-white hover:text-blue-800 transition-all duration-300 font-medium transform hover:scale-105"
             >
-              <Phone className="mr-2 w-5 h-5" />
+              <Phone className="mr-2 w-5 h-5 group-hover:animate-bounce" />
               Call Now
             </a>
           </div>
