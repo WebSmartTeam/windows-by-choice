@@ -64,11 +64,11 @@ const HomePage = () => {
         <div className="absolute inset-0 bg-gradient-to-r from-blue-900/90 via-blue-800/80 to-blue-900/90" />
         
         {/* Which? Trusted Trader Badge */}
-        <div className="absolute top-8 right-8 z-20">
+        <div className="absolute top-6 right-6 z-20">
           <img 
             src="/images/contact/which-trusted-wbc.png" 
             alt="Which? Trusted Trader" 
-            className="h-16 w-auto drop-shadow-lg"
+            className="h-24 lg:h-28 w-auto drop-shadow-xl"
           />
         </div>
         
@@ -162,31 +162,6 @@ const HomePage = () => {
         </div>
       </section>
 
-      {/* Features Section */}
-      <section className="py-20" style={{backgroundColor: '#F9FAFB'}}>
-        <div className="container mx-auto px-4">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-slate-800 mb-4">
-              Why Choose Windows by Choice?
-            </h2>
-            <p className="text-lg text-slate-600 max-w-2xl mx-auto">
-              Trusted by homeowners across Bedfordshire for over three decades
-            </p>
-          </div>
-
-          <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
-            {features.map((feature) => (
-              <div key={feature.title} className="text-center">
-                <div className="inline-flex items-center justify-center w-16 h-16 bg-blue-800 text-white rounded-full mb-6 hover:bg-emerald-500 transition-all duration-300 transform hover:scale-110 hover:animate-pulse">
-                  <feature.icon className="w-8 h-8" />
-                </div>
-                <h3 className="text-xl font-bold text-slate-800 mb-3">{feature.title}</h3>
-                <p className="text-slate-600">{feature.description}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
 
       {/* Detailed Process Section */}
       <section className="py-20 bg-white">
@@ -300,56 +275,7 @@ const HomePage = () => {
         </div>
       </section>
 
-      {/* Service Areas */}
-      <section className="py-20 bg-white">
-        <div className="container mx-auto px-4">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl font-bold text-slate-800 mb-4">
-              Serving South East England & London
-            </h2>
-            <p className="text-lg text-slate-600 max-w-3xl mx-auto">
-              Based in Shefford, Bedfordshire, we proudly serve customers across a wide area with the same high standards
-            </p>
-          </div>
-
-          <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
-            <div className="text-center p-6">
-              <div className="inline-flex items-center justify-center w-16 h-16 bg-blue-800 text-white rounded-full mb-6">
-                <span className="text-2xl font-bold">B</span>
-              </div>
-              <h3 className="text-xl font-bold text-slate-800 mb-3">Bedfordshire</h3>
-              <p className="text-slate-600 text-sm">Bedford, Luton, Dunstable, Leighton Buzzard, Biggleswade, Sandy, Flitwick, Ampthill, Woburn</p>
-            </div>
-            
-            <div className="text-center p-6">
-              <div className="inline-flex items-center justify-center w-16 h-16 bg-blue-800 text-white rounded-full mb-6">
-                <span className="text-2xl font-bold">H</span>
-              </div>
-              <h3 className="text-xl font-bold text-slate-800 mb-3">Hertfordshire</h3>
-              <p className="text-slate-600 text-sm">Hitchin, St Albans, Hemel Hempstead, Watford, Stevenage, Welwyn Garden City, Hertford</p>
-            </div>
-            
-            <div className="text-center p-6">
-              <div className="inline-flex items-center justify-center w-16 h-16 bg-blue-800 text-white rounded-full mb-6">
-                <span className="text-2xl font-bold">L</span>
-              </div>
-              <h3 className="text-xl font-bold text-slate-800 mb-3">London Areas</h3>
-              <p className="text-slate-600 text-sm">North London, North West London, selected Central London areas - call to confirm coverage</p>
-            </div>
-          </div>
-          
-          <div className="text-center mt-12">
-            <p className="text-slate-600 mb-4">
-              <strong>Free surveys available within 20 miles of Shefford.</strong> Longer distances may incur a small travel charge.
-            </p>
-            <a href="tel:07774604190" className="text-blue-800 hover:text-emerald-500 font-semibold">
-              Call 07774 604 190 to confirm we cover your area
-            </a>
-          </div>
-        </div>
-      </section>
-
-      {/* CTA Section - Softer Blue */}
+      {/* CTA Section - Move to 3rd from last */}
       <section className="py-20 text-white" style={{background: 'linear-gradient(135deg, #1E3A8A 0%, #3B82F6 100%)'}}>
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl font-bold mb-4">
@@ -373,6 +299,81 @@ const HomePage = () => {
               <Phone className="mr-2 w-5 h-5 group-hover:animate-bounce" />
               Call Now
             </a>
+          </div>
+        </div>
+      </section>
+
+      {/* Service Areas - With Beautiful Gradient */}
+      <section className="py-20 text-white" style={{background: 'linear-gradient(135deg, #059669 0%, #10B981 100%)'}}>
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl font-bold text-white mb-4">
+              Serving South East England & London
+            </h2>
+            <p className="text-lg text-emerald-100 max-w-3xl mx-auto">
+              Based in Shefford, Bedfordshire, we proudly serve customers across a wide area with the same high standards
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+            <div className="text-center p-6 bg-white/10 backdrop-blur-sm rounded-xl">
+              <div className="inline-flex items-center justify-center w-16 h-16 bg-white text-emerald-600 rounded-full mb-6">
+                <span className="text-2xl font-bold">B</span>
+              </div>
+              <h3 className="text-xl font-bold text-white mb-3">Bedfordshire</h3>
+              <p className="text-emerald-100 text-sm">Bedford, Luton, Dunstable, Leighton Buzzard, Biggleswade, Sandy, Flitwick, Ampthill, Woburn</p>
+            </div>
+            
+            <div className="text-center p-6 bg-white/10 backdrop-blur-sm rounded-xl">
+              <div className="inline-flex items-center justify-center w-16 h-16 bg-white text-emerald-600 rounded-full mb-6">
+                <span className="text-2xl font-bold">H</span>
+              </div>
+              <h3 className="text-xl font-bold text-white mb-3">Hertfordshire</h3>
+              <p className="text-emerald-100 text-sm">Hitchin, St Albans, Hemel Hempstead, Watford, Stevenage, Welwyn Garden City, Hertford</p>
+            </div>
+            
+            <div className="text-center p-6 bg-white/10 backdrop-blur-sm rounded-xl">
+              <div className="inline-flex items-center justify-center w-16 h-16 bg-white text-emerald-600 rounded-full mb-6">
+                <span className="text-2xl font-bold">L</span>
+              </div>
+              <h3 className="text-xl font-bold text-white mb-3">London Areas</h3>
+              <p className="text-emerald-100 text-sm">North London, North West London, selected Central London areas - call to confirm coverage</p>
+            </div>
+          </div>
+          
+          <div className="text-center mt-12">
+            <p className="text-emerald-100 mb-4">
+              <strong>Free surveys available within 20 miles of Shefford.</strong> Longer distances may incur a small travel charge.
+            </p>
+            <a href="tel:07774604190" className="text-white hover:text-emerald-200 font-semibold bg-white/20 px-6 py-3 rounded-lg backdrop-blur-sm transition-all duration-300 inline-block">
+              Call 07774 604 190 to confirm we cover your area
+            </a>
+          </div>
+        </div>
+      </section>
+
+      {/* Features Section - Final section before end */}
+      <section className="py-20" style={{backgroundColor: '#F9FAFB'}}>
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl font-bold text-slate-800 mb-4">
+              Why Choose Windows by Choice?
+            </h2>
+            <p className="text-lg text-slate-600 max-w-2xl mx-auto">
+              Trusted by homeowners across Bedfordshire for over three decades
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+            {features.map((feature) => (
+              <div key={feature.title} className="text-center">
+                <div className="inline-flex items-center justify-center w-16 h-16 bg-blue-800 text-white rounded-full mb-6 hover:bg-emerald-500 transition-all duration-300 transform hover:scale-110 hover:animate-pulse">
+                  <feature.icon className="w-8 h-8" />
+                </div>
+                <h3 className="text-xl font-bold text-slate-800 mb-3">{feature.title}</h3>
+                <p className="text-slate-600">{feature.description}</p>
+              </div>
+            ))}
           </div>
         </div>
       </section>
