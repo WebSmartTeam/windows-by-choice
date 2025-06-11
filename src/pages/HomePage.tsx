@@ -51,7 +51,7 @@ const HomePage = () => {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-b from-[#FAF8F5] to-white py-20">
+      <section className="relative bg-gradient-to-br from-blue-50 via-white to-blue-50 py-20">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="text-5xl font-bold text-gray-800 mb-6">
@@ -64,14 +64,14 @@ const HomePage = () => {
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link
                 to="/contact"
-                className="inline-flex items-center justify-center px-8 py-4 bg-[#8B7E6A] text-white rounded-lg hover:bg-[#6B5E4A] transition-colors font-medium"
+                className="inline-flex items-center justify-center px-8 py-4 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors font-medium shadow-lg"
               >
                 Get Free Quote
                 <ArrowRight className="ml-2 w-5 h-5" />
               </Link>
               <a
                 href="tel:07774604190"
-                className="inline-flex items-center justify-center px-8 py-4 border-2 border-[#8B7E6A] text-[#8B7E6A] rounded-lg hover:bg-[#8B7E6A] hover:text-white transition-colors font-medium"
+                className="inline-flex items-center justify-center px-8 py-4 border-2 border-blue-600 text-blue-600 rounded-lg hover:bg-blue-600 hover:text-white transition-colors font-medium"
               >
                 <Phone className="mr-2 w-5 h-5" />
                 07774 604 190
@@ -110,7 +110,7 @@ const HomePage = () => {
                 <div className="p-6">
                   <h3 className="text-xl font-bold text-gray-800 mb-2">{service.title}</h3>
                   <p className="text-gray-600 mb-4">{service.description}</p>
-                  <span className="inline-flex items-center text-[#8B7E6A] font-medium group-hover:text-[#6B5E4A]">
+                  <span className="inline-flex items-center text-blue-600 font-medium group-hover:text-blue-700">
                     Learn More
                     <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
                   </span>
@@ -122,7 +122,7 @@ const HomePage = () => {
       </section>
 
       {/* Features Section */}
-      <section className="py-20 bg-[#FAF8F5]">
+      <section className="py-20 bg-gray-50">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
             <h2 className="text-4xl font-bold text-gray-800 mb-4">
@@ -136,7 +136,7 @@ const HomePage = () => {
           <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
             {features.map((feature) => (
               <div key={feature.title} className="text-center">
-                <div className="inline-flex items-center justify-center w-16 h-16 bg-[#8B7E6A] text-white rounded-full mb-6">
+                <div className="inline-flex items-center justify-center w-16 h-16 bg-blue-600 text-white rounded-full mb-6">
                   <feature.icon className="w-8 h-8" />
                 </div>
                 <h3 className="text-xl font-bold text-gray-800 mb-3">{feature.title}</h3>
@@ -148,7 +148,7 @@ const HomePage = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-gradient-to-r from-[#8B7E6A] to-[#6B5E4A] text-white">
+      <section className="py-20 bg-gradient-to-r from-blue-600 to-blue-700 text-white">
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-4xl font-bold mb-4">
             Ready to Transform Your Home?
@@ -159,14 +159,14 @@ const HomePage = () => {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
               to="/contact"
-              className="inline-flex items-center justify-center px-8 py-4 bg-white text-[#8B7E6A] rounded-lg hover:bg-gray-100 transition-colors font-medium"
+              className="inline-flex items-center justify-center px-8 py-4 bg-white text-blue-600 rounded-lg hover:bg-gray-100 transition-colors font-medium"
             >
               Request Free Quote
               <ArrowRight className="ml-2 w-5 h-5" />
             </Link>
             <a
               href="tel:07774604190"
-              className="inline-flex items-center justify-center px-8 py-4 border-2 border-white text-white rounded-lg hover:bg-white hover:text-[#8B7E6A] transition-colors font-medium"
+              className="inline-flex items-center justify-center px-8 py-4 border-2 border-white text-white rounded-lg hover:bg-white hover:text-blue-600 transition-colors font-medium"
             >
               <Phone className="mr-2 w-5 h-5" />
               Call Now

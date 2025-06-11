@@ -14,7 +14,7 @@ const BlogPage = () => {
           <p className="text-xl text-gray-600 mb-8">
             Stay updated with the latest news, tips, and insights about windows, doors, and home improvements.
           </p>
-          <div className="bg-[#FAF8F5] rounded-lg p-12">
+          <div className="bg-gray-50 rounded-lg p-12">
             <h2 className="text-2xl font-semibold text-gray-800 mb-4">
               Blog Coming Soon
             </h2>

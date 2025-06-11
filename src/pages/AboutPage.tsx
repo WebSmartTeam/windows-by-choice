@@ -60,7 +60,7 @@ const AboutPage = () => {
   return (
     <div className="min-h-screen bg-white">
       {/* Page Header */}
-      <section className="bg-[#FAF8F5] py-16">
+      <section className="bg-gray-50 py-16">
         <div className="container mx-auto px-4">
           <h1 className="text-4xl font-bold text-gray-800 text-center mb-4">
             About Windows by Choice
@@ -102,7 +102,7 @@ const AboutPage = () => {
                   alt="Windows by Choice team"
                   className="w-full rounded-lg shadow-lg"
                 />
-                <div className="absolute -bottom-6 -right-6 bg-[#8B7E6A] text-white p-6 rounded-lg shadow-lg">
+                <div className="absolute -bottom-6 -right-6 bg-blue-600 text-white p-6 rounded-lg shadow-lg">
                   <div className="text-center">
                     <div className="text-3xl font-bold">35+</div>
                     <div className="text-sm">Years Experience</div>
@@ -115,7 +115,7 @@ const AboutPage = () => {
       </section>
 
       {/* Company Timeline */}
-      <section className="py-16 bg-[#FAF8F5]">
+      <section className="py-16 bg-gray-50">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl font-bold text-gray-800 text-center mb-12">
             Our Journey
@@ -126,7 +126,7 @@ const AboutPage = () => {
               {milestones.map((milestone) => (
                 <div key={milestone.year} className="flex gap-8 items-start">
                   <div className="flex-shrink-0">
-                    <div className="w-16 h-16 bg-[#8B7E6A] text-white rounded-full flex items-center justify-center font-bold text-sm">
+                    <div className="w-16 h-16 bg-blue-600 text-white rounded-full flex items-center justify-center font-bold text-sm">
                       {milestone.year}
                     </div>
                   </div>
@@ -156,7 +156,7 @@ const AboutPage = () => {
           <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
             {values.map((value) => (
               <div key={value.title} className="text-center">
-                <div className="inline-flex items-center justify-center w-16 h-16 bg-[#FAF8F5] text-[#8B7E6A] rounded-full mb-6">
+                <div className="inline-flex items-center justify-center w-16 h-16 bg-gray-50 text-blue-600 rounded-full mb-6">
                   <value.icon className="w-8 h-8" />
                 </div>
                 <h3 className="text-xl font-bold text-gray-800 mb-3">{value.title}</h3>
@@ -168,7 +168,7 @@ const AboutPage = () => {
       </section>
 
       {/* Certifications & Accreditations */}
-      <section className="py-16 bg-[#FAF8F5]">
+      <section className="py-16 bg-gray-50">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold text-gray-800 mb-4">
@@ -182,7 +182,7 @@ const AboutPage = () => {
           <div className="grid md:grid-cols-3 gap-6 max-w-4xl mx-auto">
             {certifications.map((cert, index) => (
               <div key={index} className="bg-white p-6 rounded-lg shadow-lg text-center">
-                <Award className="w-8 h-8 text-[#8B7E6A] mx-auto mb-4" />
+                <Award className="w-8 h-8 text-blue-600 mx-auto mb-4" />
                 <h3 className="font-bold text-gray-800">{cert}</h3>
               </div>
             ))}
@@ -205,15 +205,15 @@ const AboutPage = () => {
                 
                 <div className="space-y-3 mb-8">
                   <div className="flex items-center gap-3">
-                    <MapPin className="w-5 h-5 text-[#8B7E6A]" />
+                    <MapPin className="w-5 h-5 text-blue-600" />
                     <span className="text-gray-700">Bedfordshire and surrounding areas</span>
                   </div>
                   <div className="flex items-center gap-3">
-                    <MapPin className="w-5 h-5 text-[#8B7E6A]" />
+                    <MapPin className="w-5 h-5 text-blue-600" />
                     <span className="text-gray-700">South East England</span>
                   </div>
                   <div className="flex items-center gap-3">
-                    <MapPin className="w-5 h-5 text-[#8B7E6A]" />
+                    <MapPin className="w-5 h-5 text-blue-600" />
                     <span className="text-gray-700">Greater London area</span>
                   </div>
                 </div>
@@ -223,24 +223,24 @@ const AboutPage = () => {
                 </p>
               </div>
               
-              <div className="bg-[#FAF8F5] p-8 rounded-lg">
+              <div className="bg-gray-50 p-8 rounded-lg">
                 <h3 className="text-xl font-bold text-gray-800 mb-6">Get in Touch</h3>
                 
                 <div className="space-y-4">
                   <div className="flex items-center gap-3">
-                    <Phone className="w-5 h-5 text-[#8B7E6A]" />
-                    <a href="tel:07774604190" className="text-gray-700 hover:text-[#8B7E6A]">
+                    <Phone className="w-5 h-5 text-blue-600" />
+                    <a href="tel:07774604190" className="text-gray-700 hover:text-blue-600">
                       07774 604 190
                     </a>
                   </div>
                   <div className="flex items-center gap-3">
-                    <Mail className="w-5 h-5 text-[#8B7E6A]" />
-                    <a href="mailto:info@windowsbychoice.co.uk" className="text-gray-700 hover:text-[#8B7E6A]">
+                    <Mail className="w-5 h-5 text-blue-600" />
+                    <a href="mailto:info@windowsbychoice.co.uk" className="text-gray-700 hover:text-blue-600">
                       info@windowsbychoice.co.uk
                     </a>
                   </div>
                   <div className="flex items-start gap-3">
-                    <MapPin className="w-5 h-5 text-[#8B7E6A] mt-1" />
+                    <MapPin className="w-5 h-5 text-blue-600 mt-1" />
                     <div className="text-gray-700">
                       Shefford, Bedfordshire<br />
                       South East England
@@ -250,7 +250,7 @@ const AboutPage = () => {
                 
                 <Link
                   to="/contact"
-                  className="inline-flex items-center justify-center w-full mt-6 px-6 py-3 bg-[#8B7E6A] text-white rounded-lg hover:bg-[#6B5E4A] transition-colors font-medium"
+                  className="inline-flex items-center justify-center w-full mt-6 px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors font-medium"
                 >
                   Get Free Quote
                   <ArrowRight className="ml-2 w-5 h-5" />
@@ -262,7 +262,7 @@ const AboutPage = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-16 bg-gradient-to-r from-[#8B7E6A] to-[#6B5E4A] text-white">
+      <section className="py-16 bg-gradient-to-r from-blue-600 to-blue-700 text-white">
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl font-bold mb-4">
             Ready to Work With Us?
@@ -273,14 +273,14 @@ const AboutPage = () => {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
               to="/contact"
-              className="inline-flex items-center justify-center px-8 py-4 bg-white text-[#8B7E6A] rounded-lg hover:bg-gray-100 transition-colors font-medium"
+              className="inline-flex items-center justify-center px-8 py-4 bg-white text-blue-600 rounded-lg hover:bg-gray-100 transition-colors font-medium"
             >
               Get Free Consultation
               <ArrowRight className="ml-2 w-5 h-5" />
             </Link>
             <a
               href="tel:07774604190"
-              className="inline-flex items-center justify-center px-8 py-4 border-2 border-white text-white rounded-lg hover:bg-white hover:text-[#8B7E6A] transition-colors font-medium"
+              className="inline-flex items-center justify-center px-8 py-4 border-2 border-white text-white rounded-lg hover:bg-white hover:text-blue-600 transition-colors font-medium"
             >
               Call 07774 604 190
             </a>

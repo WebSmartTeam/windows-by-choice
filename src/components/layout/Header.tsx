@@ -55,7 +55,7 @@ const Header = () => {
             <div className="text-gray-600">
               35+ Years of Excellence in Windows & Doors
             </div>
-            <a href="tel:07774604190" className="flex items-center gap-2 text-[#8B7E6A] hover:text-[#6B5E4A] font-medium">
+            <a href="tel:07774604190" className="flex items-center gap-2 text-blue-600 hover:text-blue-700 font-medium">
               <Phone className="w-4 h-4" />
               07774 604 190
             </a>
@@ -70,9 +70,18 @@ const Header = () => {
               <img 
                 src="/images/homepage/logo.png" 
                 alt="Windows by Choice" 
-                className="h-16 w-auto"
-                onError={(e) => console.log('Logo failed to load:', e)}
+                className="h-20 w-auto"
+                onError={(e) => {
+                  console.log('Logo failed to load:', e);
+                  const target = e.target as HTMLImageElement;
+                  target.style.display = 'none';
+                  const fallback = target.nextElementSibling as HTMLElement;
+                  if (fallback) fallback.style.display = 'block';
+                }}
               />
+              <div className="hidden text-2xl font-bold text-blue-600">
+                Windows by Choice
+              </div>
             </Link>
 
             {/* Desktop Navigation */}
@@ -86,7 +95,7 @@ const Header = () => {
                 >
                   <Link
                     to={item.href}
-                    className="flex items-center gap-1 text-gray-700 hover:text-[#8B7E6A] font-medium transition-colors"
+                    className="flex items-center gap-1 text-gray-700 hover:text-blue-600 font-medium transition-colors"
                   >
                     {item.name}
                     {item.dropdown && <ChevronDown className="w-4 h-4" />}
@@ -99,7 +108,7 @@ const Header = () => {
                         <Link
                           key={subItem.name}
                           to={subItem.href}
-                          className="block px-4 py-2 text-gray-700 hover:bg-[#FAF8F5] hover:text-[#8B7E6A] transition-colors"
+                          className="block px-4 py-2 text-gray-700 hover:bg-blue-50 hover:text-blue-600 transition-colors"
                         >
                           {subItem.name}
                         </Link>
@@ -113,7 +122,7 @@ const Header = () => {
             {/* Mobile Menu Button */}
             <button
               onClick={() => setIsMenuOpen(!isMenuOpen)}
-              className="lg:hidden p-2 text-gray-700 hover:text-[#8B7E6A]"
+              className="lg:hidden p-2 text-gray-700 hover:text-blue-600"
             >
               {isMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
             </button>
@@ -128,7 +137,7 @@ const Header = () => {
                 <div key={item.name}>
                   <Link
                     to={item.href}
-                    className="block py-2 text-gray-700 hover:text-[#8B7E6A] font-medium"
+                    className="block py-2 text-gray-700 hover:text-blue-600 font-medium"
                     onClick={() => setIsMenuOpen(false)}
                   >
                     {item.name}
@@ -139,7 +148,7 @@ const Header = () => {
                         <Link
                           key={subItem.name}
                           to={subItem.href}
-                          className="block py-1 text-sm text-gray-600 hover:text-[#8B7E6A]"
+                          className="block py-1 text-sm text-gray-600 hover:text-blue-600"
                           onClick={() => setIsMenuOpen(false)}
                         >
                           {subItem.name}

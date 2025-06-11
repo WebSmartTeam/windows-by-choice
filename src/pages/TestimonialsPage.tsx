@@ -80,7 +80,7 @@ const TestimonialsPage = () => {
   return (
     <div className="min-h-screen bg-white">
       {/* Page Header */}
-      <section className="bg-[#FAF8F5] py-16">
+      <section className="bg-gray-50 py-16">
         <div className="container mx-auto px-4">
           <h1 className="text-4xl font-bold text-gray-800 text-center mb-4">
             Customer Testimonials
@@ -98,7 +98,7 @@ const TestimonialsPage = () => {
           <div className="grid md:grid-cols-3 gap-8 max-w-4xl mx-auto">
             {stats.map((stat, index) => (
               <div key={index} className="text-center">
-                <div className="text-4xl font-bold text-[#8B7E6A] mb-2">{stat.number}</div>
+                <div className="text-4xl font-bold text-blue-600 mb-2">{stat.number}</div>
                 <div className="text-xl font-semibold text-gray-800 mb-2">{stat.label}</div>
                 <div className="text-gray-600">{stat.description}</div>
               </div>
@@ -108,7 +108,7 @@ const TestimonialsPage = () => {
       </section>
 
       {/* Testimonials Grid */}
-      <section className="py-16 bg-[#FAF8F5]">
+      <section className="py-16 bg-gray-50">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl font-bold text-gray-800 text-center mb-12">
             What Our Customers Say
@@ -118,7 +118,7 @@ const TestimonialsPage = () => {
             {testimonials.map((testimonial) => (
               <div key={testimonial.id} className="bg-white rounded-lg p-6 shadow-lg hover:shadow-xl transition-shadow">
                 <div className="flex items-center mb-4">
-                  <Quote className="w-8 h-8 text-[#8B7E6A] mr-2" />
+                  <Quote className="w-8 h-8 text-blue-600 mr-2" />
                   <div className="flex">
                     {[...Array(testimonial.rating)].map((_, i) => (
                       <Star key={i} className="w-5 h-5 text-yellow-400 fill-current" />
@@ -131,7 +131,7 @@ const TestimonialsPage = () => {
                 <div className="border-t pt-4">
                   <div className="font-semibold text-gray-800">{testimonial.name}</div>
                   <div className="text-sm text-gray-600">{testimonial.location}</div>
-                  <div className="text-sm text-[#8B7E6A] font-medium">{testimonial.service}</div>
+                  <div className="text-sm text-blue-600 font-medium">{testimonial.service}</div>
                   <div className="text-xs text-gray-500 mt-1">{testimonial.date}</div>
                 </div>
               </div>
@@ -174,7 +174,7 @@ const TestimonialsPage = () => {
       </section>
 
       {/* Review Process */}
-      <section className="py-16 bg-[#FAF8F5]">
+      <section className="py-16 bg-gray-50">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-3xl font-bold text-gray-800 mb-6">
@@ -187,7 +187,7 @@ const TestimonialsPage = () => {
             
             <div className="grid md:grid-cols-3 gap-8">
               <div className="text-center">
-                <div className="w-12 h-12 bg-[#8B7E6A] text-white rounded-full flex items-center justify-center mx-auto mb-4 text-xl font-bold">
+                <div className="w-12 h-12 bg-blue-600 text-white rounded-full flex items-center justify-center mx-auto mb-4 text-xl font-bold">
                   1
                 </div>
                 <h3 className="font-semibold text-gray-800 mb-2">Project Completion</h3>
@@ -195,7 +195,7 @@ const TestimonialsPage = () => {
               </div>
               
               <div className="text-center">
-                <div className="w-12 h-12 bg-[#8B7E6A] text-white rounded-full flex items-center justify-center mx-auto mb-4 text-xl font-bold">
+                <div className="w-12 h-12 bg-blue-600 text-white rounded-full flex items-center justify-center mx-auto mb-4 text-xl font-bold">
                   2
                 </div>
                 <h3 className="font-semibold text-gray-800 mb-2">Independent Verification</h3>
@@ -203,7 +203,7 @@ const TestimonialsPage = () => {
               </div>
               
               <div className="text-center">
-                <div className="w-12 h-12 bg-[#8B7E6A] text-white rounded-full flex items-center justify-center mx-auto mb-4 text-xl font-bold">
+                <div className="w-12 h-12 bg-blue-600 text-white rounded-full flex items-center justify-center mx-auto mb-4 text-xl font-bold">
                   3
                 </div>
                 <h3 className="font-semibold text-gray-800 mb-2">Published Reviews</h3>
@@ -215,7 +215,7 @@ const TestimonialsPage = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-16 bg-gradient-to-r from-[#8B7E6A] to-[#6B5E4A] text-white">
+      <section className="py-16 bg-gradient-to-r from-blue-600 to-blue-700 text-white">
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl font-bold mb-4">
             Ready to Join Our Happy Customers?
@@ -226,14 +226,14 @@ const TestimonialsPage = () => {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
               to="/contact"
-              className="inline-flex items-center justify-center px-8 py-4 bg-white text-[#8B7E6A] rounded-lg hover:bg-gray-100 transition-colors font-medium"
+              className="inline-flex items-center justify-center px-8 py-4 bg-white text-blue-600 rounded-lg hover:bg-gray-100 transition-colors font-medium"
             >
               Get Free Quote
               <ArrowRight className="ml-2 w-5 h-5" />
             </Link>
             <a
               href="tel:07774604190"
-              className="inline-flex items-center justify-center px-8 py-4 border-2 border-white text-white rounded-lg hover:bg-white hover:text-[#8B7E6A] transition-colors font-medium"
+              className="inline-flex items-center justify-center px-8 py-4 border-2 border-white text-white rounded-lg hover:bg-white hover:text-blue-600 transition-colors font-medium"
             >
               Call 07774 604 190
             </a>

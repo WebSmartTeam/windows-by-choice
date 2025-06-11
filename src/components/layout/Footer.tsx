@@ -37,13 +37,13 @@ const Footer = () => {
               Family-run business with over 35 years of experience in windows, doors, and conservatories.
             </p>
             <div className="flex gap-4">
-              <a href="#" className="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-[#8B7E6A] transition-colors">
+              <a href="#" className="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-blue-600 transition-colors">
                 <Facebook className="w-5 h-5" />
               </a>
-              <a href="#" className="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-[#8B7E6A] transition-colors">
+              <a href="#" className="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-blue-600 transition-colors">
                 <Twitter className="w-5 h-5" />
               </a>
-              <a href="#" className="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-[#8B7E6A] transition-colors">
+              <a href="#" className="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-blue-600 transition-colors">
                 <Instagram className="w-5 h-5" />
               </a>
             </div>
@@ -57,7 +57,7 @@ const Footer = () => {
                 <li key={service.name}>
                   <Link
                     to={service.href}
-                    className="hover:text-[#8B7E6A] transition-colors flex items-center gap-1"
+                    className="hover:text-blue-400 transition-colors flex items-center gap-1"
                   >
                     <ArrowRight className="w-3 h-3" />
                     {service.name}
@@ -75,7 +75,7 @@ const Footer = () => {
                 <li key={link.name}>
                   <Link
                     to={link.href}
-                    className="hover:text-[#8B7E6A] transition-colors flex items-center gap-1"
+                    className="hover:text-blue-400 transition-colors flex items-center gap-1"
                   >
                     <ArrowRight className="w-3 h-3" />
                     {link.name}
@@ -91,7 +91,7 @@ const Footer = () => {
             <div className="space-y-4">
               <a
                 href="tel:07774604190"
-                className="flex items-start gap-3 hover:text-[#8B7E6A] transition-colors"
+                className="flex items-start gap-3 hover:text-blue-600 transition-colors"
               >
                 <Phone className="w-5 h-5 mt-0.5 flex-shrink-0" />
                 <div>
@@ -102,7 +102,7 @@ const Footer = () => {
               
               <a
                 href="mailto:info@windowsbychoice.co.uk"
-                className="flex items-start gap-3 hover:text-[#8B7E6A] transition-colors"
+                className="flex items-start gap-3 hover:text-blue-600 transition-colors"
               >
                 <Mail className="w-5 h-5 mt-0.5 flex-shrink-0" />
                 <span>info@windowsbychoice.co.uk</span>
@@ -121,7 +121,7 @@ const Footer = () => {
       </div>
 
       {/* CTA Section */}
-      <div className="bg-[#8B7E6A] py-8">
+      <div className="bg-blue-600 py-8">
         <div className="container mx-auto px-4">
           <div className="flex flex-col md:flex-row items-center justify-between gap-4">
             <div>
@@ -133,13 +133,13 @@ const Footer = () => {
             <div className="flex gap-4">
               <Link
                 to="/contact"
-                className="px-6 py-3 bg-white text-[#8B7E6A] rounded-lg hover:bg-gray-100 transition-colors font-medium"
+                className="px-6 py-3 bg-white text-blue-600 rounded-lg hover:bg-gray-100 transition-colors font-medium"
               >
                 Get Free Quote
               </Link>
               <a
                 href="tel:07774604190"
-                className="px-6 py-3 border-2 border-white text-white rounded-lg hover:bg-white hover:text-[#8B7E6A] transition-colors font-medium"
+                className="px-6 py-3 border-2 border-white text-white rounded-lg hover:bg-white hover:text-blue-600 transition-colors font-medium"
               >
                 Call Now
               </a>

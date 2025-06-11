@@ -15,7 +15,7 @@ import BlogPage from './pages/BlogPage';
 function App() {
   return (
     <BrowserRouter>
-      <div className="min-h-screen bg-[#FAF8F5] text-gray-800">
+      <div className="min-h-screen bg-gray-50 text-gray-800">
         
         <Header />
         

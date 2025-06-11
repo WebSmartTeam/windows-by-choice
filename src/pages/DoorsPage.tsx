@@ -79,7 +79,7 @@ const DoorsPage = () => {
   return (
     <div className="min-h-screen bg-white">
       {/* Page Header */}
-      <section className="bg-[#FAF8F5] py-16">
+      <section className="bg-gray-50 py-16">
         <div className="container mx-auto px-4">
           <h1 className="text-4xl font-bold text-gray-800 text-center mb-4">
             Premium Doors
@@ -98,7 +98,7 @@ const DoorsPage = () => {
             <div
               key={type.id}
               id={type.id}
-              className={`mb-16 ${index % 2 === 1 ? 'bg-[#FAF8F5] -mx-4 px-4 py-12 md:-mx-8 md:px-8' : ''}`}
+              className={`mb-16 ${index % 2 === 1 ? 'bg-gray-50 -mx-4 px-4 py-12 md:-mx-8 md:px-8' : ''}`}
             >
               <div className="max-w-6xl mx-auto">
                 <div className={`grid md:grid-cols-2 gap-12 items-center ${index % 2 === 1 ? 'md:grid-flow-dense' : ''}`}>
@@ -117,7 +117,7 @@ const DoorsPage = () => {
                     <ul className="space-y-3 mb-8">
                       {type.features.map((feature) => (
                         <li key={feature} className="flex items-start gap-3">
-                          <Check className="w-5 h-5 text-[#8B7E6A] mt-0.5 flex-shrink-0" />
+                          <Check className="w-5 h-5 text-blue-600 mt-0.5 flex-shrink-0" />
                           <span className="text-gray-700">{feature}</span>
                         </li>
                       ))}
@@ -125,7 +125,7 @@ const DoorsPage = () => {
                     
                     <Link
                       to="/contact"
-                      className="inline-flex items-center px-6 py-3 bg-[#8B7E6A] text-white rounded-lg hover:bg-[#6B5E4A] transition-colors font-medium"
+                      className="inline-flex items-center px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors font-medium"
                     >
                       Get Quote
                       <ArrowRight className="ml-2 w-5 h-5" />
@@ -153,7 +153,7 @@ const DoorsPage = () => {
           <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
             {benefits.map((benefit) => (
               <div key={benefit.title} className="text-center">
-                <div className="inline-flex items-center justify-center w-16 h-16 bg-[#FAF8F5] text-[#8B7E6A] rounded-full mb-6">
+                <div className="inline-flex items-center justify-center w-16 h-16 bg-gray-50 text-blue-600 rounded-full mb-6">
                   <benefit.icon className="w-8 h-8" />
                 </div>
                 <h3 className="text-xl font-bold text-gray-800 mb-3">{benefit.title}</h3>
@@ -165,7 +165,7 @@ const DoorsPage = () => {
       </section>
 
       {/* Gallery Section */}
-      <section className="py-16 bg-[#FAF8F5]">
+      <section className="py-16 bg-gray-50">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl font-bold text-gray-800 text-center mb-12">
             Our Door Installations
@@ -185,7 +185,7 @@ const DoorsPage = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-16 bg-gradient-to-r from-[#8B7E6A] to-[#6B5E4A] text-white">
+      <section className="py-16 bg-gradient-to-r from-blue-600 to-blue-700 text-white">
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl font-bold mb-4">
             Ready to Upgrade Your Doors?
@@ -196,14 +196,14 @@ const DoorsPage = () => {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
               to="/contact"
-              className="inline-flex items-center justify-center px-8 py-4 bg-white text-[#8B7E6A] rounded-lg hover:bg-gray-100 transition-colors font-medium"
+              className="inline-flex items-center justify-center px-8 py-4 bg-white text-blue-600 rounded-lg hover:bg-gray-100 transition-colors font-medium"
             >
               Get Free Quote
               <ArrowRight className="ml-2 w-5 h-5" />
             </Link>
             <a
               href="tel:07774604190"
-              className="inline-flex items-center justify-center px-8 py-4 border-2 border-white text-white rounded-lg hover:bg-white hover:text-[#8B7E6A] transition-colors font-medium"
+              className="inline-flex items-center justify-center px-8 py-4 border-2 border-white text-white rounded-lg hover:bg-white hover:text-blue-600 transition-colors font-medium"
             >
               Call 07774 604 190
             </a>
