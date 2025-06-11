@@ -157,7 +157,7 @@ const Footer = () => {
             </p>
             <div className="flex items-center gap-2">
               <img 
-                src="./images/contact/which-trusted-wbc.png" 
+                src="/images/contact/which-trusted-wbc.png" 
                 alt="Which? Trusted Trader" 
                 className="h-8"
               />
