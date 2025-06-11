@@ -8,7 +8,7 @@ const ConservatoriesPage = () => {
       id: 'victorian',
       title: 'Victorian Conservatories',
       description: 'Classic multi-faceted design with ornate ridging and elegant curves',
-      image: '/images/conservatories/victorian-conservatory-1.jpg',
+      image: '/images/conservatories/victorian-conservatories-hitchin-2.jpg',
       features: [
         '3, 5 or 7 faceted bay',
         'Ornate ridge details',
@@ -21,7 +21,7 @@ const ConservatoriesPage = () => {
       id: 'edwardian',
       title: 'Edwardian Conservatories',
       description: 'Square or rectangular design maximising floor space and natural light',
-      image: '/images/conservatories/edwardian-conservatory-1.jpg',
+      image: '/images/conservatories/edwardian-conservatories-hitchin-2.jpg',
       features: [
         'Square or rectangular floor',
         'Maximum floor space',
@@ -34,7 +34,7 @@ const ConservatoriesPage = () => {
       id: 'lean-to',
       title: 'Lean-To Conservatories',
       description: 'Simple, elegant design perfect for bungalows and restricted height properties',
-      image: '/images/conservatories/lean-to-conservatory-1.jpg',
+      image: '/images/conservatories/lean-to-conservatories-hitchin-1.jpg',
       features: [
         'Simple sloping roof',
         'Space-efficient design',
@@ -47,7 +47,7 @@ const ConservatoriesPage = () => {
       id: 'p-shaped',
       title: 'P-Shaped Conservatories',
       description: 'Combination design offering separate living and dining areas',
-      image: '/images/conservatories/p-shaped-conservatory-1.jpg',
+      image: '/images/conservatories/p-shaped-conservatories-hitchin-1-1.jpg',
       features: [
         'Two distinct areas',
         'Victorian & lean-to combined',
@@ -60,7 +60,7 @@ const ConservatoriesPage = () => {
       id: 't-shaped',
       title: 'T-Shaped Conservatories',
       description: 'Distinctive central projection creating unique living spaces',
-      image: '/images/conservatories/t-shaped-conservatory-1.jpg',
+      image: '/images/conservatories/t-shaped-conservatories-hitchin-1.jpg',
       features: [
         'Central projection feature',
         'Unique architectural impact',
@@ -219,11 +219,11 @@ const ConservatoriesPage = () => {
           {/* Temporary Gallery */}
           <div className="grid md:grid-cols-3 gap-6 max-w-6xl mx-auto">
             <img src="/images/conservatories/conservatories-hitchin.png" alt="Conservatory installation" className="w-full h-64 object-cover rounded-lg" />
-            <img src="/images/conservatories/victorian-conservatory-2.jpg" alt="Victorian conservatory" className="w-full h-64 object-cover rounded-lg" />
-            <img src="/images/conservatories/edwardian-conservatory-2.jpg" alt="Edwardian conservatory" className="w-full h-64 object-cover rounded-lg" />
-            <img src="/images/conservatories/lean-to-conservatory-2.jpg" alt="Lean-to conservatory" className="w-full h-64 object-cover rounded-lg" />
-            <img src="/images/conservatories/p-shaped-conservatory-2.jpg" alt="P-shaped conservatory" className="w-full h-64 object-cover rounded-lg" />
-            <img src="/images/conservatories/t-shaped-conservatory-2.jpg" alt="T-shaped conservatory" className="w-full h-64 object-cover rounded-lg" />
+            <img src="/images/conservatories/victorian-conservatories-hitchin-3.jpg" alt="Victorian conservatory" className="w-full h-64 object-cover rounded-lg" />
+            <img src="/images/conservatories/edwardian-conservatories-hitchin-3.jpg" alt="Edwardian conservatory" className="w-full h-64 object-cover rounded-lg" />
+            <img src="/images/conservatories/lean-to-conservatories-hitchin-2.jpg" alt="Lean-to conservatory" className="w-full h-64 object-cover rounded-lg" />
+            <img src="/images/conservatories/p-shaped-conservatories-hitchin-2.jpg" alt="P-shaped conservatory" className="w-full h-64 object-cover rounded-lg" />
+            <img src="/images/conservatories/t-shaped-conservatories-hitchin-2.jpg" alt="T-shaped conservatory" className="w-full h-64 object-cover rounded-lg" />
           </div>
         </div>
       </section>

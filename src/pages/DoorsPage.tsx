@@ -21,7 +21,7 @@ const DoorsPage = () => {
       id: 'bifold',
       title: 'Bi-Fold Doors',
       description: 'Create seamless indoor-outdoor living with our premium bi-fold door systems',
-      image: '/images/doors/bifold-doors-1.jpg',
+      image: '/images/doors/aluminium-bi-fold-doors-2.jpg',
       features: [
         'Maximum opening space',
         'Slim sight lines',
@@ -34,7 +34,7 @@ const DoorsPage = () => {
       id: 'patio',
       title: 'Patio Doors',
       description: 'Large sliding doors perfect for garden access and natural light',
-      image: '/images/doors/patio-doors-1.jpg',
+      image: '/images/doors/upvc-patio-doors-1.jpg',
       features: [
         'Space-saving design',
         'Large glass areas',
@@ -47,7 +47,7 @@ const DoorsPage = () => {
       id: 'french',
       title: 'French Doors',
       description: 'Classic elegance with modern performance for traditional and contemporary homes',
-      image: '/images/doors/french-doors-1.jpg',
+      image: '/images/doors/upvc-french-doors-1.jpg',
       features: [
         'Timeless design',
         'Excellent ventilation',
@@ -176,10 +176,10 @@ const DoorsPage = () => {
           <div className="grid md:grid-cols-3 gap-6 max-w-6xl mx-auto">
             <img src="/images/doors/door-services-hitchin-1.jpg" alt="Door installation" className="w-full h-64 object-cover rounded-lg" />
             <img src="/images/doors/composite-doors-2.jpg" alt="Composite door" className="w-full h-64 object-cover rounded-lg" />
-            <img src="/images/doors/bifold-doors-2.jpg" alt="Bi-fold doors" className="w-full h-64 object-cover rounded-lg" />
-            <img src="/images/doors/patio-doors-2.jpg" alt="Patio doors" className="w-full h-64 object-cover rounded-lg" />
-            <img src="/images/doors/french-doors-2.jpg" alt="French doors" className="w-full h-64 object-cover rounded-lg" />
-            <img src="/images/doors/composite-doors-3.jpg" alt="Composite doors" className="w-full h-64 object-cover rounded-lg" />
+            <img src="/images/doors/aluminium-bi-fold-doors-3.jpg" alt="Bi-fold doors" className="w-full h-64 object-cover rounded-lg" />
+            <img src="/images/doors/upvc-patio-doors-3.jpg" alt="Patio doors" className="w-full h-64 object-cover rounded-lg" />
+            <img src="/images/doors/upvc-french-doors-2.jpg" alt="French doors" className="w-full h-64 object-cover rounded-lg" />
+            <img src="/images/doors/composite-doors-2.jpg" alt="Composite doors" className="w-full h-64 object-cover rounded-lg" />
           </div>
         </div>
       </section>

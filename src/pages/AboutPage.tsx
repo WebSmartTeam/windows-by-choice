@@ -98,7 +98,7 @@ const AboutPage = () => {
               
               <div className="relative">
                 <img 
-                  src="/images/homepage/logo.png" 
+                  src="/images/about us/about-us-1.jpg" 
                   alt="Windows by Choice team"
                   className="w-full rounded-lg shadow-lg"
                 />

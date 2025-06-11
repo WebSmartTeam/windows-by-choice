@@ -8,7 +8,7 @@ const LivingRoomsPage = () => {
       id: 'contemporary',
       title: 'Contemporary Orangeries',
       description: 'Modern design with clean lines and maximum natural light for stylish living',
-      image: '/images/living-room-orangeries/contemporary-orangery-1.jpg',
+      image: '/images/living-room-orangeries/livin-room-and-orangeries-2.jpg',
       features: [
         'Floor-to-ceiling glazing',
         'Flat or pitched roof options',
@@ -21,7 +21,7 @@ const LivingRoomsPage = () => {
       id: 'traditional',
       title: 'Traditional Orangeries',
       description: 'Classic brick pillars and period features combined with modern performance',
-      image: '/images/living-room-orangeries/traditional-orangery-1.jpg',
+      image: '/images/living-room-orangeries/livin-rooms-1.jpg',
       features: [
         'Brick pillar construction',
         'Period-style windows',
@@ -34,7 +34,7 @@ const LivingRoomsPage = () => {
       id: 'lantern',
       title: 'Lantern Roof Extensions',
       description: 'Stunning roof lanterns that flood your space with natural light from above',
-      image: '/images/living-room-orangeries/lantern-roof-1.jpg',
+      image: '/images/living-room-orangeries/livin-rooms-2.jpg',
       features: [
         'Central roof lantern feature',
         'Maximum overhead lighting',
@@ -257,11 +257,11 @@ const LivingRoomsPage = () => {
           {/* Temporary Gallery */}
           <div className="grid md:grid-cols-3 gap-6 max-w-6xl mx-auto">
             <img src="/images/living-room-orangeries/livin-room-and-orangeries-1.jpg" alt="Orangery installation" className="w-full h-64 object-cover rounded-lg" />
-            <img src="/images/living-room-orangeries/contemporary-orangery-2.jpg" alt="Contemporary orangery" className="w-full h-64 object-cover rounded-lg" />
-            <img src="/images/living-room-orangeries/traditional-orangery-2.jpg" alt="Traditional orangery" className="w-full h-64 object-cover rounded-lg" />
-            <img src="/images/living-room-orangeries/lantern-roof-2.jpg" alt="Lantern roof extension" className="w-full h-64 object-cover rounded-lg" />
-            <img src="/images/living-room-orangeries/luxury-orangery-1.jpg" alt="Luxury orangery" className="w-full h-64 object-cover rounded-lg" />
-            <img src="/images/living-room-orangeries/orangery-interior-1.jpg" alt="Orangery interior" className="w-full h-64 object-cover rounded-lg" />
+            <img src="/images/living-room-orangeries/livin-room-and-orangeries-2.jpg" alt="Contemporary orangery" className="w-full h-64 object-cover rounded-lg" />
+            <img src="/images/living-room-orangeries/livin-rooms-1.jpg" alt="Traditional orangery" className="w-full h-64 object-cover rounded-lg" />
+            <img src="/images/living-room-orangeries/livin-rooms-2.jpg" alt="Lantern roof extension" className="w-full h-64 object-cover rounded-lg" />
+            <img src="/images/living-room-orangeries/livin-room-and-orangeries-3.jpg" alt="Luxury orangery" className="w-full h-64 object-cover rounded-lg" />
+            <img src="/images/living-room-orangeries/livin-rooms-3.jpg" alt="Orangery interior" className="w-full h-64 object-cover rounded-lg" />
           </div>
         </div>
       </section>
