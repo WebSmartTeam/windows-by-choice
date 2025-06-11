@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import { ArrowRight, Calendar, User } from 'lucide-react';
 
 const BlogPage = () => {
@@ -131,10 +132,13 @@ const BlogPage = () => {
                       <span>{post.author}</span>
                     </div>
                     
-                    <button className="inline-flex items-center text-blue-600 hover:text-blue-700 font-medium transition-colors">
+                    <Link 
+                      to={`/blog/${post.id}`}
+                      className="inline-flex items-center text-blue-600 hover:text-blue-700 font-medium transition-colors"
+                    >
                       Read More
                       <ArrowRight className="ml-1 w-4 h-4" />
-                    </button>
+                    </Link>
                   </div>
                 </div>
               </article>

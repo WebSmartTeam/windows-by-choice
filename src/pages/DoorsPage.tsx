@@ -78,16 +78,79 @@ const DoorsPage = () => {
 
   return (
     <div className="min-h-screen bg-white">
-      {/* Page Header */}
-      <section className="bg-gray-50 py-16">
-        <div className="container mx-auto px-4">
-          <h1 className="text-4xl font-bold text-gray-800 text-center mb-4">
-            Premium Doors
-          </h1>
-          <p className="text-xl text-gray-600 text-center max-w-3xl mx-auto">
-            Enhance your home's entrance with our range of high-quality doors. 
-            From secure composite doors to space-saving bi-folds, we have the perfect solution for every home.
-          </p>
+      {/* Interactive Hero Header */}
+      <section className="relative min-h-[60vh] flex items-center">
+        {/* Background Image */}
+        <div 
+          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+          style={{
+            backgroundImage: "url('/images/doors/door-services-hitchin-1.jpg')"
+          }}
+        />
+        
+        {/* Overlay */}
+        <div className="absolute inset-0 bg-gradient-to-r from-slate-900/85 via-slate-800/75 to-slate-900/85" />
+        
+        {/* Floating Security Badge */}
+        <div className="absolute top-10 right-10 bg-emerald-500/90 backdrop-blur-sm rounded-xl p-4 animate-bounce">
+          <div className="text-white text-center">
+            <Shield className="w-8 h-8 mx-auto mb-2" />
+            <div className="text-sm font-bold">Multi-Point<br/>Locking</div>
+          </div>
+        </div>
+        
+        {/* Floating Efficiency Badge */}
+        <div className="absolute bottom-10 left-10 bg-blue-500/90 backdrop-blur-sm rounded-xl p-4 animate-pulse">
+          <div className="text-white text-center">
+            <div className="text-2xl font-bold">A+</div>
+            <div className="text-sm">Energy Rating</div>
+          </div>
+        </div>
+        
+        {/* Content */}
+        <div className="relative z-10 container mx-auto px-4 py-20">
+          <div className="max-w-4xl mx-auto text-center">
+            <h1 className="text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight">
+              Premium Doors
+            </h1>
+            <p className="text-xl text-slate-200 mb-8 max-w-3xl mx-auto">
+              Enhance your home's entrance with our range of high-quality doors. 
+              From secure composite doors to space-saving bi-folds, we have the perfect solution for every home.
+            </p>
+            
+            {/* Interactive CTAs */}
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <Link
+                to="/contact"
+                className="group inline-flex items-center justify-center px-8 py-4 bg-emerald-500 text-white rounded-lg hover:bg-emerald-600 transition-all duration-300 font-semibold shadow-lg hover:shadow-xl transform hover:scale-105"
+              >
+                Get Free Quote
+                <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
+              </Link>
+              <a
+                href="tel:07774604190"
+                className="group inline-flex items-center justify-center px-8 py-4 border-2 border-white text-white rounded-lg hover:bg-white hover:text-slate-800 transition-all duration-300 font-semibold transform hover:scale-105"
+              >
+                Call 07774 604 190
+              </a>
+            </div>
+            
+            {/* Trust Indicators */}
+            <div className="flex items-center justify-center gap-8 mt-8 text-slate-200">
+              <div className="flex items-center gap-2">
+                <Shield className="w-5 h-5 text-emerald-400" />
+                <span className="text-sm font-medium">Secured by Design</span>
+              </div>
+              <div className="flex items-center gap-2">
+                <Lock className="w-5 h-5 text-emerald-400" />
+                <span className="text-sm font-medium">Multi-Point Locks</span>
+              </div>
+              <div className="flex items-center gap-2">
+                <Palette className="w-5 h-5 text-emerald-400" />
+                <span className="text-sm font-medium">Custom Colours</span>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
