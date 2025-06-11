@@ -8,7 +8,6 @@ const Header = () => {
   const [activeDropdown, setActiveDropdown] = useState<string | null>(null);
 
   const navigation = [
-    { name: 'Home', href: '/' },
     {
       name: 'Windows',
       href: '/windows',

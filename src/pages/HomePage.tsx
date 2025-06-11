@@ -303,49 +303,49 @@ const HomePage = () => {
         </div>
       </section>
 
-      {/* Service Areas - With Beautiful Gradient */}
-      <section className="py-20 text-white" style={{background: 'linear-gradient(135deg, #059669 0%, #10B981 100%)'}}>
+      {/* Service Areas - Subtle Light Blue Background */}
+      <section className="py-20 bg-blue-50">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
-            <h2 className="text-3xl font-bold text-white mb-4">
+            <h2 className="text-3xl font-bold text-slate-800 mb-4">
               Serving South East England & London
             </h2>
-            <p className="text-lg text-emerald-100 max-w-3xl mx-auto">
+            <p className="text-lg text-slate-600 max-w-3xl mx-auto">
               Based in Shefford, Bedfordshire, we proudly serve customers across a wide area with the same high standards
             </p>
           </div>
 
           <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
-            <div className="text-center p-6 bg-white/10 backdrop-blur-sm rounded-xl">
-              <div className="inline-flex items-center justify-center w-16 h-16 bg-white text-emerald-600 rounded-full mb-6">
+            <div className="text-center p-6 bg-white rounded-xl shadow-lg">
+              <div className="inline-flex items-center justify-center w-16 h-16 bg-blue-800 text-white rounded-full mb-6">
                 <span className="text-2xl font-bold">B</span>
               </div>
-              <h3 className="text-xl font-bold text-white mb-3">Bedfordshire</h3>
-              <p className="text-emerald-100 text-sm">Bedford, Luton, Dunstable, Leighton Buzzard, Biggleswade, Sandy, Flitwick, Ampthill, Woburn</p>
+              <h3 className="text-xl font-bold text-slate-800 mb-3">Bedfordshire</h3>
+              <p className="text-slate-600 text-sm">Bedford, Luton, Dunstable, Leighton Buzzard, Biggleswade, Sandy, Flitwick, Ampthill, Woburn</p>
             </div>
             
-            <div className="text-center p-6 bg-white/10 backdrop-blur-sm rounded-xl">
-              <div className="inline-flex items-center justify-center w-16 h-16 bg-white text-emerald-600 rounded-full mb-6">
+            <div className="text-center p-6 bg-white rounded-xl shadow-lg">
+              <div className="inline-flex items-center justify-center w-16 h-16 bg-blue-800 text-white rounded-full mb-6">
                 <span className="text-2xl font-bold">H</span>
               </div>
-              <h3 className="text-xl font-bold text-white mb-3">Hertfordshire</h3>
-              <p className="text-emerald-100 text-sm">Hitchin, St Albans, Hemel Hempstead, Watford, Stevenage, Welwyn Garden City, Hertford</p>
+              <h3 className="text-xl font-bold text-slate-800 mb-3">Hertfordshire</h3>
+              <p className="text-slate-600 text-sm">Hitchin, St Albans, Hemel Hempstead, Watford, Stevenage, Welwyn Garden City, Hertford</p>
             </div>
             
-            <div className="text-center p-6 bg-white/10 backdrop-blur-sm rounded-xl">
-              <div className="inline-flex items-center justify-center w-16 h-16 bg-white text-emerald-600 rounded-full mb-6">
+            <div className="text-center p-6 bg-white rounded-xl shadow-lg">
+              <div className="inline-flex items-center justify-center w-16 h-16 bg-blue-800 text-white rounded-full mb-6">
                 <span className="text-2xl font-bold">L</span>
               </div>
-              <h3 className="text-xl font-bold text-white mb-3">London Areas</h3>
-              <p className="text-emerald-100 text-sm">North London, North West London, selected Central London areas - call to confirm coverage</p>
+              <h3 className="text-xl font-bold text-slate-800 mb-3">London Areas</h3>
+              <p className="text-slate-600 text-sm">North London, North West London, selected Central London areas - call to confirm coverage</p>
             </div>
           </div>
           
           <div className="text-center mt-12">
-            <p className="text-emerald-100 mb-4">
+            <p className="text-slate-600 mb-4">
               <strong>Free surveys available within 20 miles of Shefford.</strong> Longer distances may incur a small travel charge.
             </p>
-            <a href="tel:07774604190" className="text-white hover:text-emerald-200 font-semibold bg-white/20 px-6 py-3 rounded-lg backdrop-blur-sm transition-all duration-300 inline-block">
+            <a href="tel:07774604190" className="text-blue-800 hover:text-emerald-500 font-semibold bg-white px-6 py-3 rounded-lg shadow-lg transition-all duration-300 inline-block">
               Call 07774 604 190 to confirm we cover your area
             </a>
           </div>

@@ -155,7 +155,7 @@ const Footer = () => {
             <h4 className="text-white font-semibold mb-2">Trusted & Certified</h4>
             <p className="text-gray-400 text-sm">Accredited by leading industry bodies for your peace of mind</p>
           </div>
-          <div className="flex items-center justify-center gap-6 flex-wrap">
+          <div className="flex items-center justify-center gap-8 flex-wrap">
             <div className="flex items-center gap-2">
               <img 
                 src="/images/footer logos/footerl.png" 
@@ -170,34 +170,13 @@ const Footer = () => {
                 className="h-16 w-auto"
               />
             </div>
-            <div className="flex items-center gap-2">
-              <img 
-                src="/images/contact/which-trusted-wbc.png" 
-                alt="Which? Trusted Trader" 
-                className="h-14 w-auto"
-              />
-            </div>
-            <div className="flex items-center gap-2">
-              <img 
-                src="/images/contact/smq3.png" 
-                alt="SMQ Certification" 
-                className="h-14 w-auto"
-              />
-            </div>
-            <div className="flex items-center gap-2">
-              <img 
-                src="/images/contact/reward.png" 
-                alt="Reward Certification" 
-                className="h-14 w-auto"
-              />
-            </div>
             <div className="text-center">
               <div className="bg-blue-600 text-white px-4 py-2 rounded-lg font-semibold text-sm">
                 FENSA<br />REGISTERED
               </div>
             </div>
             <div className="text-center">
-              <div className="bg-emerald-600 text-white px-4 py-2 rounded-lg font-semibold text-sm">
+              <div className="bg-blue-600 text-white px-4 py-2 rounded-lg font-semibold text-sm">
                 BUILDING REGS<br />COMPLIANT
               </div>
             </div>
