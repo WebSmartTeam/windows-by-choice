@@ -68,7 +68,7 @@ const Header = () => {
             {/* Logo */}
             <Link to="/" className="flex items-center">
               <img 
-                src="/images/homepage/logo.png" 
+                src="./images/homepage/logo.png" 
                 alt="Windows by Choice" 
                 className="h-16 w-auto"
               />

@@ -155,7 +155,7 @@ const TestimonialsPage = () => {
           <div className="flex justify-center items-center gap-8 flex-wrap max-w-4xl mx-auto">
             <div className="text-center">
               <img 
-                src="/images/contact/which-trusted-wbc.png" 
+                src="./images/contact/which-trusted-wbc.png" 
                 alt="Which? Trusted Trader" 
                 className="h-20 mx-auto mb-2"
               />
@@ -163,7 +163,7 @@ const TestimonialsPage = () => {
             </div>
             <div className="text-center">
               <img 
-                src="/images/contact/smq3.png" 
+                src="./images/contact/smq3.png" 
                 alt="FENSA Registered" 
                 className="h-20 mx-auto mb-2"
               />

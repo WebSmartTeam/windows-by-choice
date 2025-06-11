@@ -174,12 +174,12 @@ const DoorsPage = () => {
           
           {/* Temporary Gallery */}
           <div className="grid md:grid-cols-3 gap-6 max-w-6xl mx-auto">
-            <img src="/images/doors/door-services-hitchin-1.jpg" alt="Door installation" className="w-full h-64 object-cover rounded-lg" />
-            <img src="/images/doors/composite-doors-2.jpg" alt="Composite door" className="w-full h-64 object-cover rounded-lg" />
-            <img src="/images/doors/bifold-doors-2.jpg" alt="Bi-fold doors" className="w-full h-64 object-cover rounded-lg" />
-            <img src="/images/doors/patio-doors-2.jpg" alt="Patio doors" className="w-full h-64 object-cover rounded-lg" />
-            <img src="/images/doors/french-doors-2.jpg" alt="French doors" className="w-full h-64 object-cover rounded-lg" />
-            <img src="/images/doors/composite-doors-3.jpg" alt="Composite doors" className="w-full h-64 object-cover rounded-lg" />
+            <img src="./images/doors/door-services-hitchin-1.jpg" alt="Door installation" className="w-full h-64 object-cover rounded-lg" />
+            <img src="./images/doors/composite-doors-2.jpg" alt="Composite door" className="w-full h-64 object-cover rounded-lg" />
+            <img src="./images/doors/bifold-doors-2.jpg" alt="Bi-fold doors" className="w-full h-64 object-cover rounded-lg" />
+            <img src="./images/doors/patio-doors-2.jpg" alt="Patio doors" className="w-full h-64 object-cover rounded-lg" />
+            <img src="./images/doors/french-doors-2.jpg" alt="French doors" className="w-full h-64 object-cover rounded-lg" />
+            <img src="./images/doors/composite-doors-3.jpg" alt="Composite doors" className="w-full h-64 object-cover rounded-lg" />
           </div>
         </div>
       </section>

@@ -93,12 +93,12 @@ const ContactPage = () => {
                 <h3 className="font-semibold text-gray-800 mb-4">Accreditations</h3>
                 <div className="flex gap-4">
                   <img 
-                    src="/images/contact/which-trusted-wbc.png" 
+                    src="./images/contact/which-trusted-wbc.png" 
                     alt="Which? Trusted Trader" 
                     className="h-16"
                   />
                   <img 
-                    src="/images/contact/smq3.png" 
+                    src="./images/contact/smq3.png" 
                     alt="Certification" 
                     className="h-16"
                   />

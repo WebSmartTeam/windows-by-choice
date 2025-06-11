@@ -7,25 +7,25 @@ const HomePage = () => {
     {
       title: 'Windows',
       description: 'UPVC & aluminium windows with energy-efficient double glazing',
-      image: '/images/windows/window-services-hitchin-1.jpg',
+      image: './images/windows/window-services-hitchin-1.jpg',
       link: '/windows'
     },
     {
       title: 'Doors',
       description: 'Composite, bi-fold, patio & French doors for every home',
-      image: '/images/doors/door-services-hitchin-1.jpg',
+      image: './images/doors/door-services-hitchin-1.jpg',
       link: '/doors'
     },
     {
       title: 'Conservatories',
       description: 'Victorian, Edwardian & modern conservatory designs',
-      image: '/images/conservatories/conservatories-hitchin.png',
+      image: './images/conservatories/conservatories-hitchin.png',
       link: '/conservatories'
     },
     {
       title: 'Living Rooms',
       description: 'Stunning orangeries and living room extensions',
-      image: '/images/living-room-orangeries/livin-room-and-orangeries-1.jpg',
+      image: './images/living-room-orangeries/livin-room-and-orangeries-1.jpg',
       link: '/living-rooms'
     }
   ];

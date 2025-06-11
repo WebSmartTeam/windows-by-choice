@@ -218,12 +218,12 @@ const ConservatoriesPage = () => {
           
           {/* Temporary Gallery */}
           <div className="grid md:grid-cols-3 gap-6 max-w-6xl mx-auto">
-            <img src="/images/conservatories/conservatories-hitchin.png" alt="Conservatory installation" className="w-full h-64 object-cover rounded-lg" />
-            <img src="/images/conservatories/victorian-conservatory-2.jpg" alt="Victorian conservatory" className="w-full h-64 object-cover rounded-lg" />
-            <img src="/images/conservatories/edwardian-conservatory-2.jpg" alt="Edwardian conservatory" className="w-full h-64 object-cover rounded-lg" />
-            <img src="/images/conservatories/lean-to-conservatory-2.jpg" alt="Lean-to conservatory" className="w-full h-64 object-cover rounded-lg" />
-            <img src="/images/conservatories/p-shaped-conservatory-2.jpg" alt="P-shaped conservatory" className="w-full h-64 object-cover rounded-lg" />
-            <img src="/images/conservatories/t-shaped-conservatory-2.jpg" alt="T-shaped conservatory" className="w-full h-64 object-cover rounded-lg" />
+            <img src="./images/conservatories/conservatories-hitchin.png" alt="Conservatory installation" className="w-full h-64 object-cover rounded-lg" />
+            <img src="./images/conservatories/victorian-conservatory-2.jpg" alt="Victorian conservatory" className="w-full h-64 object-cover rounded-lg" />
+            <img src="./images/conservatories/edwardian-conservatory-2.jpg" alt="Edwardian conservatory" className="w-full h-64 object-cover rounded-lg" />
+            <img src="./images/conservatories/lean-to-conservatory-2.jpg" alt="Lean-to conservatory" className="w-full h-64 object-cover rounded-lg" />
+            <img src="./images/conservatories/p-shaped-conservatory-2.jpg" alt="P-shaped conservatory" className="w-full h-64 object-cover rounded-lg" />
+            <img src="./images/conservatories/t-shaped-conservatory-2.jpg" alt="T-shaped conservatory" className="w-full h-64 object-cover rounded-lg" />
           </div>
         </div>
       </section>

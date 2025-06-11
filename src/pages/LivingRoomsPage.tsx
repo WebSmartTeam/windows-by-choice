@@ -91,7 +91,7 @@ const LivingRoomsPage = () => {
       <section className="py-0">
         <div className="container mx-auto px-4">
           <img 
-            src="/images/living-room-orangeries/livin-room-and-orangeries-1.jpg" 
+            src="./images/living-room-orangeries/livin-room-and-orangeries-1.jpg" 
             alt="Luxury orangery living space" 
             className="w-full h-96 object-cover rounded-lg shadow-lg"
           />
@@ -256,12 +256,12 @@ const LivingRoomsPage = () => {
           
           {/* Temporary Gallery */}
           <div className="grid md:grid-cols-3 gap-6 max-w-6xl mx-auto">
-            <img src="/images/living-room-orangeries/livin-room-and-orangeries-1.jpg" alt="Orangery installation" className="w-full h-64 object-cover rounded-lg" />
-            <img src="/images/living-room-orangeries/contemporary-orangery-2.jpg" alt="Contemporary orangery" className="w-full h-64 object-cover rounded-lg" />
-            <img src="/images/living-room-orangeries/traditional-orangery-2.jpg" alt="Traditional orangery" className="w-full h-64 object-cover rounded-lg" />
-            <img src="/images/living-room-orangeries/lantern-roof-2.jpg" alt="Lantern roof extension" className="w-full h-64 object-cover rounded-lg" />
-            <img src="/images/living-room-orangeries/luxury-orangery-1.jpg" alt="Luxury orangery" className="w-full h-64 object-cover rounded-lg" />
-            <img src="/images/living-room-orangeries/orangery-interior-1.jpg" alt="Orangery interior" className="w-full h-64 object-cover rounded-lg" />
+            <img src="./images/living-room-orangeries/livin-room-and-orangeries-1.jpg" alt="Orangery installation" className="w-full h-64 object-cover rounded-lg" />
+            <img src="./images/living-room-orangeries/contemporary-orangery-2.jpg" alt="Contemporary orangery" className="w-full h-64 object-cover rounded-lg" />
+            <img src="./images/living-room-orangeries/traditional-orangery-2.jpg" alt="Traditional orangery" className="w-full h-64 object-cover rounded-lg" />
+            <img src="./images/living-room-orangeries/lantern-roof-2.jpg" alt="Lantern roof extension" className="w-full h-64 object-cover rounded-lg" />
+            <img src="./images/living-room-orangeries/luxury-orangery-1.jpg" alt="Luxury orangery" className="w-full h-64 object-cover rounded-lg" />
+            <img src="./images/living-room-orangeries/orangery-interior-1.jpg" alt="Orangery interior" className="w-full h-64 object-cover rounded-lg" />
           </div>
         </div>
       </section>

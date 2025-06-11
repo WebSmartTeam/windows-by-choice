@@ -161,12 +161,12 @@ const WindowsPage = () => {
           
           {/* Temporary Gallery */}
           <div className="grid md:grid-cols-3 gap-6 max-w-6xl mx-auto">
-            <img src="/images/windows/window-services-hitchin-1.jpg" alt="Window installation" className="w-full h-64 object-cover rounded-lg" />
-            <img src="/images/windows/upvc-windows-3.jpg" alt="UPVC windows" className="w-full h-64 object-cover rounded-lg" />
-            <img src="/images/windows/aluminium-windows-3.jpg" alt="Aluminium windows" className="w-full h-64 object-cover rounded-lg" />
-            <img src="/images/windows/lantern-roofs-2.jpg" alt="Lantern roof" className="w-full h-64 object-cover rounded-lg" />
-            <img src="/images/windows/window-services-hitchin-2.jpg" alt="Window service" className="w-full h-64 object-cover rounded-lg" />
-            <img src="/images/windows/lantern-roofs-3.jpg" alt="Roof lantern" className="w-full h-64 object-cover rounded-lg" />
+            <img src="./images/windows/window-services-hitchin-1.jpg" alt="Window installation" className="w-full h-64 object-cover rounded-lg" />
+            <img src="./images/windows/upvc-windows-3.jpg" alt="UPVC windows" className="w-full h-64 object-cover rounded-lg" />
+            <img src="./images/windows/aluminium-windows-3.jpg" alt="Aluminium windows" className="w-full h-64 object-cover rounded-lg" />
+            <img src="./images/windows/lantern-roofs-2.jpg" alt="Lantern roof" className="w-full h-64 object-cover rounded-lg" />
+            <img src="./images/windows/window-services-hitchin-2.jpg" alt="Window service" className="w-full h-64 object-cover rounded-lg" />
+            <img src="./images/windows/lantern-roofs-3.jpg" alt="Roof lantern" className="w-full h-64 object-cover rounded-lg" />
           </div>
         </div>
       </section>
