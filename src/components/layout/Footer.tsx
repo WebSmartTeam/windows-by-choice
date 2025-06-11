@@ -186,15 +186,10 @@ const Footer = () => {
       {/* Bottom Bar */}
       <div className="bg-gray-950 py-4">
         <div className="container mx-auto px-4">
-          <div className="flex flex-col md:flex-row items-center justify-between gap-4 text-sm">
+          <div className="text-center text-sm">
             <p>
               © {currentYear} Windows by Choice Ltd. All rights reserved.
             </p>
-            <div className="flex items-center gap-4 text-gray-400">
-              <span>Company Registration: 12345678</span>
-              <span>•</span>
-              <span>VAT Number: GB123456789</span>
-            </div>
           </div>
         </div>
       </div>
