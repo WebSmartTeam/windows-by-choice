@@ -1,5 +1,5 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import Header from './components/layout/Header';
+import NewHeader from './components/layout/NewHeader';
 import Footer from './components/layout/Footer';
 import QuoteCalculator from './components/QuoteCalculator';
 import LeadAnalytics from './components/LeadAnalytics';
@@ -23,7 +23,7 @@ function App() {
     <BrowserRouter>
       <div className="min-h-screen bg-gray-50 text-gray-800">
         
-        <Header />
+        <NewHeader />
         
         <main className="flex-grow">
           <Routes>
@@ -45,8 +45,10 @@ function App() {
         
         <Footer />
         
-        {/* Global Quote Calculator - Floating Button */}
-        <QuoteCalculator />
+        {/* Quote Calculator - Desktop Only */}
+        <div className="hidden lg:block">
+          <QuoteCalculator />
+        </div>
         
         {/* Lead Analytics Dashboard (Admin Access) */}
         <LeadAnalytics />
