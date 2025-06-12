@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import { ArrowRight, Shield, Award, Clock, Phone } from 'lucide-react';
+import HeroVariant1Corporate from '../components/heroes/HeroVariant1Corporate';
 
 
 const HomePage = () => {
@@ -50,77 +51,8 @@ const HomePage = () => {
 
   return (
     <div className="min-h-screen">
-      {/* Hero Section */}
-      <section className="relative min-h-[70vh] flex items-center">
-        {/* Background Image */}
-        <div 
-          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-          style={{
-            backgroundImage: "url('/images/homepage/window-services-hitchin.jpg')"
-          }}
-        />
-        
-        {/* Overlay */}
-        <div className="absolute inset-0 bg-gradient-to-r from-blue-900/90 via-blue-800/80 to-blue-900/90" />
-        
-        {/* Which? Trusted Trader Badge */}
-        <div className="absolute top-6 right-6 z-20">
-          <img 
-            src="/images/contact/which-trusted-wbc.png" 
-            alt="Which? Trusted Trader" 
-            className="h-24 lg:h-28 w-auto drop-shadow-xl"
-          />
-        </div>
-        
-        {/* Content */}
-        <div className="relative z-10 container mx-auto px-4 py-20">
-          <div className="max-w-4xl">
-            <h1 className="text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight">
-              We Produce Quality Windows for You
-            </h1>
-            <p className="text-xl text-blue-100 mb-4 max-w-2xl">
-              Transform your home with our premium windows, doors, and conservatories. 
-            </p>
-            <p className="text-lg text-blue-200 mb-8 max-w-2xl">
-              Over 35 years of excellence serving Bedfordshire, South East England, and London. 
-              Family-run business with FENSA certification and Which? Trusted Trader status.
-            </p>
-            
-            {/* Trust Indicators */}
-            <div className="flex items-center gap-6 mb-8 text-blue-100">
-              <div className="flex items-center gap-2">
-                <Shield className="w-5 h-5 text-emerald-400" />
-                <span className="text-sm font-medium">FENSA Certified</span>
-              </div>
-              <div className="flex items-center gap-2">
-                <Award className="w-5 h-5 text-emerald-400" />
-                <span className="text-sm font-medium">Which? Trusted Trader</span>
-              </div>
-              <div className="flex items-center gap-2">
-                <Clock className="w-5 h-5 text-emerald-400" />
-                <span className="text-sm font-medium">35+ Years Experience</span>
-              </div>
-            </div>
-            
-            <div className="flex flex-col sm:flex-row gap-4">
-              <Link
-                to="/contact"
-                className="group inline-flex items-center justify-center px-8 py-4 bg-emerald-500 text-white rounded-lg hover:bg-emerald-600 transition-all duration-300 font-semibold shadow-lg hover:shadow-xl transform hover:scale-105"
-              >
-                Get Free Quote Today
-                <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
-              </Link>
-              <a
-                href="tel:07774604190"
-                className="group inline-flex items-center justify-center px-8 py-4 border-2 border-white text-white rounded-lg hover:bg-white hover:text-blue-800 transition-all duration-300 font-semibold transform hover:scale-105"
-              >
-                <Phone className="mr-2 w-5 h-5 group-hover:animate-bounce" />
-                Call 07774 604 190
-              </a>
-            </div>
-          </div>
-        </div>
-      </section>
+      {/* Hero Section - Professional Corporate Design */}
+      <HeroVariant1Corporate />
 
       {/* Services Grid */}
       <section className="py-20 bg-white">

@@ -1,0 +1,1 @@
+export { default as HeroVariant1Corporate } from './HeroVariant1Corporate';

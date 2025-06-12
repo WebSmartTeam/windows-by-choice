@@ -1,42 +1,25 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Menu, X, ChevronDown, Phone } from 'lucide-react';
+import MegaMenu from './MegaMenu';
 
+interface NavigationItem {
+  name: string;
+  href: string;
+  megaMenu?: boolean;
+  dropdown?: { name: string; href: string; }[];
+}
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [activeDropdown, setActiveDropdown] = useState<string | null>(null);
+  const [isMegaMenuOpen, setIsMegaMenuOpen] = useState(false);
 
-  const navigation = [
-    {
-      name: 'Windows',
-      href: '/windows',
-      dropdown: [
-        { name: 'UPVC Windows', href: '/windows#upvc' },
-        { name: 'Aluminium Windows', href: '/windows#aluminium' },
-        { name: 'Lantern Roofs', href: '/windows#lantern' }
-      ]
-    },
-    {
-      name: 'Doors',
-      href: '/doors',
-      dropdown: [
-        { name: 'Composite Doors', href: '/doors#composite' },
-        { name: 'Bi-Fold Doors', href: '/doors#bifold' },
-        { name: 'Patio Doors', href: '/doors#patio' },
-        { name: 'French Doors', href: '/doors#french' }
-      ]
-    },
-    {
-      name: 'Conservatories',
-      href: '/conservatories',
-      dropdown: [
-        { name: 'Victorian', href: '/conservatories#victorian' },
-        { name: 'Edwardian', href: '/conservatories#edwardian' },
-        { name: 'Lean-To', href: '/conservatories#lean-to' },
-        { name: 'P-Shaped', href: '/conservatories#p-shaped' },
-        { name: 'T-Shaped', href: '/conservatories#t-shaped' }
-      ]
+  const navigation: NavigationItem[] = [
+    { 
+      name: 'Services', 
+      href: '#', 
+      megaMenu: true 
     },
     { name: 'Living Rooms', href: '/living-rooms' },
     { name: 'About', href: '/about' },
@@ -79,18 +62,39 @@ const Header = () => {
                 <div
                   key={item.name}
                   className="relative"
-                  onMouseEnter={() => item.dropdown && setActiveDropdown(item.name)}
-                  onMouseLeave={() => setActiveDropdown(null)}
+                  onMouseEnter={() => {
+                    if (item.megaMenu) {
+                      setIsMegaMenuOpen(true);
+                    } else if (item.dropdown) {
+                      setActiveDropdown(item.name);
+                    }
+                  }}
+                  onMouseLeave={() => {
+                    if (item.megaMenu) {
+                      // Don't close mega menu immediately - let MegaMenu component handle it
+                    } else {
+                      setActiveDropdown(null);
+                    }
+                  }}
                 >
-                  <Link
-                    to={item.href}
-                    className="flex items-center gap-1 text-slate-700 hover:text-blue-800 font-medium transition-colors"
-                  >
-                    {item.name}
-                    {item.dropdown && <ChevronDown className="w-4 h-4" />}
-                  </Link>
+                  {item.megaMenu ? (
+                    <button
+                      className="flex items-center gap-1 text-slate-700 hover:text-blue-800 font-medium transition-colors"
+                    >
+                      {item.name}
+                      <ChevronDown className="w-4 h-4" />
+                    </button>
+                  ) : (
+                    <Link
+                      to={item.href}
+                      className="flex items-center gap-1 text-slate-700 hover:text-blue-800 font-medium transition-colors"
+                    >
+                      {item.name}
+                      {item.dropdown && <ChevronDown className="w-4 h-4" />}
+                    </Link>
+                  )}
                   
-                  {/* Dropdown Menu */}
+                  {/* Dropdown Menu for regular items */}
                   {item.dropdown && activeDropdown === item.name && (
                     <div className="absolute top-full left-0 mt-2 w-64 bg-white rounded-lg shadow-lg py-2 z-50">
                       {item.dropdown.map((subItem) => (
@@ -124,13 +128,44 @@ const Header = () => {
             <nav className="space-y-2">
               {navigation.map((item) => (
                 <div key={item.name}>
-                  <Link
-                    to={item.href}
-                    className="block py-2 text-gray-700 hover:text-blue-600 font-medium"
-                    onClick={() => setIsMenuOpen(false)}
-                  >
-                    {item.name}
-                  </Link>
+                  {item.megaMenu ? (
+                    <div>
+                      <div className="py-2 font-medium text-gray-700">
+                        {item.name}
+                      </div>
+                      <div className="ml-4 space-y-1">
+                        <Link
+                          to="/windows"
+                          className="block py-1 text-sm text-gray-600 hover:text-blue-600"
+                          onClick={() => setIsMenuOpen(false)}
+                        >
+                          Windows
+                        </Link>
+                        <Link
+                          to="/doors"
+                          className="block py-1 text-sm text-gray-600 hover:text-blue-600"
+                          onClick={() => setIsMenuOpen(false)}
+                        >
+                          Doors
+                        </Link>
+                        <Link
+                          to="/conservatories"
+                          className="block py-1 text-sm text-gray-600 hover:text-blue-600"
+                          onClick={() => setIsMenuOpen(false)}
+                        >
+                          Conservatories
+                        </Link>
+                      </div>
+                    </div>
+                  ) : (
+                    <Link
+                      to={item.href}
+                      className="block py-2 text-gray-700 hover:text-blue-600 font-medium"
+                      onClick={() => setIsMenuOpen(false)}
+                    >
+                      {item.name}
+                    </Link>
+                  )}
                   {item.dropdown && (
                     <div className="ml-4 space-y-1 mt-1">
                       {item.dropdown.map((subItem) => (
@@ -152,6 +187,17 @@ const Header = () => {
         )}
       </div>
 
+      {/* Mega Menu */}
+      <div 
+        className="relative"
+        onMouseEnter={() => setIsMegaMenuOpen(true)}
+        onMouseLeave={() => setIsMegaMenuOpen(false)}
+      >
+        <MegaMenu 
+          isOpen={isMegaMenuOpen} 
+          onClose={() => setIsMegaMenuOpen(false)} 
+        />
+      </div>
     </header>
   );
 };
