@@ -24,6 +24,7 @@ const Header = () => {
     { name: 'Living Rooms', href: '/living-rooms' },
     { name: 'About', href: '/about' },
     { name: 'Testimonials', href: '/testimonials' },
+    { name: 'Resources', href: '/resources' },
     { name: 'Blog', href: '/blog' },
     { name: 'Contact', href: '/contact' }
   ];
@@ -112,6 +113,23 @@ const Header = () => {
               ))}
             </nav>
 
+            {/* Get Quote Button */}
+            <div className="hidden lg:flex items-center space-x-4">
+              <Link
+                to="/quote"
+                className="bg-gradient-to-r from-blue-600 to-blue-700 text-white px-6 py-2 rounded-lg font-semibold hover:from-blue-700 hover:to-blue-800 transition-all duration-300 transform hover:scale-105 shadow-lg"
+              >
+                Get Quote
+              </Link>
+              <a
+                href="tel:07774604190"
+                className="flex items-center text-blue-600 font-semibold hover:text-blue-700 transition-colors"
+              >
+                <Phone className="w-4 h-4 mr-1" />
+                Call Now
+              </a>
+            </div>
+
             {/* Mobile Menu Button */}
             <button
               onClick={() => setIsMenuOpen(!isMenuOpen)}
@@ -182,6 +200,24 @@ const Header = () => {
                   )}
                 </div>
               ))}
+              
+              {/* Mobile Quote Button */}
+              <div className="pt-4 border-t border-gray-100 mt-4">
+                <Link
+                  to="/quote"
+                  className="block w-full bg-gradient-to-r from-blue-600 to-blue-700 text-white text-center py-3 rounded-lg font-semibold hover:from-blue-700 hover:to-blue-800 transition-all duration-300 mb-3"
+                  onClick={() => setIsMenuOpen(false)}
+                >
+                  Get Free Quote
+                </Link>
+                <a
+                  href="tel:07774604190"
+                  className="block w-full text-center text-blue-600 font-semibold py-2 border border-blue-600 rounded-lg hover:bg-blue-50 transition-colors"
+                  onClick={() => setIsMenuOpen(false)}
+                >
+                  📞 Call Now: 07774 604 190
+                </a>
+              </div>
             </nav>
           </div>
         )}

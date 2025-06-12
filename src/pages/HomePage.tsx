@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
 import { ArrowRight, Shield, Award, Clock, Phone } from 'lucide-react';
 import HeroVariant1Corporate from '../components/heroes/HeroVariant1Corporate';
+import PDFGenerator from '../components/PDFGenerator';
 
 
 const HomePage = () => {
@@ -283,6 +284,9 @@ const HomePage = () => {
           </div>
         </div>
       </section>
+
+      {/* PDF Downloads Section */}
+      <PDFGenerator />
 
       {/* Features Section - Final section before end */}
       <section className="py-20" style={{backgroundColor: '#F9FAFB'}}>

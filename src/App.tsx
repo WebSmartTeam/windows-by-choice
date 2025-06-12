@@ -1,6 +1,8 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Header from './components/layout/Header';
 import Footer from './components/layout/Footer';
+import QuoteCalculator from './components/QuoteCalculator';
+import LeadAnalytics from './components/LeadAnalytics';
 import HomePage from './pages/HomePage';
 import WindowsPage from './pages/WindowsPage';
 import DoorsPage from './pages/DoorsPage';
@@ -12,6 +14,8 @@ import TestimonialsPage from './pages/TestimonialsPage';
 import BlogPage from './pages/BlogPage';
 import BlogPostPage from './pages/BlogPostPage';
 import PrivacyPage from './pages/PrivacyPage';
+import QuotePage from './pages/QuotePage';
+import ResourcesPage from './pages/ResourcesPage';
 
 
 function App() {
@@ -33,11 +37,19 @@ function App() {
             <Route path="/blog" element={<BlogPage />} />
             <Route path="/blog/:id" element={<BlogPostPage />} />
             <Route path="/contact" element={<ContactPage />} />
+            <Route path="/quote" element={<QuotePage />} />
+            <Route path="/resources" element={<ResourcesPage />} />
             <Route path="/privacy" element={<PrivacyPage />} />
           </Routes>
         </main>
         
         <Footer />
+        
+        {/* Global Quote Calculator - Floating Button */}
+        <QuoteCalculator />
+        
+        {/* Lead Analytics Dashboard (Admin Access) */}
+        <LeadAnalytics />
       </div>
     </BrowserRouter>
   );
