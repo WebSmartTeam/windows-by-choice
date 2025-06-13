@@ -10,7 +10,9 @@ const Footer = () => {
     { name: 'Composite Doors', href: '/doors#composite' },
     { name: 'Bi-Fold Doors', href: '/doors#bifold' },
     { name: 'Conservatories', href: '/conservatories' },
-    { name: 'Living Rooms', href: '/living-rooms' }
+    { name: 'Living Rooms', href: '/living-rooms' },
+    { name: 'Kitchen and Bathroom Fitting', href: 'https://www.lms-interiors.co.uk/', external: true },
+    { name: 'Painting & Decorating in Hitchin', href: 'https://www.heavenlydecor.co.uk/', external: true }
   ];
 
   const quickLinks = [
@@ -22,27 +24,27 @@ const Footer = () => {
   ];
 
   return (
-    <footer className="bg-gray-900 text-gray-300">
+    <footer className="bg-gray-50 text-gray-700">
       {/* Main Footer */}
       <div className="container mx-auto px-4 py-12">
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Company Info */}
           <div>
             <div className="mb-6">
-              <h3 className="text-2xl font-bold text-white mb-2">Windows by Choice</h3>
+              <h3 className="text-2xl font-bold text-gray-800 mb-2">Windows by Choice</h3>
               <p className="text-sm">Quality Windows for You</p>
             </div>
             <p className="mb-4">
               Family-run business with over 35 years of experience in windows, doors, and conservatories.
             </p>
             <div className="flex gap-4">
-              <a href="#" className="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-blue-600 transition-colors">
+              <a href="https://www.facebook.com/windowsbychoice/" target="_blank" rel="noopener noreferrer" className="w-10 h-10 bg-gray-200 rounded-full flex items-center justify-center hover:bg-blue-600 hover:text-white transition-colors">
                 <Facebook className="w-5 h-5" />
               </a>
-              <a href="#" className="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-blue-600 transition-colors">
+              <a href="#" className="w-10 h-10 bg-gray-200 rounded-full flex items-center justify-center hover:bg-blue-600 hover:text-white transition-colors">
                 <Twitter className="w-5 h-5" />
               </a>
-              <a href="#" className="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-blue-600 transition-colors">
+              <a href="#" className="w-10 h-10 bg-gray-200 rounded-full flex items-center justify-center hover:bg-blue-600 hover:text-white transition-colors">
                 <Instagram className="w-5 h-5" />
               </a>
             </div>
@@ -74,7 +76,7 @@ const Footer = () => {
                 <li key={link.name}>
                   <Link
                     to={link.href}
-                    className="hover:text-blue-400 transition-colors flex items-center gap-1"
+                    className="hover:text-blue-600 transition-colors flex items-center gap-1"
                   >
                     <ArrowRight className="w-3 h-3" />
                     {link.name}
@@ -86,7 +88,7 @@ const Footer = () => {
 
           {/* Contact Info */}
           <div>
-            <h4 className="text-lg font-semibold text-white mb-4">Contact Us</h4>
+            <h4 className="text-lg font-semibold text-gray-800 mb-4">Contact Us</h4>
             <div className="space-y-4">
               <a
                 href="tel:07774604190"
@@ -148,30 +150,30 @@ const Footer = () => {
       </div>
 
       {/* Certifications Bar */}
-      <div className="bg-gray-800 py-6">
+      <div className="bg-gray-200 py-6">
         <div className="container mx-auto px-4">
           <div className="text-center mb-4">
-            <h4 className="text-white font-semibold mb-2">Trusted & Certified</h4>
-            <p className="text-gray-400 text-sm">Accredited by leading industry bodies for your peace of mind</p>
+            <h4 className="text-gray-800 font-semibold mb-2">Trusted & Certified</h4>
+            <p className="text-gray-600 text-sm">Accredited by leading industry bodies for your peace of mind</p>
           </div>
           <div className="grid grid-cols-3 md:grid-cols-5 lg:grid-cols-8 gap-4 items-center justify-items-center">
-            <img src="/images/footer logos/fensa.png" alt="FENSA Registered" className="h-12 opacity-80 hover:opacity-100 transition-opacity filter brightness-0 invert" />
-            <img src="/images/footer logos/all-seasons-trees-which-trusted-trader.png" alt="Which? Trusted Trader" className="h-12 opacity-80 hover:opacity-100 transition-opacity filter brightness-0 invert" />
-            <img src="/images/footer logos/kitemark.png" alt="BSI Kitemark" className="h-12 opacity-80 hover:opacity-100 transition-opacity filter brightness-0 invert" />
-            <img src="/images/footer logos/Rehau-Logo.png" alt="Rehau Partner" className="h-8 opacity-80 hover:opacity-100 transition-opacity filter brightness-0 invert" />
-            <img src="/images/footer logos/Smart-300w.png" alt="Smart Systems" className="h-8 opacity-80 hover:opacity-100 transition-opacity filter brightness-0 invert" />
-            <img src="/images/footer logos/liniar-goe-approved.png" alt="Liniar Approved" className="h-10 opacity-80 hover:opacity-100 transition-opacity filter brightness-0 invert" />
-            <img src="/images/footer logos/solidor-premium-installer-300x159.webp" alt="Solidor Premium Installer" className="h-10 opacity-80 hover:opacity-100 transition-opacity filter brightness-0 invert" />
-            <img src="/images/footer logos/ultra-installer-logo.png" alt="Ultra Installer" className="h-8 opacity-80 hover:opacity-100 transition-opacity filter brightness-0 invert" />
+            <img src="/images/footer logos/fensa.png" alt="FENSA Registered" className="h-16 opacity-80 hover:opacity-100 transition-opacity" />
+            <img src="/images/footer logos/all-seasons-trees-which-trusted-trader.png" alt="Which? Trusted Trader" className="h-16 opacity-80 hover:opacity-100 transition-opacity" />
+            <img src="/images/footer logos/kitemark.png" alt="BSI Kitemark" className="h-16 opacity-80 hover:opacity-100 transition-opacity" />
+            <img src="/images/footer logos/Rehau-Logo.png" alt="Rehau Partner" className="h-12 opacity-80 hover:opacity-100 transition-opacity" />
+            <img src="/images/footer logos/Smart-300w.png" alt="Smart Systems" className="h-12 opacity-80 hover:opacity-100 transition-opacity" />
+            <img src="/images/footer logos/liniar-goe-approved.png" alt="Liniar Approved" className="h-14 opacity-80 hover:opacity-100 transition-opacity" />
+            <img src="/images/footer logos/solidor-premium-installer-300x159.webp" alt="Solidor Premium Installer" className="h-14 opacity-80 hover:opacity-100 transition-opacity" />
+            <img src="/images/footer logos/ultra-installer-logo.png" alt="Ultra Installer" className="h-12 opacity-80 hover:opacity-100 transition-opacity" />
           </div>
         </div>
       </div>
 
       {/* Bottom Bar */}
-      <div className="bg-gray-950 py-4">
+      <div className="bg-gray-300 py-4">
         <div className="container mx-auto px-4">
           <div className="text-center text-sm">
-            <p>
+            <p className="text-gray-700">
               © {currentYear} Windows by Choice Ltd. All rights reserved.
             </p>
           </div>
