@@ -108,11 +108,10 @@ const TestimonialsPage = () => {
       {/* Interactive Hero Header */}
       <section className="relative min-h-[60vh] flex items-center">
         {/* Background Image */}
-        <div 
-          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-          style={{
-            backgroundImage: "url('/images/Testimonials/tes1.jpg')"
-          }}
+        <img 
+          src="/images/Testimonials/20250613_1447_Delighted Homeowners' Joy_simple_compose_01jxm96yk1earbe5j6p9gpgas9.png"
+          alt="Delighted Homeowners Joy"
+          className="absolute inset-0 w-full h-full object-cover"
         />
         
         {/* Overlay */}

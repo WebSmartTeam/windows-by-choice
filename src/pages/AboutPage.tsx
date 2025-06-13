@@ -62,11 +62,10 @@ const AboutPage = () => {
       {/* Interactive Hero Header */}
       <section className="relative min-h-[60vh] flex items-center">
         {/* Background Image */}
-        <div 
-          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-          style={{
-            backgroundImage: "url('/images/about us/about-us-1.jpg')"
-          }}
+        <img 
+          src="/images/about us/20250613_1446_British Home Exterior_remix_01jxm92sz9eq4bzevpbgs7674z.png"
+          alt="British Home Exterior"
+          className="absolute inset-0 w-full h-full object-cover"
         />
         
         {/* Overlay */}

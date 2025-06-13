@@ -74,27 +74,59 @@ const LivingRoomsPage = () => {
 
   return (
     <div className="min-h-screen bg-white">
-      {/* Page Header */}
-      <section className="bg-gray-50 py-16">
-        <div className="container mx-auto px-4">
-          <h1 className="text-4xl font-bold text-gray-800 text-center mb-4">
-            Luxury Orangeries & Living Room Extensions
-          </h1>
-          <p className="text-xl text-gray-600 text-center max-w-3xl mx-auto">
-            Create the ultimate living space with our luxury orangeries. 
-            Combining the best of traditional construction with modern glazing for year-round comfort.
-          </p>
+      {/* Interactive Hero Header */}
+      <section className="relative min-h-[60vh] flex items-center">
+        {/* Background Image */}
+        <img 
+          src="/images/living-room-orangeries/20250613_1441_Luxury British Orangery_simple_compose_01jxm8v09gew8bv752qxhc8ndd.png"
+          alt="Luxury British Orangery"
+          className="absolute inset-0 w-full h-full object-cover"
+        />
+        
+        {/* Overlay */}
+        <div className="absolute inset-0 bg-gradient-to-r from-orange-900/85 via-orange-800/75 to-orange-900/85" />
+        
+        {/* Floating Elements */}
+        <div className="absolute top-10 right-10 bg-white/20 backdrop-blur-sm rounded-xl p-4 animate-bounce">
+          <div className="text-white text-center">
+            <div className="text-2xl font-bold">365</div>
+            <div className="text-sm">Days Comfort</div>
+          </div>
         </div>
-      </section>
-
-      {/* Hero Image */}
-      <section className="py-0">
-        <div className="container mx-auto px-4">
-          <img 
-            src="/images/living-room-orangeries/livin-room-and-orangeries-1.jpg" 
-            alt="Luxury orangery living space" 
-            className="w-full h-96 object-cover rounded-lg shadow-lg"
-          />
+        
+        <div className="absolute bottom-10 left-10 bg-emerald-500/90 backdrop-blur-sm rounded-xl p-4 animate-pulse">
+          <div className="text-white text-center">
+            <div className="text-2xl font-bold">Premium</div>
+            <div className="text-sm">Extensions</div>
+          </div>
+        </div>
+        
+        {/* Content */}
+        <div className="relative z-10 container mx-auto px-4 py-20">
+          <div className="max-w-4xl mx-auto text-center">
+            <h1 className="text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight">
+              Luxury Orangeries & Living Room Extensions
+            </h1>
+            <p className="text-xl text-orange-100 mb-8 max-w-3xl mx-auto">
+              Create the ultimate living space with our luxury orangeries. 
+              Combining traditional construction with modern glazing for year-round comfort.
+            </p>
+            
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <a 
+                href="tel:07774604190" 
+                className="inline-flex items-center justify-center px-8 py-4 bg-orange-600 text-white rounded-lg hover:bg-orange-700 transition-all duration-300 font-semibold shadow-lg hover:shadow-xl transform hover:scale-105"
+              >
+                Call for Free Consultation
+              </a>
+              <a 
+                href="/contact" 
+                className="inline-flex items-center justify-center px-8 py-4 border-2 border-white text-white rounded-lg hover:bg-white hover:text-orange-800 transition-all duration-300 font-semibold transform hover:scale-105"
+              >
+                View Our Portfolio
+              </a>
+            </div>
+          </div>
         </div>
       </section>
 

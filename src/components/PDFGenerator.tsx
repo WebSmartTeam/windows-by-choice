@@ -1188,7 +1188,7 @@ const PDFGenerator: React.FC = () => {
           </div>
         )}
 
-        <div className="grid lg:grid-cols-2 gap-8 max-w-6xl mx-auto">
+        <div className="grid md:grid-cols-1 lg:grid-cols-2 gap-8 max-w-6xl mx-auto">
           {pdfGuides.map((guide) => (
             <div key={guide.id} className="bg-white rounded-xl shadow-lg overflow-hidden">
               <div className="p-8">

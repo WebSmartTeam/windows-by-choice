@@ -67,11 +67,10 @@ const BlogPage = () => {
       {/* Interactive Hero Header */}
       <section className="relative min-h-[60vh] flex items-center">
         {/* Background Image */}
-        <div 
-          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-          style={{
-            backgroundImage: "url('/images/homepage/window-services-hitchin.jpg')"
-          }}
+        <img 
+          src="/images/blog/20250613_1451_Architectural Workspace Inspiration_simple_compose_01jxm9cx8jet38h5hkhbaee16r.png"
+          alt="Architectural Workspace Inspiration"
+          className="absolute inset-0 w-full h-full object-cover"
         />
         
         {/* Overlay */}
