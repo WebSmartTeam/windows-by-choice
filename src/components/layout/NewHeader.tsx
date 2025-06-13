@@ -266,7 +266,12 @@ const NewHeader = () => {
                         <div className="space-y-3">
                           {item.megaMenu.sections.map((section, index) => (
                             <div key={index}>
-                              <h4 className="font-semibold text-sm text-gray-800 mb-1">{section.title}</h4>
+                              <Link
+                                to={item.href}
+                                className="font-semibold text-sm text-gray-800 hover:text-[#8B7E6A] transition-colors mb-1 block"
+                              >
+                                {section.title}
+                              </Link>
                               <div className="grid grid-cols-2 gap-1">
                                 {section.items.slice(0, 4).map((subItem) => (
                                   <Link

@@ -201,28 +201,28 @@ const HomePage = () => {
         </div>
       </section>
 
-      {/* CTA Section - Move to 3rd from last */}
-      <section className="py-20 text-white" style={{background: 'linear-gradient(135deg, #1E3A8A 0%, #3B82F6 100%)'}}>
+      {/* CTA Section - Sleeker Design */}
+      <section className="py-12 text-white" style={{background: 'linear-gradient(135deg, #1E3A8A 0%, #3B82F6 100%)'}}>
         <div className="container mx-auto px-4 text-center">
-          <h2 className="text-3xl font-bold mb-4">
+          <h2 className="text-2xl font-bold mb-3">
             Ready to Transform Your Home?
           </h2>
-          <p className="text-lg mb-8 max-w-2xl mx-auto">
+          <p className="text-lg mb-6 max-w-2xl mx-auto">
             Get a free, no-obligation quote for your windows, doors, or conservatory project
           </p>
-          <div className="flex flex-col sm:flex-row gap-6 justify-center">
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
               to="/contact"
-              className="group inline-flex items-center justify-center px-8 py-4 bg-emerald-500 text-white rounded-lg hover:bg-white hover:text-blue-800 transition-all duration-300 font-medium shadow-lg transform hover:scale-105 hover:animate-pulse"
+              className="inline-flex items-center justify-center px-6 py-3 bg-emerald-500 text-white rounded-lg hover:bg-white hover:text-blue-800 transition-colors font-medium"
             >
               Request Free Quote
-              <ArrowRight className="ml-2 w-5 h-5 group-hover:animate-bounce" />
+              <ArrowRight className="ml-2 w-4 h-4" />
             </Link>
             <a
               href="tel:07774604190"
-              className="group inline-flex items-center justify-center px-8 py-4 border-2 border-white text-white rounded-lg hover:bg-white hover:text-blue-800 transition-all duration-300 font-medium transform hover:scale-105"
+              className="inline-flex items-center justify-center px-6 py-3 border-2 border-white text-white rounded-lg hover:bg-white hover:text-blue-800 transition-colors font-medium"
             >
-              <Phone className="mr-2 w-5 h-5 group-hover:animate-bounce" />
+              <Phone className="mr-2 w-4 h-4" />
               Call Now
             </a>
           </div>
@@ -303,6 +303,33 @@ const HomePage = () => {
                 <p className="text-slate-600">{feature.description}</p>
               </div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Ready to Work With Us CTA */}
+      <section className="py-12 bg-gradient-to-r from-blue-600 to-blue-700 text-white">
+        <div className="container mx-auto px-4 text-center">
+          <h2 className="text-2xl font-bold mb-3">
+            Ready to Work With Us?
+          </h2>
+          <p className="text-lg mb-6 max-w-2xl mx-auto">
+            Experience the difference that 35+ years of expertise makes
+          </p>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <Link
+              to="/contact"
+              className="inline-flex items-center justify-center px-6 py-3 bg-white text-blue-600 rounded-lg hover:bg-gray-100 transition-colors font-medium"
+            >
+              Get Free Consultation
+              <ArrowRight className="ml-2 w-4 h-4" />
+            </Link>
+            <a
+              href="tel:07774604190"
+              className="inline-flex items-center justify-center px-6 py-3 border-2 border-white text-white rounded-lg hover:bg-white hover:text-blue-600 transition-colors font-medium"
+            >
+              Call 07774 604 190
+            </a>
           </div>
         </div>
       </section>

@@ -265,20 +265,34 @@ const TestimonialsPage = () => {
 
           <div className="flex justify-center items-center gap-8 flex-wrap max-w-4xl mx-auto">
             <div className="text-center">
-              <img 
-                src="/images/contact/which-trusted-wbc.png" 
-                alt="Which? Trusted Trader" 
-                className="h-20 mx-auto mb-2"
-              />
-              <div className="text-sm font-medium text-gray-700">Which? Trusted Trader</div>
+              <a 
+                href="https://trustedtraders.which.co.uk/businesses/windows-by-choice-ltd/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block hover:scale-105 transition-transform duration-300"
+              >
+                <img 
+                  src="/images/contact/which-trusted-wbc.png" 
+                  alt="Which? Trusted Trader" 
+                  className="h-20 mx-auto mb-2"
+                />
+                <div className="text-sm font-medium text-gray-700">Which? Trusted Trader</div>
+              </a>
             </div>
             <div className="text-center">
-              <img 
-                src="/images/contact/smq3.png" 
-                alt="FENSA Registered" 
-                className="h-20 mx-auto mb-2"
-              />
-              <div className="text-sm font-medium text-gray-700">FENSA Registered</div>
+              <a 
+                href="https://www.facebook.com/windowsbychoice/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block hover:scale-105 transition-transform duration-300"
+              >
+                <img 
+                  src="/images/contact/smq3.png" 
+                  alt="Facebook Page" 
+                  className="h-20 mx-auto mb-2"
+                />
+                <div className="text-sm font-medium text-gray-700">Follow Us on Facebook</div>
+              </a>
             </div>
           </div>
         </div>
@@ -294,11 +308,11 @@ const TestimonialsPage = () => {
               className="w-full max-w-md mx-auto rounded-lg shadow-lg mb-8"
             />
             <h2 className="text-3xl font-bold text-gray-800 mb-6">
-              How We Collect Reviews
+              Our Commitment to Excellence
             </h2>
             <p className="text-lg text-gray-600 mb-8">
-              All our reviews are collected from genuine customers who have used our services. 
-              We believe in transparency and authenticity in all our customer feedback.
+              Over 35 years of dedicated service has earned us the trust of thousands of homeowners. 
+              Every testimonial represents a family whose home we've transformed with care and expertise.
             </p>
             
             <div className="grid md:grid-cols-3 gap-8">
@@ -306,24 +320,24 @@ const TestimonialsPage = () => {
                 <div className="w-12 h-12 bg-blue-600 text-white rounded-full flex items-center justify-center mx-auto mb-4 text-xl font-bold">
                   1
                 </div>
-                <h3 className="font-semibold text-gray-800 mb-2">Project Completion</h3>
-                <p className="text-sm text-gray-600">After completing your installation, we send a feedback request</p>
+                <h3 className="font-semibold text-gray-800 mb-2">Personal Consultation</h3>
+                <p className="text-sm text-gray-600">We visit your home to understand your unique needs and provide tailored solutions</p>
               </div>
               
               <div className="text-center">
                 <div className="w-12 h-12 bg-blue-600 text-white rounded-full flex items-center justify-center mx-auto mb-4 text-xl font-bold">
                   2
                 </div>
-                <h3 className="font-semibold text-gray-800 mb-2">Independent Verification</h3>
-                <p className="text-sm text-gray-600">Reviews are verified through trusted third-party platforms</p>
+                <h3 className="font-semibold text-gray-800 mb-2">Expert Installation</h3>
+                <p className="text-sm text-gray-600">Our skilled craftsmen ensure every detail meets our exacting standards</p>
               </div>
               
               <div className="text-center">
                 <div className="w-12 h-12 bg-blue-600 text-white rounded-full flex items-center justify-center mx-auto mb-4 text-xl font-bold">
                   3
                 </div>
-                <h3 className="font-semibold text-gray-800 mb-2">Published Reviews</h3>
-                <p className="text-sm text-gray-600">Genuine reviews are published to help future customers</p>
+                <h3 className="font-semibold text-gray-800 mb-2">Ongoing Support</h3>
+                <p className="text-sm text-gray-600">We provide comprehensive aftercare and support for complete peace of mind</p>
               </div>
             </div>
           </div>
@@ -331,25 +345,25 @@ const TestimonialsPage = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-16 bg-gradient-to-r from-blue-600 to-blue-700 text-white">
+      <section className="py-12 bg-gradient-to-r from-blue-600 to-blue-700 text-white">
         <div className="container mx-auto px-4 text-center">
-          <h2 className="text-3xl font-bold mb-4">
+          <h2 className="text-2xl font-bold mb-3">
             Ready to Join Our Happy Customers?
           </h2>
-          <p className="text-xl mb-8 max-w-2xl mx-auto">
+          <p className="text-lg mb-6 max-w-2xl mx-auto">
             Get your free quote today and experience the Windows by Choice difference
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
               to="/contact"
-              className="inline-flex items-center justify-center px-8 py-4 bg-white text-blue-600 rounded-lg hover:bg-gray-100 transition-colors font-medium"
+              className="inline-flex items-center justify-center px-6 py-3 bg-white text-blue-600 rounded-lg hover:bg-gray-100 transition-colors font-medium"
             >
               Get Free Quote
-              <ArrowRight className="ml-2 w-5 h-5" />
+              <ArrowRight className="ml-2 w-4 h-4" />
             </Link>
             <a
               href="tel:07774604190"
-              className="inline-flex items-center justify-center px-8 py-4 border-2 border-white text-white rounded-lg hover:bg-white hover:text-blue-600 transition-colors font-medium"
+              className="inline-flex items-center justify-center px-6 py-3 border-2 border-white text-white rounded-lg hover:bg-white hover:text-blue-600 transition-colors font-medium"
             >
               Call 07774 604 190
             </a>

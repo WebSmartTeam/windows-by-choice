@@ -13,6 +13,22 @@ const HeroVariant1Corporate = () => {
         />
       </div>
 
+      {/* Which? Trusted Trader Badge */}
+      <div className="absolute top-10 right-10 z-20">
+        <a 
+          href="https://trustedtraders.which.co.uk/businesses/windows-by-choice-ltd/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="block bg-white/95 backdrop-blur-sm rounded-xl p-4 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105"
+        >
+          <img 
+            src="/images/contact/which-trusted-wbc.png" 
+            alt="Which? Trusted Trader" 
+            className="h-16 w-auto"
+          />
+        </a>
+      </div>
+
       {/* Simple Content - Bottom Left */}
       <div className="relative z-10 h-screen flex items-end">
         <div className="container mx-auto px-4 pb-20">

@@ -158,18 +158,12 @@ const AboutPage = () => {
                 </p>
               </div>
               
-              <div className="relative">
+              <div>
                 <img 
                   src="/images/about us/20250613_1446_British Home Exterior_remix_01jxm92sz9eq4bzevpbgs7674z.png" 
                   alt="British Home Exterior"
                   className="w-full rounded-lg shadow-lg"
                 />
-                <div className="absolute -bottom-6 -right-6 bg-blue-600 text-white p-6 rounded-lg shadow-lg">
-                  <div className="text-center">
-                    <div className="text-3xl font-bold">35+</div>
-                    <div className="text-sm">Years Experience</div>
-                  </div>
-                </div>
               </div>
             </div>
           </div>
@@ -370,25 +364,25 @@ const AboutPage = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-16 bg-gradient-to-r from-blue-600 to-blue-700 text-white">
+      <section className="py-12 bg-gradient-to-r from-blue-600 to-blue-700 text-white">
         <div className="container mx-auto px-4 text-center">
-          <h2 className="text-3xl font-bold mb-4">
+          <h2 className="text-2xl font-bold mb-3">
             Ready to Work With Us?
           </h2>
-          <p className="text-xl mb-8 max-w-2xl mx-auto">
+          <p className="text-lg mb-6 max-w-2xl mx-auto">
             Experience the difference that 35+ years of expertise makes
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
               to="/contact"
-              className="inline-flex items-center justify-center px-8 py-4 bg-white text-blue-600 rounded-lg hover:bg-gray-100 transition-colors font-medium"
+              className="inline-flex items-center justify-center px-6 py-3 bg-white text-blue-600 rounded-lg hover:bg-gray-100 transition-colors font-medium"
             >
               Get Free Consultation
-              <ArrowRight className="ml-2 w-5 h-5" />
+              <ArrowRight className="ml-2 w-4 h-4" />
             </Link>
             <a
               href="tel:07774604190"
-              className="inline-flex items-center justify-center px-8 py-4 border-2 border-white text-white rounded-lg hover:bg-white hover:text-blue-600 transition-colors font-medium"
+              className="inline-flex items-center justify-center px-6 py-3 border-2 border-white text-white rounded-lg hover:bg-white hover:text-blue-600 transition-colors font-medium"
             >
               Call 07774 604 190
             </a>
