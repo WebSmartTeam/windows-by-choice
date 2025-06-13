@@ -114,8 +114,8 @@ const TestimonialsPage = () => {
           className="absolute inset-0 w-full h-full object-cover"
         />
         
-        {/* Overlay */}
-        <div className="absolute inset-0 bg-gradient-to-r from-purple-900/90 via-purple-800/85 to-purple-900/90" />
+        {/* Light Overlay */}
+        <div className="absolute inset-0 bg-gradient-to-r from-purple-900/40 via-purple-800/30 to-purple-900/40" />
         
         {/* Floating Rating Badge */}
         <div className="absolute top-10 right-10 bg-yellow-500/90 backdrop-blur-sm rounded-xl p-4 animate-bounce">

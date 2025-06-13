@@ -207,14 +207,14 @@ const NewHeader = () => {
     <header className="bg-white shadow-sm sticky top-0 z-50">
       <div className="container mx-auto px-4">
         {/* Top Bar */}
-        <div className="border-b border-gray-100 py-2">
+        <div className="bg-slate-800 py-3">
           <div className="flex justify-between items-center text-sm">
-            <div className="text-gray-600">
+            <div className="text-slate-200 font-medium">
               35+ Years of Excellence in Windows & Doors
             </div>
-            <a href="tel:07774604190" className="flex items-center gap-2 text-[#8B7E6A] hover:text-[#6B5E4A] font-medium">
+            <a href="tel:07774604190" className="flex items-center gap-2 text-orange-400 hover:text-orange-300 font-bold">
               <Phone className="w-4 h-4" />
-              07774 604 190
+              CALL NOW ON 07774 604 190
             </a>
           </div>
         </div>

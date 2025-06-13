@@ -156,7 +156,7 @@ const Footer = () => {
             <h4 className="text-gray-800 font-semibold mb-2">Trusted & Certified</h4>
             <p className="text-gray-600 text-sm">Accredited by leading industry bodies for your peace of mind</p>
           </div>
-          <div className="grid grid-cols-3 md:grid-cols-5 lg:grid-cols-8 gap-4 items-center justify-items-center">
+          <div className="grid grid-cols-3 md:grid-cols-5 lg:grid-cols-9 gap-4 items-center justify-items-center">
             <img src="/images/footer logos/fensa.png" alt="FENSA Registered" className="h-16 opacity-80 hover:opacity-100 transition-opacity" />
             <img src="/images/footer logos/all-seasons-trees-which-trusted-trader.png" alt="Which? Trusted Trader" className="h-16 opacity-80 hover:opacity-100 transition-opacity" />
             <img src="/images/footer logos/kitemark.png" alt="BSI Kitemark" className="h-16 opacity-80 hover:opacity-100 transition-opacity" />

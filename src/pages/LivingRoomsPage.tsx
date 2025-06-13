@@ -83,8 +83,8 @@ const LivingRoomsPage = () => {
           className="absolute inset-0 w-full h-full object-cover"
         />
         
-        {/* Overlay */}
-        <div className="absolute inset-0 bg-gradient-to-r from-orange-900/85 via-orange-800/75 to-orange-900/85" />
+        {/* Light Overlay */}
+        <div className="absolute inset-0 bg-gradient-to-r from-orange-900/40 via-orange-800/30 to-orange-900/40" />
         
         {/* Floating Elements */}
         <div className="absolute top-10 right-10 bg-white/20 backdrop-blur-sm rounded-xl p-4 animate-bounce">

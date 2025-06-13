@@ -100,8 +100,8 @@ const ConservatoriesPage = () => {
           className="absolute inset-0 w-full h-full object-cover"
         />
         
-        {/* Overlay */}
-        <div className="absolute inset-0 bg-gradient-to-r from-green-900/85 via-green-800/75 to-green-900/85" />
+        {/* Light Overlay */}
+        <div className="absolute inset-0 bg-gradient-to-r from-green-900/40 via-green-800/30 to-green-900/40" />
         
         {/* Floating Year-Round Badge */}
         <div className="absolute top-10 right-10 bg-orange-500/90 backdrop-blur-sm rounded-xl p-4 animate-bounce">

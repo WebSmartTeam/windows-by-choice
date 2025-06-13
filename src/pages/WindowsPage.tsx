@@ -1,8 +1,20 @@
 import { Link } from 'react-router-dom';
-import { ArrowRight, Check, Shield, Zap, Home } from 'lucide-react';
+import { ArrowRight, Check, Shield, Zap, Home, X } from 'lucide-react';
+import { useState } from 'react';
 
 
 const WindowsPage = () => {
+  const [selectedImage, setSelectedImage] = useState<string | null>(null);
+
+  const galleryImages = [
+    { src: "/images/windows/window-services-hitchin-1.jpg", alt: "Window installation" },
+    { src: "/images/windows/upvc-windows-3.jpg", alt: "UPVC windows" },
+    { src: "/images/windows/aluminium-windows-3.jpg", alt: "Aluminium windows" },
+    { src: "/images/windows/lantern-roofs-2.jpg", alt: "Lantern roof" },
+    { src: "/images/windows/window-services-hitchin-2.jpg", alt: "Window service" },
+    { src: "/images/windows/lantern-roofs-3.jpg", alt: "Roof lantern" }
+  ];
+
   const windowTypes = [
     {
       id: 'upvc',
@@ -74,8 +86,8 @@ const WindowsPage = () => {
           className="absolute inset-0 w-full h-full object-cover"
         />
         
-        {/* Overlay */}
-        <div className="absolute inset-0 bg-gradient-to-r from-blue-900/85 via-blue-800/75 to-blue-900/85" />
+        {/* Light Overlay */}
+        <div className="absolute inset-0 bg-gradient-to-r from-blue-900/40 via-blue-800/30 to-blue-900/40" />
         
         {/* Floating Elements */}
         <div className="absolute top-10 right-10 bg-white/20 backdrop-blur-sm rounded-xl p-4 animate-bounce">
@@ -220,15 +232,42 @@ const WindowsPage = () => {
           </h2>
           
           
-          {/* Temporary Gallery */}
+          {/* Clickable Gallery */}
           <div className="grid md:grid-cols-3 gap-6 max-w-6xl mx-auto">
-            <img src="/images/windows/window-services-hitchin-1.jpg" alt="Window installation" className="w-full h-64 object-cover rounded-lg" />
-            <img src="/images/windows/upvc-windows-3.jpg" alt="UPVC windows" className="w-full h-64 object-cover rounded-lg" />
-            <img src="/images/windows/aluminium-windows-3.jpg" alt="Aluminium windows" className="w-full h-64 object-cover rounded-lg" />
-            <img src="/images/windows/lantern-roofs-2.jpg" alt="Lantern roof" className="w-full h-64 object-cover rounded-lg" />
-            <img src="/images/windows/window-services-hitchin-2.jpg" alt="Window service" className="w-full h-64 object-cover rounded-lg" />
-            <img src="/images/windows/lantern-roofs-3.jpg" alt="Roof lantern" className="w-full h-64 object-cover rounded-lg" />
+            {galleryImages.map((image, index) => (
+              <div key={index} className="relative group cursor-pointer" onClick={() => setSelectedImage(image.src)}>
+                <img 
+                  src={image.src} 
+                  alt={image.alt} 
+                  className="w-full h-64 object-cover rounded-lg transition-transform duration-300 group-hover:scale-105" 
+                />
+                <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-all duration-300 rounded-lg flex items-center justify-center">
+                  <div className="text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300 text-lg font-semibold">
+                    Click to view
+                  </div>
+                </div>
+              </div>
+            ))}
           </div>
+
+          {/* Image Modal */}
+          {selectedImage && (
+            <div className="fixed inset-0 bg-black/80 z-50 flex items-center justify-center p-4" onClick={() => setSelectedImage(null)}>
+              <div className="relative max-w-4xl max-h-full">
+                <button 
+                  onClick={() => setSelectedImage(null)}
+                  className="absolute -top-12 right-0 text-white hover:text-gray-300 transition-colors"
+                >
+                  <X className="w-8 h-8" />
+                </button>
+                <img 
+                  src={selectedImage} 
+                  alt="Gallery image" 
+                  className="max-w-full max-h-[80vh] object-contain rounded-lg"
+                />
+              </div>
+            </div>
+          )}
         </div>
       </section>
 

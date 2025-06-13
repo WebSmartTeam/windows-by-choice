@@ -73,8 +73,8 @@ const BlogPage = () => {
           className="absolute inset-0 w-full h-full object-cover"
         />
         
-        {/* Overlay */}
-        <div className="absolute inset-0 bg-gradient-to-r from-indigo-900/90 via-indigo-800/85 to-indigo-900/90" />
+        {/* Light Overlay */}
+        <div className="absolute inset-0 bg-gradient-to-r from-indigo-900/40 via-indigo-800/30 to-indigo-900/40" />
         
         {/* Floating Tips Badge */}
         <div className="absolute top-10 right-10 bg-orange-500/90 backdrop-blur-sm rounded-xl p-4 animate-bounce">

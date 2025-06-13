@@ -68,8 +68,8 @@ const AboutPage = () => {
           className="absolute inset-0 w-full h-full object-cover"
         />
         
-        {/* Overlay */}
-        <div className="absolute inset-0 bg-gradient-to-r from-slate-900/90 via-slate-800/85 to-slate-900/90" />
+        {/* Light Overlay - Side positioning to show van branding */}
+        <div className="absolute inset-0 bg-gradient-to-r from-slate-900/50 via-transparent to-slate-900/30" />
         
         {/* Floating Experience Badge */}
         <div className="absolute top-10 right-10 bg-blue-600/90 backdrop-blur-sm rounded-xl p-4 animate-bounce">
