@@ -155,14 +155,14 @@ const Footer = () => {
             <p className="text-gray-400 text-sm">Accredited by leading industry bodies for your peace of mind</p>
           </div>
           <div className="grid grid-cols-3 md:grid-cols-5 lg:grid-cols-8 gap-4 items-center justify-items-center">
-            <img src="/images/footer logos/fensa.png" alt="FENSA Registered" className="h-12 opacity-80 hover:opacity-100 transition-opacity" />
-            <img src="/images/footer logos/all-seasons-trees-which-trusted-trader.png" alt="Which? Trusted Trader" className="h-12 opacity-80 hover:opacity-100 transition-opacity" />
-            <img src="/images/footer logos/kitemark.png" alt="BSI Kitemark" className="h-12 opacity-80 hover:opacity-100 transition-opacity" />
-            <img src="/images/footer logos/Rehau-Logo.png" alt="Rehau Partner" className="h-8 opacity-80 hover:opacity-100 transition-opacity" />
-            <img src="/images/footer logos/Smart-300w.png" alt="Smart Systems" className="h-8 opacity-80 hover:opacity-100 transition-opacity" />
-            <img src="/images/footer logos/liniar-goe-approved.png" alt="Liniar Approved" className="h-10 opacity-80 hover:opacity-100 transition-opacity" />
-            <img src="/images/footer logos/solidor-premium-installer-300x159.webp" alt="Solidor Premium Installer" className="h-10 opacity-80 hover:opacity-100 transition-opacity" />
-            <img src="/images/footer logos/ultra-installer-logo.png" alt="Ultra Installer" className="h-8 opacity-80 hover:opacity-100 transition-opacity" />
+            <img src="/images/footer logos/fensa.png" alt="FENSA Registered" className="h-12 opacity-80 hover:opacity-100 transition-opacity filter brightness-0 invert" />
+            <img src="/images/footer logos/all-seasons-trees-which-trusted-trader.png" alt="Which? Trusted Trader" className="h-12 opacity-80 hover:opacity-100 transition-opacity filter brightness-0 invert" />
+            <img src="/images/footer logos/kitemark.png" alt="BSI Kitemark" className="h-12 opacity-80 hover:opacity-100 transition-opacity filter brightness-0 invert" />
+            <img src="/images/footer logos/Rehau-Logo.png" alt="Rehau Partner" className="h-8 opacity-80 hover:opacity-100 transition-opacity filter brightness-0 invert" />
+            <img src="/images/footer logos/Smart-300w.png" alt="Smart Systems" className="h-8 opacity-80 hover:opacity-100 transition-opacity filter brightness-0 invert" />
+            <img src="/images/footer logos/liniar-goe-approved.png" alt="Liniar Approved" className="h-10 opacity-80 hover:opacity-100 transition-opacity filter brightness-0 invert" />
+            <img src="/images/footer logos/solidor-premium-installer-300x159.webp" alt="Solidor Premium Installer" className="h-10 opacity-80 hover:opacity-100 transition-opacity filter brightness-0 invert" />
+            <img src="/images/footer logos/ultra-installer-logo.png" alt="Ultra Installer" className="h-8 opacity-80 hover:opacity-100 transition-opacity filter brightness-0 invert" />
           </div>
         </div>
       </div>

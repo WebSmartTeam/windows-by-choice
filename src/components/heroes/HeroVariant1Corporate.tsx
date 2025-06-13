@@ -7,8 +7,8 @@ const HeroVariant1Corporate = () => {
       {/* Clean Background Image - No Overlay */}
       <div className="absolute inset-0">
         <img 
-          src="/images/doors/aluminium-bi-fold-doors-2.jpg"
-          alt="Premium bi-fold doors installation" 
+          src="https://ik.imagekit.io/7i8ktrp7s/Images%20new%20guardians/20250613_0028_Modern%20Suburban%20Elegance_simple_compose_01jxjr11ehfv68aq7zdcbvr047.png?updatedAt=1749755203461"
+          alt="Modern suburban home with premium windows and doors" 
           className="w-full h-full object-cover"
         />
       </div>

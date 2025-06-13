@@ -225,7 +225,7 @@ const NewHeader = () => {
             {/* Logo */}
             <Link to="/" className="flex items-center">
               <img 
-                src="/images/homepage/logo.png" 
+                src="/images/logo/413776ca-d0ec-471a-a4d9-4fbe072a37d0.png" 
                 alt="Windows by Choice" 
                 className="h-16 w-auto"
               />
@@ -248,71 +248,51 @@ const NewHeader = () => {
                     {item.megaMenu && <ChevronDown className="w-4 h-4" />}
                   </Link>
                   
-                  {/* Mega Menu */}
+                  {/* Compact Mega Menu */}
                   {item.megaMenu && activeMegaMenu === item.name && (
-                    <div className="absolute top-full left-1/2 transform -translate-x-1/2 mt-2 w-screen max-w-6xl bg-white rounded-lg shadow-2xl border border-gray-100 z-50">
-                      <div className="p-8">
-                        <div className="text-center mb-8">
-                          <h3 className="text-2xl font-bold text-gray-800">{item.megaMenu.title}</h3>
-                          <p className="text-gray-600 mt-2">{item.megaMenu.description}</p>
+                    <div className="absolute top-full left-1/2 transform -translate-x-1/2 mt-2 w-96 bg-white rounded-lg shadow-xl border border-gray-100 z-50">
+                      <div className="p-4">
+                        <div className="text-center mb-4">
+                          <img 
+                            src={item.megaMenu.sections[0]?.image} 
+                            alt={item.megaMenu.title}
+                            className="w-full h-24 object-cover rounded-lg mb-2"
+                          />
+                          <h3 className="text-lg font-bold text-gray-800">{item.megaMenu.title}</h3>
                         </div>
                         
-                        <div className="grid grid-cols-3 gap-8">
+                        <div className="space-y-3">
                           {item.megaMenu.sections.map((section, index) => (
-                            <div key={index} className="group">
-                              <div className="aspect-w-16 aspect-h-9 mb-4 overflow-hidden rounded-lg">
-                                <img 
-                                  src={section.image} 
-                                  alt={section.title}
-                                  className="w-full h-32 object-cover group-hover:scale-105 transition-transform duration-300"
-                                />
-                              </div>
-                              
-                              <h4 className="font-bold text-lg text-gray-800 mb-2">{section.title}</h4>
-                              <p className="text-sm text-gray-600 mb-4">{section.description}</p>
-                              
-                              <ul className="space-y-2">
-                                {section.items.map((subItem) => (
-                                  <li key={subItem.name}>
-                                    <Link
-                                      to={subItem.href}
-                                      className="text-sm text-gray-700 hover:text-[#8B7E6A] transition-colors block py-1"
-                                    >
-                                      {subItem.name}
-                                    </Link>
-                                  </li>
+                            <div key={index}>
+                              <h4 className="font-semibold text-sm text-gray-800 mb-1">{section.title}</h4>
+                              <div className="grid grid-cols-2 gap-1">
+                                {section.items.slice(0, 4).map((subItem) => (
+                                  <Link
+                                    key={subItem.name}
+                                    to={subItem.href}
+                                    className="text-xs text-gray-600 hover:text-[#8B7E6A] transition-colors py-1"
+                                  >
+                                    {subItem.name}
+                                  </Link>
                                 ))}
-                              </ul>
-                              
-                              <div className="mt-4 pt-4 border-t border-gray-100">
-                                <Link
-                                  to={item.href}
-                                  className="inline-flex items-center text-sm font-medium text-[#8B7E6A] hover:text-[#6B5E4A]"
-                                >
-                                  View All {section.title}
-                                  <ChevronDown className="w-4 h-4 ml-1 rotate-[-90deg]" />
-                                </Link>
                               </div>
                             </div>
                           ))}
                         </div>
                         
-                        <div className="mt-8 pt-6 border-t border-gray-100 text-center">
-                          <div className="flex items-center justify-center gap-6">
-                            <Link
-                              to="/quote"
-                              className="bg-[#8B7E6A] text-white px-6 py-3 rounded-lg font-semibold hover:bg-[#6B5E4A] transition-colors"
-                            >
-                              Get Free Quote
-                            </Link>
-                            <a
-                              href="tel:07774604190"
-                              className="flex items-center gap-2 text-[#8B7E6A] hover:text-[#6B5E4A] font-medium"
-                            >
-                              <Phone className="w-4 h-4" />
-                              Call 07774 604 190
-                            </a>
-                          </div>
+                        <div className="mt-4 pt-3 border-t border-gray-100 flex gap-2">
+                          <Link
+                            to="/quote"
+                            className="flex-1 bg-[#8B7E6A] text-white px-3 py-2 rounded text-sm font-medium hover:bg-[#6B5E4A] transition-colors text-center"
+                          >
+                            Get Quote
+                          </Link>
+                          <Link
+                            to={item.href}
+                            className="flex-1 border border-[#8B7E6A] text-[#8B7E6A] px-3 py-2 rounded text-sm font-medium hover:bg-[#8B7E6A] hover:text-white transition-colors text-center"
+                          >
+                            View All
+                          </Link>
                         </div>
                       </div>
                     </div>

@@ -57,17 +57,8 @@ const HomePage = () => {
 
       {/* Services Grid - Full Width */}
       <section className="py-20 bg-white">
-        <div className="w-full px-4">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-slate-800 mb-4">
-              Services
-            </h2>
-            <p className="text-lg text-slate-600 max-w-2xl mx-auto">
-              Choose from our comprehensive range of windows, doors, and home extensions
-            </p>
-          </div>
-
-          <div className="container mx-auto">
+        <div className="w-full">
+          <div className="container mx-auto px-4">
             <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             {services.map((service) => (
               <Link
