@@ -81,11 +81,10 @@ const DoorsPage = () => {
       {/* Interactive Hero Header */}
       <section className="relative min-h-[60vh] flex items-center">
         {/* Background Image */}
-        <div 
-          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-          style={{
-            backgroundImage: "url('/images/doors/door-services-hitchin-1.jpg')"
-          }}
+        <img 
+          src="/images/doors/20250613_1431_Stylish British Home Entrance_simple_compose_01jxm89e90etns0cs6bhged3fe.png"
+          alt="Stylish British Home Entrance"
+          className="absolute inset-0 w-full h-full object-cover"
         />
         
         {/* Overlay */}

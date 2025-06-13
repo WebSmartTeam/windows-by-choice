@@ -94,11 +94,10 @@ const ConservatoriesPage = () => {
       {/* Interactive Hero Header */}
       <section className="relative min-h-[60vh] flex items-center">
         {/* Background Image */}
-        <div 
-          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-          style={{
-            backgroundImage: "url('/images/conservatories/conservatories-hitchin.png')"
-          }}
+        <img 
+          src="/images/conservatories/20250613_1432_Victorian Conservatory Haven_simple_compose_01jxm89vt6fegt2nrhs75pc312.png"
+          alt="Victorian Conservatory Haven"
+          className="absolute inset-0 w-full h-full object-cover"
         />
         
         {/* Overlay */}

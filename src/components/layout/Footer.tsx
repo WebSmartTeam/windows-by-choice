@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { Phone, Mail, MapPin, Facebook, Twitter, Instagram, ArrowRight } from 'lucide-react';
+import { Phone, Mail, MapPin, Facebook, ArrowRight } from 'lucide-react';
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -41,11 +41,11 @@ const Footer = () => {
               <a href="https://www.facebook.com/windowsbychoice/" target="_blank" rel="noopener noreferrer" className="w-10 h-10 bg-gray-200 rounded-full flex items-center justify-center hover:bg-blue-600 hover:text-white transition-colors">
                 <Facebook className="w-5 h-5" />
               </a>
-              <a href="#" className="w-10 h-10 bg-gray-200 rounded-full flex items-center justify-center hover:bg-blue-600 hover:text-white transition-colors">
-                <Twitter className="w-5 h-5" />
+              <a href="mailto:info@windowsbychoice.co.uk" className="w-10 h-10 bg-gray-200 rounded-full flex items-center justify-center hover:bg-green-600 hover:text-white transition-colors">
+                <Mail className="w-5 h-5" />
               </a>
-              <a href="#" className="w-10 h-10 bg-gray-200 rounded-full flex items-center justify-center hover:bg-blue-600 hover:text-white transition-colors">
-                <Instagram className="w-5 h-5" />
+              <a href="tel:07774604190" className="w-10 h-10 bg-gray-200 rounded-full flex items-center justify-center hover:bg-orange-600 hover:text-white transition-colors">
+                <Phone className="w-5 h-5" />
               </a>
             </div>
           </div>
@@ -165,6 +165,7 @@ const Footer = () => {
             <img src="/images/footer logos/liniar-goe-approved.png" alt="Liniar Approved" className="h-14 opacity-80 hover:opacity-100 transition-opacity" />
             <img src="/images/footer logos/solidor-premium-installer-300x159.webp" alt="Solidor Premium Installer" className="h-14 opacity-80 hover:opacity-100 transition-opacity" />
             <img src="/images/footer logos/ultra-installer-logo.png" alt="Ultra Installer" className="h-12 opacity-80 hover:opacity-100 transition-opacity" />
+            <img src="/images/footer logos/images.png" alt="Certification Logo" className="h-14 opacity-80 hover:opacity-100 transition-opacity" />
           </div>
         </div>
       </div>
