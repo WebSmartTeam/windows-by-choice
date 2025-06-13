@@ -82,13 +82,13 @@ const DoorsPage = () => {
       <section className="relative min-h-[60vh] flex items-center">
         {/* Background Image */}
         <img 
-          src="/images/doors/20250613_1431_Stylish British Home Entrance_simple_compose_01jxm89e90etns0cs6bhged3fe.png"
-          alt="Stylish British Home Entrance"
+          src="/images/about us/about-us-1.jpg"
+          alt="Windows by Choice team"
           className="absolute inset-0 w-full h-full object-cover"
         />
         
-        {/* Light Overlay */}
-        <div className="absolute inset-0 bg-gradient-to-r from-slate-900/40 via-slate-800/30 to-slate-900/40" />
+        {/* Black Overlay */}
+        <div className="absolute inset-0 bg-black/50" />
         
         {/* Floating Security Badge */}
         <div className="absolute top-10 right-10 bg-emerald-500/90 backdrop-blur-sm rounded-xl p-4 animate-bounce">

@@ -68,8 +68,8 @@ const AboutPage = () => {
           className="absolute inset-0 w-full h-full object-cover"
         />
         
-        {/* Light Overlay - Side positioning to show van branding */}
-        <div className="absolute inset-0 bg-gradient-to-r from-slate-900/50 via-transparent to-slate-900/30" />
+        {/* Black Overlay */}
+        <div className="absolute inset-0 bg-black/50" />
         
         {/* Floating Experience Badge */}
         <div className="absolute top-10 right-10 bg-blue-600/90 backdrop-blur-sm rounded-xl p-4 animate-bounce">
@@ -160,8 +160,8 @@ const AboutPage = () => {
               
               <div className="relative">
                 <img 
-                  src="/images/about us/about-us-1.jpg" 
-                  alt="Windows by Choice team"
+                  src="/images/doors/20250613_1431_Stylish British Home Entrance_simple_compose_01jxm89e90etns0cs6bhged3fe.png" 
+                  alt="Stylish British Home Entrance"
                   className="w-full rounded-lg shadow-lg"
                 />
                 <div className="absolute -bottom-6 -right-6 bg-blue-600 text-white p-6 rounded-lg shadow-lg">

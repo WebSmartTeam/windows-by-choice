@@ -111,7 +111,7 @@ const TestimonialsPage = () => {
         <img 
           src="/images/Testimonials/20250613_1447_Delighted Homeowners' Joy_simple_compose_01jxm96yk1earbe5j6p9gpgas9.png"
           alt="Delighted Homeowners Joy"
-          className="absolute inset-0 w-full h-full object-cover"
+          className="absolute inset-0 w-full h-full object-cover object-top"
         />
         
         {/* Light Overlay */}
