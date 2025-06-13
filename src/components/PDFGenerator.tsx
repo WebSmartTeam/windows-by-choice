@@ -1171,13 +1171,13 @@ const PDFGenerator: React.FC = () => {
   };
 
   return (
-    <div className="bg-gray-50 py-16">
+    <div className="py-16 text-white" style={{background: 'linear-gradient(135deg, #1E3A8A 0%, #3B82F6 100%)'}}>
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
-          <h2 className="text-3xl font-bold text-slate-800 mb-4">
-            Free Professional Guides
+          <h2 className="text-3xl font-bold text-white mb-4">
+            Why Download Our Guides?
           </h2>
-          <p className="text-lg text-slate-600 max-w-3xl mx-auto">
+          <p className="text-lg text-blue-100 max-w-3xl mx-auto">
             Download our comprehensive guides to help you make informed decisions about your home improvement projects
           </p>
         </div>

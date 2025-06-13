@@ -1,8 +1,10 @@
+import { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { ArrowRight, Check, Home, Crown, Building } from 'lucide-react';
+import { ArrowRight, Check, Home, Crown, Building, X } from 'lucide-react';
 
 
 const LivingRoomsPage = () => {
+  const [selectedImage, setSelectedImage] = useState<string | null>(null);
   const orangeryTypes = [
     {
       id: 'contemporary',
@@ -285,18 +287,51 @@ const LivingRoomsPage = () => {
             Our Orangery Projects
           </h2>
           
-          
-          {/* Temporary Gallery */}
+          {/* Interactive Gallery */}
           <div className="grid md:grid-cols-3 gap-6 max-w-6xl mx-auto">
-            <img src="/images/living-room-orangeries/livin-room-and-orangeries-1.jpg" alt="Orangery installation" className="w-full h-64 object-cover rounded-lg" />
-            <img src="/images/living-room-orangeries/livin-room-and-orangeries-2.jpg" alt="Contemporary orangery" className="w-full h-64 object-cover rounded-lg" />
-            <img src="/images/living-room-orangeries/livin-rooms-1.jpg" alt="Traditional orangery" className="w-full h-64 object-cover rounded-lg" />
-            <img src="/images/living-room-orangeries/livin-rooms-2.jpg" alt="Lantern roof extension" className="w-full h-64 object-cover rounded-lg" />
-            <img src="/images/living-room-orangeries/livin-room-and-orangeries-3.jpg" alt="Luxury orangery" className="w-full h-64 object-cover rounded-lg" />
-            <img src="/images/living-room-orangeries/livin-rooms-3.jpg" alt="Orangery interior" className="w-full h-64 object-cover rounded-lg" />
+            {[
+              { src: "/images/living-room-orangeries/livin-room-and-orangeries-1.jpg", alt: "Orangery installation" },
+              { src: "/images/living-room-orangeries/livin-room-and-orangeries-2.jpg", alt: "Contemporary orangery" },
+              { src: "/images/living-room-orangeries/livin-rooms-1.jpg", alt: "Traditional orangery" },
+              { src: "/images/living-room-orangeries/livin-rooms-2.jpg", alt: "Lantern roof extension" },
+              { src: "/images/living-room-orangeries/livin-room-and-orangeries-3.jpg", alt: "Luxury orangery" },
+              { src: "/images/living-room-orangeries/livin-rooms-3.jpg", alt: "Orangery interior" }
+            ].map((image, index) => (
+              <div 
+                key={index}
+                className="relative group cursor-pointer"
+                onClick={() => setSelectedImage(image.src)}
+              >
+                <img 
+                  src={image.src} 
+                  alt={image.alt} 
+                  className="w-full h-64 object-cover rounded-lg transition-transform duration-300 group-hover:scale-105" 
+                />
+                <div className="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-30 transition-all duration-300 rounded-lg flex items-center justify-center">
+                  <span className="text-white font-medium opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                    Click to view
+                  </span>
+                </div>
+              </div>
+            ))}
           </div>
         </div>
       </section>
+
+      {/* Image Modal */}
+      {selectedImage && (
+        <div className="fixed inset-0 bg-black bg-opacity-75 z-50 flex items-center justify-center p-4" onClick={() => setSelectedImage(null)}>
+          <div className="relative max-w-4xl max-h-full">
+            <img src={selectedImage} alt="Full size view" className="max-w-full max-h-full object-contain" />
+            <button 
+              onClick={() => setSelectedImage(null)}
+              className="absolute top-4 right-4 text-white hover:text-gray-300 transition-colors"
+            >
+              <X className="w-8 h-8" />
+            </button>
+          </div>
+        </div>
+      )}
 
       {/* CTA Section */}
       <section className="py-16 bg-gradient-to-r from-blue-600 to-blue-700 text-white">

@@ -1,8 +1,10 @@
+import { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { ArrowRight, Check, Sun, Home, Thermometer } from 'lucide-react';
+import { ArrowRight, Check, Sun, Home, Thermometer, X } from 'lucide-react';
 
 
 const ConservatoriesPage = () => {
+  const [selectedImage, setSelectedImage] = useState<string | null>(null);
   const conservatoryTypes = [
     {
       id: 'victorian',
@@ -290,20 +292,53 @@ const ConservatoriesPage = () => {
             Our Conservatory Projects
           </h2>
           
-          
-          {/* Complete Gallery */}
+          {/* Interactive Gallery */}
           <div className="grid md:grid-cols-3 gap-6 max-w-6xl mx-auto">
-            <img src="/images/conservatories/conservatories-hitchin.png" alt="Conservatory installation" className="w-full h-64 object-cover rounded-lg" />
-            <img src="/images/conservatories/victorian-conservatories-hitchin-3.jpg" alt="Victorian conservatory" className="w-full h-64 object-cover rounded-lg" />
-            <img src="/images/conservatories/edwardian-conservatories-hitchin-3.jpg" alt="Edwardian conservatory" className="w-full h-64 object-cover rounded-lg" />
-            <img src="/images/conservatories/lean-to-conservatories-hitchin-2.jpg" alt="Lean-to conservatory" className="w-full h-64 object-cover rounded-lg" />
-            <img src="/images/conservatories/lean-to-conservatories-hitchin-3.jpg" alt="Modern lean-to" className="w-full h-64 object-cover rounded-lg" />
-            <img src="/images/conservatories/p-shaped-conservatories-hitchin-2.jpg" alt="P-shaped conservatory" className="w-full h-64 object-cover rounded-lg" />
-            <img src="/images/conservatories/t-shaped-conservatories-hitchin-2.jpg" alt="T-shaped conservatory" className="w-full h-64 object-cover rounded-lg" />
-            <img src="/images/conservatories/l-shaped-conservatories-hitchin-3.jpg" alt="L-shaped conservatory" className="w-full h-64 object-cover rounded-lg" />
+            {[
+              { src: "/images/conservatories/conservatories-hitchin.png", alt: "Conservatory installation" },
+              { src: "/images/conservatories/victorian-conservatories-hitchin-3.jpg", alt: "Victorian conservatory" },
+              { src: "/images/conservatories/edwardian-conservatories-hitchin-3.jpg", alt: "Edwardian conservatory" },
+              { src: "/images/conservatories/lean-to-conservatories-hitchin-2.jpg", alt: "Lean-to conservatory" },
+              { src: "/images/conservatories/lean-to-conservatories-hitchin-3.jpg", alt: "Modern lean-to" },
+              { src: "/images/conservatories/p-shaped-conservatories-hitchin-2.jpg", alt: "P-shaped conservatory" },
+              { src: "/images/conservatories/t-shaped-conservatories-hitchin-2.jpg", alt: "T-shaped conservatory" },
+              { src: "/images/conservatories/l-shaped-conservatories-hitchin-3.jpg", alt: "L-shaped conservatory" }
+            ].map((image, index) => (
+              <div 
+                key={index}
+                className="relative group cursor-pointer"
+                onClick={() => setSelectedImage(image.src)}
+              >
+                <img 
+                  src={image.src} 
+                  alt={image.alt} 
+                  className="w-full h-64 object-cover rounded-lg transition-transform duration-300 group-hover:scale-105" 
+                />
+                <div className="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-30 transition-all duration-300 rounded-lg flex items-center justify-center">
+                  <span className="text-white font-medium opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                    Click to view
+                  </span>
+                </div>
+              </div>
+            ))}
           </div>
         </div>
       </section>
+
+      {/* Image Modal */}
+      {selectedImage && (
+        <div className="fixed inset-0 bg-black bg-opacity-75 z-50 flex items-center justify-center p-4" onClick={() => setSelectedImage(null)}>
+          <div className="relative max-w-4xl max-h-full">
+            <img src={selectedImage} alt="Full size view" className="max-w-full max-h-full object-contain" />
+            <button 
+              onClick={() => setSelectedImage(null)}
+              className="absolute top-4 right-4 text-white hover:text-gray-300 transition-colors"
+            >
+              <X className="w-8 h-8" />
+            </button>
+          </div>
+        </div>
+      )}
 
       {/* CTA Section */}
       <section className="py-16 bg-gradient-to-r from-blue-600 to-blue-700 text-white">
