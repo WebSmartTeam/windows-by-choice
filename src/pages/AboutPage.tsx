@@ -252,6 +252,52 @@ const AboutPage = () => {
         </div>
       </section>
 
+      {/* Meet the Team */}
+      <section className="py-16 bg-gray-50">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl font-bold text-gray-800 mb-4">
+              Meet Our Expert Team
+            </h2>
+            <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+              The skilled craftsmen and professionals behind your perfect installation
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+            <div className="bg-white rounded-lg shadow-lg overflow-hidden">
+              <img 
+                src="/images/about us/about-us-1.jpg" 
+                alt="Windows by Choice installation team"
+                className="w-full h-64 object-cover"
+              />
+              <div className="p-6">
+                <h3 className="text-xl font-bold text-gray-800 mb-2">Expert Installation Team</h3>
+                <p className="text-gray-600">
+                  Our highly trained installation specialists ensure every window, door, and conservatory 
+                  is fitted to the highest standards with meticulous attention to detail.
+                </p>
+              </div>
+            </div>
+            
+            <div className="bg-white rounded-lg shadow-lg overflow-hidden">
+              <img 
+                src="/images/about us/about-us-2.jpg" 
+                alt="Windows by Choice team at work"
+                className="w-full h-64 object-cover"
+              />
+              <div className="p-6">
+                <h3 className="text-xl font-bold text-gray-800 mb-2">Professional Craftsmanship</h3>
+                <p className="text-gray-600">
+                  With over 35 years of combined experience, our team takes pride in delivering 
+                  exceptional quality workmanship on every project, big or small.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Service Area */}
       <section className="py-16">
         <div className="container mx-auto px-4">

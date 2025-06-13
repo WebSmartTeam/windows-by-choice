@@ -55,6 +55,45 @@ const DoorsPage = () => {
         'Energy efficient',
         'Custom sizes available'
       ]
+    },
+    {
+      id: 'stable',
+      title: 'Stable Doors',
+      description: 'Traditional stable doors with independent top and bottom sections for versatile use',
+      image: '/images/doors/stable-doors-1.jpg',
+      features: [
+        'Top and bottom open independently',
+        'Traditional cottage styling',
+        'Enhanced ventilation control',
+        'Child and pet friendly',
+        'Available in multiple colours'
+      ]
+    },
+    {
+      id: 'upvc',
+      title: 'UPVC Doors',
+      description: 'Affordable and durable entrance doors with excellent thermal performance',
+      image: '/images/doors/upvc-doors-1.jpg',
+      features: [
+        'Cost-effective solution',
+        'Low maintenance',
+        'Excellent insulation',
+        'Wide colour range',
+        'Proven durability'
+      ]
+    },
+    {
+      id: 'aluminium-doors',
+      title: 'Aluminium Doors',
+      description: 'Modern commercial and residential doors with sleek profiles and superior strength',
+      image: '/images/doors/aluminium-doors-1.jpg',
+      features: [
+        'Contemporary styling',
+        'Commercial grade strength',
+        'Slim sight lines',
+        'Weather resistant',
+        'Long-lasting finish'
+      ]
     }
   ];
 
@@ -234,14 +273,19 @@ const DoorsPage = () => {
           </h2>
           
           
-          {/* Temporary Gallery */}
-          <div className="grid md:grid-cols-3 gap-6 max-w-6xl mx-auto">
+          {/* Comprehensive Gallery */}
+          <div className="grid md:grid-cols-3 lg:grid-cols-4 gap-6 max-w-7xl mx-auto">
             <img src="/images/doors/door-services-hitchin-1.jpg" alt="Door installation" className="w-full h-64 object-cover rounded-lg" />
+            <img src="/images/doors/door-services-hitchin-2.jpg" alt="Professional installation" className="w-full h-64 object-cover rounded-lg" />
             <img src="/images/doors/composite-doors-2.jpg" alt="Composite door" className="w-full h-64 object-cover rounded-lg" />
             <img src="/images/doors/aluminium-bi-fold-doors-3.jpg" alt="Bi-fold doors" className="w-full h-64 object-cover rounded-lg" />
             <img src="/images/doors/upvc-patio-doors-3.jpg" alt="Patio doors" className="w-full h-64 object-cover rounded-lg" />
             <img src="/images/doors/upvc-french-doors-2.jpg" alt="French doors" className="w-full h-64 object-cover rounded-lg" />
-            <img src="/images/doors/composite-doors-2.jpg" alt="Composite doors" className="w-full h-64 object-cover rounded-lg" />
+            <img src="/images/doors/stable-doors-2.jpg" alt="Stable doors" className="w-full h-64 object-cover rounded-lg" />
+            <img src="/images/doors/upvc-doors-2.jpg" alt="UPVC doors" className="w-full h-64 object-cover rounded-lg" />
+            <img src="/images/doors/aluminium-doors-2.jpg" alt="Aluminium doors" className="w-full h-64 object-cover rounded-lg" />
+            <img src="/images/doors/aluminium-patio-doors-1.jpg" alt="Aluminium patio doors" className="w-full h-64 object-cover rounded-lg" />
+            <img src="/images/doors/aluminium-patio-doors-3.jpg" alt="Modern patio doors" className="w-full h-64 object-cover rounded-lg" />
           </div>
         </div>
       </section>
