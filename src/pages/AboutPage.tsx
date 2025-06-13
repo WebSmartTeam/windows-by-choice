@@ -63,8 +63,8 @@ const AboutPage = () => {
       <section className="relative min-h-[60vh] flex items-center">
         {/* Background Image */}
         <img 
-          src="/images/about us/20250613_1446_British Home Exterior_remix_01jxm92sz9eq4bzevpbgs7674z.png"
-          alt="British Home Exterior"
+          src="/images/about us/20250528_1218_Morning Luxury View_simple_compose_01jwat9mdxeektr6fccj8vxmt7 (3).png"
+          alt="Morning Luxury View"
           className="absolute inset-0 w-full h-full object-cover"
         />
         
@@ -160,8 +160,8 @@ const AboutPage = () => {
               
               <div className="relative">
                 <img 
-                  src="/images/doors/20250613_1431_Stylish British Home Entrance_simple_compose_01jxm89e90etns0cs6bhged3fe.png" 
-                  alt="Stylish British Home Entrance"
+                  src="/images/about us/20250613_1446_British Home Exterior_remix_01jxm92sz9eq4bzevpbgs7674z.png" 
+                  alt="British Home Exterior"
                   className="w-full rounded-lg shadow-lg"
                 />
                 <div className="absolute -bottom-6 -right-6 bg-blue-600 text-white p-6 rounded-lg shadow-lg">

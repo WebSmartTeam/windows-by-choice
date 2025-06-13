@@ -31,7 +31,11 @@ const Footer = () => {
           {/* Company Info */}
           <div>
             <div className="mb-6">
-              <h3 className="text-2xl font-bold text-gray-800 mb-2">Windows by Choice</h3>
+              <img 
+                src="/images/logo/413776ca-d0ec-471a-a4d9-4fbe072a37d0.png" 
+                alt="Windows by Choice" 
+                className="h-16 w-auto mb-2"
+              />
               <p className="text-sm">Quality Windows for You</p>
             </div>
             <p className="mb-4">
@@ -52,7 +56,7 @@ const Footer = () => {
 
           {/* Services */}
           <div>
-            <h4 className="text-lg font-semibold text-white mb-4">Our Services</h4>
+            <h4 className="text-lg font-semibold text-gray-800 mb-4">Our Services</h4>
             <ul className="space-y-2">
               {services.map((service) => (
                 <li key={service.name}>
@@ -70,7 +74,7 @@ const Footer = () => {
 
           {/* Quick Links */}
           <div>
-            <h4 className="text-lg font-semibold text-white mb-4">Quick Links</h4>
+            <h4 className="text-lg font-semibold text-gray-800 mb-4">Quick Links</h4>
             <ul className="space-y-2">
               {quickLinks.map((link) => (
                 <li key={link.name}>
@@ -116,34 +120,6 @@ const Footer = () => {
                   <p className="text-sm">Covering South East & London</p>
                 </div>
               </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      {/* CTA Section */}
-      <div className="bg-blue-600 py-8">
-        <div className="container mx-auto px-4">
-          <div className="flex flex-col md:flex-row items-center justify-between gap-4">
-            <div>
-              <h3 className="text-xl font-semibold text-white mb-1">
-                Ready to Transform Your Home?
-              </h3>
-              <p className="text-white/90">Get your free quote today</p>
-            </div>
-            <div className="flex gap-4">
-              <Link
-                to="/contact"
-                className="px-6 py-3 bg-white text-blue-600 rounded-lg hover:bg-gray-100 transition-colors font-medium"
-              >
-                Get Free Quote
-              </Link>
-              <a
-                href="tel:07774604190"
-                className="px-6 py-3 border-2 border-white text-white rounded-lg hover:bg-white hover:text-blue-600 transition-colors font-medium"
-              >
-                Call Now
-              </a>
             </div>
           </div>
         </div>

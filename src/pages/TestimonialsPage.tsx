@@ -106,16 +106,7 @@ const TestimonialsPage = () => {
   return (
     <div className="min-h-screen bg-white">
       {/* Interactive Hero Header */}
-      <section className="relative min-h-[60vh] flex items-center">
-        {/* Background Image */}
-        <img 
-          src="/images/Testimonials/20250613_1447_Delighted Homeowners' Joy_simple_compose_01jxm96yk1earbe5j6p9gpgas9.png"
-          alt="Delighted Homeowners Joy"
-          className="absolute inset-0 w-full h-full object-cover object-top"
-        />
-        
-        {/* Light Overlay */}
-        <div className="absolute inset-0 bg-gradient-to-r from-purple-900/40 via-purple-800/30 to-purple-900/40" />
+      <section className="relative min-h-[60vh] flex items-center bg-gradient-to-r from-purple-600 via-purple-700 to-indigo-800">
         
         {/* Floating Rating Badge */}
         <div className="absolute top-10 right-10 bg-yellow-500/90 backdrop-blur-sm rounded-xl p-4 animate-bounce">
@@ -297,6 +288,11 @@ const TestimonialsPage = () => {
       <section className="py-16 bg-gray-50">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
+            <img 
+              src="/images/Testimonials/20250613_1447_Delighted Homeowners' Joy_simple_compose_01jxm96yk1earbe5j6p9gpgas9.png"
+              alt="Delighted Homeowners Joy"
+              className="w-full max-w-md mx-auto rounded-lg shadow-lg mb-8"
+            />
             <h2 className="text-3xl font-bold text-gray-800 mb-6">
               How We Collect Reviews
             </h2>

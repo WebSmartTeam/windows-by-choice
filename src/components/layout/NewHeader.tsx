@@ -155,7 +155,7 @@ const NewHeader = () => {
       }
     },
     {
-      name: 'Living Rooms',
+      name: 'Livin-Room & Orangeries',
       href: '/living-rooms',
       megaMenu: {
         title: 'Living Space Extensions',

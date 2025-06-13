@@ -82,8 +82,8 @@ const DoorsPage = () => {
       <section className="relative min-h-[60vh] flex items-center">
         {/* Background Image */}
         <img 
-          src="/images/about us/about-us-1.jpg"
-          alt="Windows by Choice team"
+          src="/images/doors/20250613_1431_Stylish British Home Entrance_simple_compose_01jxm89e90etns0cs6bhged3fe.png"
+          alt="Stylish British Home Entrance"
           className="absolute inset-0 w-full h-full object-cover"
         />
         
