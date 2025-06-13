@@ -106,25 +106,25 @@ const TestimonialsPage = () => {
   return (
     <div className="min-h-screen bg-white">
       {/* Interactive Hero Header */}
-      <section className="relative min-h-[60vh] flex items-center bg-gradient-to-r from-purple-600 via-purple-700 to-indigo-800">
+      <section className="relative min-h-[50vh] md:min-h-[60vh] flex items-center bg-gradient-to-r from-purple-600 via-purple-700 to-indigo-800">
         
         {/* Floating Rating Badge */}
-        <div className="absolute top-10 right-10 bg-yellow-500/90 backdrop-blur-sm rounded-xl p-4 animate-bounce">
+        <div className="absolute top-4 right-4 md:top-10 md:right-10 bg-yellow-500/90 backdrop-blur-sm rounded-xl p-3 md:p-4 animate-bounce">
           <div className="text-white text-center">
             <div className="flex justify-center mb-2">
               {[...Array(5)].map((_, i) => (
-                <Star key={i} className="w-5 h-5 text-white fill-current" />
+                <Star key={i} className="w-4 h-4 md:w-5 md:h-5 text-white fill-current" />
               ))}
             </div>
-            <div className="text-sm font-bold">4.9/5 Rating</div>
+            <div className="text-xs md:text-sm font-bold">4.9/5 Rating</div>
           </div>
         </div>
         
         {/* Floating Satisfaction Badge */}
-        <div className="absolute bottom-10 left-10 bg-green-600/90 backdrop-blur-sm rounded-xl p-4 animate-pulse">
+        <div className="absolute bottom-4 left-4 md:bottom-10 md:left-10 bg-green-600/90 backdrop-blur-sm rounded-xl p-3 md:p-4 animate-pulse">
           <div className="text-white text-center">
-            <div className="text-3xl font-bold">98%</div>
-            <div className="text-sm font-bold">Satisfaction</div>
+            <div className="text-2xl md:text-3xl font-bold">98%</div>
+            <div className="text-xs md:text-sm font-bold">Satisfaction</div>
           </div>
         </div>
         

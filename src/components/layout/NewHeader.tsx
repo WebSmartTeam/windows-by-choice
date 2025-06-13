@@ -205,8 +205,8 @@ const NewHeader = () => {
 
   return (
     <header className="bg-white shadow-sm sticky top-0 z-50">
-      {/* Top Bar - Full Width */}
-      <div className="bg-slate-800 py-3">
+      {/* Top Bar - Full Width - Hidden on Mobile */}
+      <div className="hidden md:block bg-slate-800 py-3">
         <div className="container mx-auto px-4">
           <div className="flex justify-between items-center text-sm">
             <div className="text-slate-200 font-medium">

@@ -3,7 +3,7 @@ import { ArrowRight, Phone } from 'lucide-react';
 
 const HeroVariant1Corporate = () => {
   return (
-    <section className="relative min-h-screen overflow-hidden">
+    <section className="relative min-h-[80vh] md:min-h-screen overflow-hidden">
       {/* Clean Background Image - No Overlay */}
       <div className="absolute inset-0">
         <img 
@@ -14,7 +14,7 @@ const HeroVariant1Corporate = () => {
       </div>
 
       {/* Which? Trusted Trader Badge */}
-      <div className="absolute top-10 right-10 z-20">
+      <div className="absolute top-4 right-4 md:top-10 md:right-10 z-20">
         <a 
           href="https://trustedtraders.which.co.uk/businesses/windows-by-choice-ltd/"
           target="_blank"
@@ -24,13 +24,13 @@ const HeroVariant1Corporate = () => {
           <img 
             src="/images/contact/which-trusted-wbc.png" 
             alt="Which? Trusted Trader" 
-            className="h-16 w-auto"
+            className="h-12 md:h-16 w-auto"
           />
         </a>
       </div>
 
       {/* Simple Content - Bottom Left */}
-      <div className="relative z-10 h-screen flex items-end">
+      <div className="relative z-10 h-[80vh] md:h-screen flex items-end">
         <div className="container mx-auto px-4 pb-20">
           <div className="max-w-xl">
             <div className="bg-white/95 backdrop-blur-sm rounded-2xl p-8 shadow-2xl">

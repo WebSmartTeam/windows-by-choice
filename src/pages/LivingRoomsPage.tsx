@@ -75,7 +75,7 @@ const LivingRoomsPage = () => {
   return (
     <div className="min-h-screen bg-white">
       {/* Interactive Hero Header */}
-      <section className="relative min-h-[60vh] flex items-center">
+      <section className="relative min-h-[50vh] md:min-h-[60vh] flex items-center">
         {/* Background Image */}
         <img 
           src="/images/living-room-orangeries/20250613_1441_Luxury British Orangery_simple_compose_01jxm8v09gew8bv752qxhc8ndd.png"

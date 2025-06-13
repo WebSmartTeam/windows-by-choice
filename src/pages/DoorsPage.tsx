@@ -118,7 +118,7 @@ const DoorsPage = () => {
   return (
     <div className="min-h-screen bg-white">
       {/* Interactive Hero Header */}
-      <section className="relative min-h-[60vh] flex items-center">
+      <section className="relative min-h-[50vh] md:min-h-[60vh] flex items-center">
         {/* Background Image */}
         <img 
           src="/images/doors/20250613_1431_Stylish British Home Entrance_simple_compose_01jxm89e90etns0cs6bhged3fe.png"

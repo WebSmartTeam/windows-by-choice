@@ -105,7 +105,7 @@ const ConservatoriesPage = () => {
   return (
     <div className="min-h-screen bg-white">
       {/* Interactive Hero Header */}
-      <section className="relative min-h-[60vh] flex items-center">
+      <section className="relative min-h-[50vh] md:min-h-[60vh] flex items-center">
         {/* Background Image */}
         <img 
           src="/images/conservatories/20250613_1432_Victorian Conservatory Haven_simple_compose_01jxm89vt6fegt2nrhs75pc312.png"

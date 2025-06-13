@@ -60,7 +60,7 @@ const AboutPage = () => {
   return (
     <div className="min-h-screen bg-white">
       {/* Interactive Hero Header */}
-      <section className="relative min-h-[60vh] flex items-center">
+      <section className="relative min-h-[50vh] md:min-h-[60vh] flex items-center">
         {/* Background Image */}
         <img 
           src="/images/about us/20250528_1218_Morning Luxury View_simple_compose_01jwat9mdxeektr6fccj8vxmt7 (3).png"

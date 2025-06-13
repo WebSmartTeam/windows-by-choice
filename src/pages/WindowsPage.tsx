@@ -78,7 +78,7 @@ const WindowsPage = () => {
   return (
     <div className="min-h-screen bg-white">
       {/* Interactive Hero Header */}
-      <section className="relative min-h-[60vh] flex items-center">
+      <section className="relative min-h-[50vh] md:min-h-[60vh] flex items-center">
         {/* Background Image */}
         <img 
           src="/images/windows/20250613_1429_Modern UPVC Windows_simple_compose_01jxm84xsdemv8rv3rstke1tnf.png"
@@ -90,17 +90,17 @@ const WindowsPage = () => {
         <div className="absolute inset-0 bg-gradient-to-r from-blue-900/40 via-blue-800/30 to-blue-900/40" />
         
         {/* Floating Elements */}
-        <div className="absolute top-10 right-10 bg-white/20 backdrop-blur-sm rounded-xl p-4 animate-bounce">
+        <div className="absolute top-4 right-4 md:top-10 md:right-10 bg-white/20 backdrop-blur-sm rounded-xl p-3 md:p-4 animate-bounce">
           <div className="text-white text-center">
-            <div className="text-2xl font-bold">A+</div>
-            <div className="text-sm">Energy Rating</div>
+            <div className="text-xl md:text-2xl font-bold">A+</div>
+            <div className="text-xs md:text-sm">Energy Rating</div>
           </div>
         </div>
         
-        <div className="absolute bottom-10 left-10 bg-emerald-500/90 backdrop-blur-sm rounded-xl p-4 animate-pulse">
+        <div className="absolute bottom-4 left-4 md:bottom-10 md:left-10 bg-emerald-500/90 backdrop-blur-sm rounded-xl p-3 md:p-4 animate-pulse">
           <div className="text-white text-center">
-            <div className="text-2xl font-bold">35+</div>
-            <div className="text-sm">Years Experience</div>
+            <div className="text-xl md:text-2xl font-bold">35+</div>
+            <div className="text-xs md:text-sm">Years Experience</div>
           </div>
         </div>
         

@@ -65,7 +65,7 @@ const BlogPage = () => {
   return (
     <div className="min-h-screen bg-white">
       {/* Interactive Hero Header */}
-      <section className="relative min-h-[60vh] flex items-center">
+      <section className="relative min-h-[50vh] md:min-h-[60vh] flex items-center">
         {/* Background Image */}
         <img 
           src="/images/blog/20250613_1451_Architectural Workspace Inspiration_simple_compose_01jxm9cx8jet38h5hkhbaee16r.png"
