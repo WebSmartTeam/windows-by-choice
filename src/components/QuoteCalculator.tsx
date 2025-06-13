@@ -180,6 +180,49 @@ const QuoteCalculator: React.FC = () => {
     }));
   };
 
+  const sendQuoteEmail = async (leadData: any) => {
+    try {
+      // Create email content
+      const emailContent = `
+        New Quote Request from Windows by Choice Website
+        
+        Customer Details:
+        - Name: ${leadData.customerDetails.firstName} ${leadData.customerDetails.lastName}
+        - Email: ${leadData.customerDetails.email}
+        - Phone: ${leadData.customerDetails.phone}
+        - Postcode: ${leadData.customerDetails.postcode}
+        - Preferred Contact: ${leadData.customerDetails.preferredContact}
+        - Preferred Time: ${leadData.customerDetails.preferredTime}
+        - Project Timeline: ${leadData.customerDetails.projectTimeline}
+        
+        Quote Details:
+        - Service Type: ${leadData.serviceType}
+        - Property Type: ${leadData.propertyType}
+        - Window Count: ${leadData.windowCount}
+        - Door Count: ${leadData.doorCount}
+        - Conservatory Type: ${leadData.conservatoryType}
+        - Materials: ${leadData.materials.join(', ')}
+        - Features: ${leadData.features.join(', ')}
+        - Installation: ${leadData.installation}
+        - Estimated Price: £${leadData.estimatedPrice.toLocaleString()}
+        
+        Timestamp: ${leadData.timestamp}
+        Source: ${leadData.source}
+        Lead Value: £${leadData.leadValue.toLocaleString()}
+      `;
+
+      // For testing - simple console log and simulated email
+      console.log('Email would be sent to: peteg@web-smart.co');
+      console.log('Email content:', emailContent);
+      
+      // TODO: Replace with actual email service
+      // This is a placeholder for the test email functionality
+      
+    } catch (error) {
+      console.error('Error sending quote email:', error);
+    }
+  };
+
   const submitQuote = async () => {
     try {
       // Format quote data for lead generation
@@ -191,16 +234,12 @@ const QuoteCalculator: React.FC = () => {
         status: 'new'
       };
 
-      // Here you would integrate with your lead management system
-      // Examples:
-      // - Send to email via EmailJS
-      // - Save to Supabase database
-      // - Send to CRM via API
-      // - Trigger notification to sales team
+      // Send quote email to test recipient
+      await sendQuoteEmail(leadData);
       
       console.log('Quote Lead Generated:', leadData);
       
-      // For now, we'll simulate successful submission
+      // Show success message
       alert(`Thank you, ${quoteData.customerDetails.firstName}! 
 
 Your estimated quote: £${quoteData.estimatedPrice.toLocaleString()}
