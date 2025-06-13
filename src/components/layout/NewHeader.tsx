@@ -35,7 +35,7 @@ const NewHeader = () => {
           {
             title: 'UPVC Windows',
             description: 'Energy efficient and low maintenance',
-            image: '/images/windows/upvc-windows-2.jpg',
+            image: '/images/windows/20250613_1429_Modern UPVC Windows_simple_compose_01jxm84xsdemv8rv3rstke1tnf.png',
             items: [
               { name: 'Casement Windows', href: '/windows#casement' },
               { name: 'Tilt & Turn Windows', href: '/windows#tilt-turn' },
@@ -78,7 +78,7 @@ const NewHeader = () => {
           {
             title: 'Front Doors',
             description: 'Make a stunning first impression',
-            image: '/images/doors/composite-doors-1.jpg',
+            image: '/images/doors/20250613_1431_Stylish British Home Entrance_simple_compose_01jxm89e90etns0cs6bhged3fe.png',
             items: [
               { name: 'Composite Doors', href: '/doors#composite' },
               { name: 'UPVC Doors', href: '/doors#upvc' },
@@ -121,7 +121,7 @@ const NewHeader = () => {
           {
             title: 'Classic Conservatories',
             description: 'Traditional designs for every home',
-            image: '/images/conservatories/victorian-conservatories-hitchin-2.jpg',
+            image: '/images/conservatories/20250613_1432_Victorian Conservatory Haven_simple_compose_01jxm89vt6fegt2nrhs75pc312.png',
             items: [
               { name: 'Victorian', href: '/conservatories#victorian' },
               { name: 'Edwardian', href: '/conservatories#edwardian' },
@@ -164,7 +164,7 @@ const NewHeader = () => {
           {
             title: 'Orangeries',
             description: 'Luxury brick and glass extensions',
-            image: '/images/living-room-orangeries/livin-rooms-1.jpg',
+            image: '/images/living-room-orangeries/20250613_1441_Luxury British Orangery_simple_compose_01jxm8v09gew8bv752qxhc8ndd.png',
             items: [
               { name: 'Traditional Orangeries', href: '/living-rooms#traditional' },
               { name: 'Modern Orangeries', href: '/living-rooms#modern' },
